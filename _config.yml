@@ -31,8 +31,8 @@ linkedin_username: aewook-lee-4a3112232
 
 # Additional icon links
 additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
+- title: medium.com
+  icon: fas fa-medium
   url: 	https://medium.com/@jaewook_lee
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
