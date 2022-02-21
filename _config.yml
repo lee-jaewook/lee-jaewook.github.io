@@ -9,20 +9,20 @@ version: 2
 name: Jaewook Lee
 title: Software Engineer
 email: jaewook_lee@outlook.com
-website: www.github.com/sproogen/resume-theme
+# website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
 # twitter_username: facespics
-github_username:  sproogen
+github_username:  lee-jaewook
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jameswgrant
-linkedin_username: jameswgrant
+linkedin_username: aewook-lee-4a3112232
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: globalmtb
@@ -33,7 +33,7 @@ linkedin_username: jameswgrant
 additional_links:
 - title: itsgoingto.be
   icon: fas fa-globe
-  url: https://www.itsgoingto.be
+  url: 	https://medium.com/@jaewook_lee
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
