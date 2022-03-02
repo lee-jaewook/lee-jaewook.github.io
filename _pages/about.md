@@ -1,7 +1,7 @@
 ---
 permalink: /about/
-title: "About"
-excerpt: "About Me"
+title: "Resume"
+excerpt: "Resume"
 search: true
 last_modified_at: 2020-01-23T13:00:00+09:00
 toc: true
@@ -19,12 +19,12 @@ padding: 5px;
 "></center>
 
 
-* NAME : JiWon, Hyeon
-* MAJOR : Computer Science Engineering
+* NAME : Jaewook, Lee
+* MAJOR : Software Engineering
 
 ## Career & Activities
- - Undergraduate resercher at Embedded System LAB (2018.06 ~ 2020.12)
- - LikeLion 7th @SCH (2019.03 ~ 2019.12)
+ - Undergraduate resercher intern at POSTECH (2021.12 ~ 2022.02)
+ - Undergraduate resercher intern at JBNU (2020.12 ~ 2021.12)
 
 ## Current Interest
  * Bigdata
@@ -34,6 +34,6 @@ padding: 5px;
 
 ## Contact
  * Email : zlone1208@gmail.com
- * Git : [https://github.com/Hyeonjiwon](https://github.com/Hyeonjiwon)
- * Blog : [https://hyeonjiwon.github.io/](https://hyeonjiwon.github.io/)
+ * Git : [https://github.com/lee-jaewook](https://github.com/lee-jaewook)
+ * Blog : [https://lee-jaewook.github.io/](https://lee-jaewook.github.io/)
 
