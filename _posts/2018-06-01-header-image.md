@@ -1,11 +1,8 @@
 ---
-title: Post with Header Image
-tags: TeXt, algorithm
-permalink : /post/header
-article_header:
-  type: cover
-  image:
-    src: /screenshot.jpg
+layout: article
+title: 청춘 예찬
+aside:
+  toc: true
 ---
 
 # header 1

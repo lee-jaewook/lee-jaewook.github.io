@@ -183,6 +183,19 @@ markdown    : kramdown
 highlighter : rouge
 permalink   : date
 
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lee-jaewook"
+
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
