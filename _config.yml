@@ -17,7 +17,7 @@ lang: en-US
 title: Jaewook's Devblog
 email: jaewook_lee@outlook.com
 description: "Software Engineer"
-baseurl: # the optional subpath of your site, e.g. "/blog"
+baseurl: "/blog" # the optional subpath of your site, e.g. "/blog"
 url: "https://lee-jaewook.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   name: Jaewook Lee
