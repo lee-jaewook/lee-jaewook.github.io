@@ -1,159 +1,235 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
+## 2.2.6 (2019-02-02)
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).
+### Enhancements
 
-## [1.4.5] - 2021-07-05
+- Add [commit linter](https://commitlint.js.org/)
+- Add [EditorConfig](https://editorconfig.org/)
+- Update npm packages
 
-## Added
-- Add translation keys for CV layout. [#145](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/145)
-- Display 'Posts' header only if the site has posts. [#144](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/144)
+### Bug Fixes
 
-## Changed
-- Improve remote theme upgrading documentation.
-- Simplify image assigns.
-### Fixed
-- Fix to use current `bundle info` syntax. [#127](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/127)
-- Add `relative_url` filter to author profile image. [#125](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/125)
-- Fix rake vulnerability in `.gemspec` file.
+- Fix some spelling errors in documents
+- Fix some errors in configs
 
-## [1.4.4] - 2019-08-20
+## 2.2.5 (2019-12-08)
 
-### Fixed
-- Fix MIME-type issues with Lunr search by renaming `search-data.json` to `lunr/lunr.store.js`. [#82](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/82)
+### Enhancements
 
-## [1.4.3] - 2019-08-20
+- Update to Jekyll 4.0
+- Add custom snippets for main/top, main/bottom, article/top,  article/bottom, etc
+- Add Medium, Zhihu social icons
+- Add Google Custom Search support
+- Add Korean locale (@ssosso)
+- Add French locale (@ctrl-q)
+- Add Docker support
 
-### Changed
-- Relax Jekyll dependency to allow for version 4.0.
+## 2.2.4 (2018-12-10)
 
-## [1.4.2] - 2019-07-18
+### Enhancements
 
-### Added
-- Document `site.copyright` override for customizing footer copyright text.
+- Swiper component support mouse move
+- Add lightbox (modal image gallery)
+- Add Valine comment system (@Lloyar)
 
-### Changed
-- Update links to LICENSE. [#102](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/102)
-- Update GitHub issue templates.
+### Bug Fixes
 
-### Fixed
-- Fix theme text strings for `search_placeholder_text` and `results_found`. [#104](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/104)
-- Remove stray `console.log` from lunr-search-scripts [#105](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/105)
-- Add missing `/` in icon-gitlab.html. [#80](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/80)
+- Fix some spelling errors in documents (@Krinkle)
 
-## [1.4.1] - 2018-08-07
+## 2.2.3 (2018-11-11)
 
-### Added
-- Add sample "404 not found page" to `/docs/404.html` and `/example/404.html`. [#12](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/12)
+### Enhancements
 
-### Changed
-- Adjust default skin colors to meet WCAG 2 AA. [#68](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/68)
+- Add Swiper component
+- Add AddThis sharing service (@liao961120)
+- Add extensions for demos (CodePen)
+- Add special stylesheets for print
 
-### Fixed
-- Remove extra footer from cv.html `layout`. [#69](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/69)
-- Fix JavaScript error when search is not enabled. [#66](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/66)
+## 2.2.2 (2018-10-21)
 
-## [1.4.0] - 2018-04-02
+### Enhancements
 
-### Changed
-- Lint JavaScript.
-- Update gemspec to use jekyll-seo-tag version `2.4`. [#47](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/47)
+- Add extensions for audios (SoundCloud, Netease Cloud Music), videos (YouTube, TED, bilibili) and slide(SlideShare)
+- Add AddToAny sharing service
 
-### Added
-- Accessibility enhancements for Lunr search form.
-- Add SCSS `$intro-image-color-overlay` variable to enable color overlay on hero images (disabled by default). [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
-- Add new archive layouts: `posts`, `categories`, `category`, `collection`, `tag`, and `tags`.
-- Add grid layout via `entries_layout: grid` front matter.
-- Add support for image thumbnails vial `image.thumbnail` front matter.
+## 2.2.1 (2018-10-02)
 
-### Fixed
-- Fix Firefox [flexbox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=939897) when printing pages.
-- Fix search excerpts that run together because of implied spaces.
-- Moved `<footer>` outside of `<main>` to be semantically correct.
+### Enhancements
 
-## [1.3.1] - 2018-02-16
+- Update screenshots
+- Landing layout `data.sections` item's `image` add `full_width` setting
+- Remove `header.type` and add `header.background` setting
+- Page layout sidebar use document scroll when viewport width < 1024px, this enhance the user experience on a phone or a pad
+- Telegram social icon (@WangQiru)
+- Search panel use dark background
 
-### Changed
-- Only include jQuery when using default Lunr search. [#49](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/49)
+## 2.2.0 (2018-09-16)
 
-### Fixed
-- Focus on search input after clicking on toggle.
+### Enhancements
 
-## [1.3.0] - 2018-02-16
+- `article_header` setting for page layout
+- Articles layout
+- New grid system
+- Image, card, item and hero components
+- Tag additional style
+- chart.js update to 2.7.2, mathjax update to 2.7.4 and mermaid update to 8.0.0-rc.8
 
-### Added
-- Add jQuery script.
-- Add site-wide search toggle.
-- Add support for [Lunr](https://lunrjs.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
-- Add support for [Algolia](https://www.algolia.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
-- Add [Algolia search demo](https://mmistakes.github.io/jekyll-theme-basically-basic-algolia-search/).
+### Bug Fixes
 
-### Changed
-- New installation and upgrade instructions.
-- Absolutely position navigation menu instead of sticking it to the top.
-- Visually hide "Menu" label.
-- Improve alignment of menu toggle when search is enabled.
+- Replace Lenna test image
 
-### Fixed
-- Fix `border-bottom` for Gist line numbers.
+## 2.1.0 (2018-08-26)
 
-## [1.2.0] - 2018-01-05
+### Enhancements
 
-### Added
-- Use [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) for demo site.
+- Search panel (Click search icon in the header or press `s` or `/` key to search)
+- Npm social icon (@WangQiru)
 
-### Changed
-- Update GitHub Pages compatible installation instructions to include jekyll-remote-theme method.
-- Update `site.gems` references to `site.plugins`. [#39](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/39)
-- Update license and copyright.
-- Improve syntax highlighting styles and colors.
+### Bug Fixes
 
-### Fixed
-- Fix primary navigation skip link to use correct anchor ID. [#41](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/41)
-- Fix Susy deprecation warnings by updating to version 3. [#21](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/21)
+- Google analytics may not work, use gtag.js
 
-## [1.1.3] - 2017-10-19
+## 2.0.2 (2018-07-29)
 
-### Fixed
-- Fix `{nil, "picture"=>nil"}` in `_layouts/about.html` when author image isn't set. [#34](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/34)
+### Enhancements
 
-## [1.1.2] - 2017-09-14
+- Highlight theme
+- Articles whit `sidebar.toc` support section navigator (previous and next navigator)
+- Aside Toc show immediately after page get ready (no more delay)
 
-### Fixed
-- Adjust `/_sass/_print.scss` to reduce blank pages when printing in Chrome. [#29](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/29)
-- Fix sidebar visibility bug in Firefox and Safari by adding toggling `visibility: hidden`. [#31](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/31) 
+### Bug Fixes
 
-## [1.1.1] - 2017-09-06
+- Aside Toc may display error when scroll to bottom
 
-### Changed
-- Change `gems` key in `_config.yml` to `plugins`. [#23](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/23)
+## 2.0.1 (2018-07-07)
 
-### Fixed
-- Fix Liquid syntax error: "Expected id but found end_of_string_in `cv.skills.`" in `/cv/skills.html` include.
+> “All elements that respond to press should have a visual feedback when touched.”
+>
+> —TouchableWithoutFeedback in *React Native Docs*
 
-## [1.1.0] - 2017-03-30
+### Enhancements
 
-### Added
-- Improve installation documentation. [#8](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/8)
-- Add Google Analytics tracking ID, Disqus comments, to `/docs` demo site.
+- Some interaction details optimize: button and link add feedback when clicked, cancel button of input in archive layout, button focus style, etc
 
-### Changed
-- Change source order of `.sidebar` and `.canvas` so menu items can easily be "tabbed" to. [#10](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/10)
-- Refactor sidebar off-canvas menu and improve animation. [#9](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/9) [#15](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/15)
-- Remove tinted background from `<th>` elements.
-- Update permalink structure of `/docs` demo site.
+### Bug Fixes
 
-### Fixed
-- Fix `body` height and `.wrapper` box shadow. [#13](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/13)
-- Fix unclickable main content links in Internet Explorer 10. [#9](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/9)
+- `mathjax` and `mermaid` setting may not work
 
-## [1.0.1] - 2017-03-23
+## 2.0.0 (2018-07-01)
 
-### Added
-- New responsive embed helper classes for videos. [#2](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/2)
-- New print styles for improved readability of printed pages. [#4](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/4)
-- Icon list to README.
+Breaking changes, please check [Update from 1.x to 2.x](https://tianqi.name/jekyll-TeXt-theme/docs/en/update-from-1-to-2) for details
 
-## [1.0.0] - 2017-03-20
+### Enhancements
+
+- Authors
+- License
+- New layouts (page, article, landing, etc)
+
+## 1.5.0 (2018-03-18)
+
+### Enhancements
+
+- `text_color_theme` setting
+- Long pagination
+- Additional styles (Alert, Image)
+- Mathjax `autoNumber` setting (@liao961120)
+- Article heading anchor
+- Previous and next post
+- Search
+
+## 1.4.3 (2018-01-13)
+
+### Enhancements
+
+- New TOC style
+- Gitalk support (@WangQiru)
+- Mermaid support
+- `site.paths` and `site.nav_lists` configs support absolute URL
+
+## 1.4.2 (2017-12-10)
+
+### Enhancements
+
+- Use new liquid syntax `{%-` `-%}` to avoid unnecessary output whitespace
+- Add `paths.base` setting
+
+## 1.4.1 (2017-12-05)
+
+### Enhancements
+
+- New color themes(Chocolate, Orange)
+
+### Bug Fixes
+
+- Issues 9: the _posts file can't recorded by git
+
+## 1.4.0 (2017-11-19)
+
+### Enhancements
+
+- Internationalization
+
+### Bug Fixes
+
+- Table overflow-x smooth on iOS
+
+## 1.3.0 (2017-11-11)
+
+### Enhancements
+
+- Article tag supports special characters
+- Excerpts type (HTML | TEXT)
+- Titles on the phone become smaller
+- Change styles for table, code and blockquote
+
+## 1.2.2 (2017-11-04)
+
+### Enhancements
+
+- MathJax Support
+- Add “Read more” link at the end of article excerpt
+- 404 page
+
+### Bug Fixes
+
+- Fix Email link URL error
+- Fix Site Title link URL error
+- Fix table responsive style error
+
+## 1.2.1 (2017-10-27)
+
+### Enhancements
+
+- Optimize Article TOC
+
+### Bug Fixes
+
+- Pageview display error when the post key include `-` (@yuxianda)
+- Email url error
+
+## 1.2.0 (2017-10-22)
+
+### Enhancements
+
+- Article excerpt no more than 200 words
+- If `leancloud` is not set, 0 view won't display
+
+### Bug Fixes
+
+- Fix article TOC’s display error at proper situation
+- Fix footer social buttons not in the center bug
+
+## 1.1.0 (2017-10-19)
+
+### Enhancements
+
+- Color variables
+- More color themes (dark, forest, ocean)
+
+## 1.0.0 (2017-10-17)
+
+### Enhancements
+
+- Better article directories
+- Dark color theme
