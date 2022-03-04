@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-03T23:34:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
-</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Welcome</title><link href="http://localhost:4000/2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+09:00</published><updated>2018-07-01T00:00:00+09:00</updated><id>http://localhost:4000/2018/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2018/07/01/welcome.html"><![CDATA[<p>If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-04T12:47:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">구글 검색에 노출 시키기</title><link href="http://localhost:4000/2022/03/04/googleSearch.html" rel="alternate" type="text/html" title="구글 검색에 노출 시키기" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/04/googleSearch</id><content type="html" xml:base="http://localhost:4000/2022/03/04/googleSearch.html"><![CDATA[<p><a href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>으로 블로그 구축을 마무리하면서, 마지막으로  Google Searh Console을 등록해 <span style="background-color: #dcffe4">구글 검색</span> 에 블로그가 노출되는 방법에 대해 설명하도록 하겠습니다.</p>
+
+<h1 id="header-1">header 1</h1>
+<p><img src="/assets/../../assets/images/posts/blog/google/g1.png" alt="나나나나나" class="align-center" /></p>
+
+<p align="center">
+ <img src="/assets/../../assets/images/posts/blog/google/g1.png" title="ㅎㅎㅎ" />
+ <figcaption>하얀 강아지</figcaption>
+</p>
+
+<h1 id="header-2">header 2</h1>
+
+<!--more-->]]></content><author><name>Jaewook Lee</name></author><category term="Blog" /><summary type="html"><![CDATA[TeXt Theme으로 블로그 구축을 마무리하면서, 마지막으로 Google Searh Console을 등록해 구글 검색 에 블로그가 노출되는 방법에 대해 설명하도록 하겠습니다. header 1 하얀 강아지 header 2]]></summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+09:00</published><updated>2018-07-01T00:00:00+09:00</updated><id>http://localhost:4000/2018/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2018/07/01/welcome.html"><![CDATA[<p>If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:</p>
 
 <p>You may want to <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration">config the site</a> or <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts">writing a post</a> next. Please feel free to <a href="https://github.com/kitian616/jekyll-TeXt-theme/issues">create an issue</a> or <a href="mailto:kitian616@outlook.com">send me email</a> if you have any questions.</p>
 
