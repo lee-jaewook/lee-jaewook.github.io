@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /privateData/
 
 Sitemap: https://lee-jaewook.github.io/sitemap.xml
