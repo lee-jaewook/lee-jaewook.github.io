@@ -3,16 +3,17 @@
 // Author: Tian Qi
 // Email: kitian616@outlook.com
 ///
+$theme-color: #4B6A78;
 
 // main colors
-$main-color-1:     #50d5b7;  //#fc4d50
+$main-color-1:     #08b6ce;  //#fc4d50
 $text-color-1:     #fff;
 
-$main-color-2:     #35aa8f;  //#fca24d
+$main-color-2:     darken($main-color-1, 20%);  //#fca24d
 $text-color-2:     #fff;
 
 $main-color-3:     #f2f2f2;
-$text-color-3:     #333;
+$text-color-3:     darken($theme-color, 10%);
 
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
@@ -21,9 +22,9 @@ $main-color-theme-dark:  rgba(#fff, .9);
 $background-color: #fff;
 
 // text colors
-$text-color-theme-light-d: #000;
-$text-color-theme-light:   #222;
-$text-color-theme-light-l: #888;
+$text-color-theme-light-d: lighten($theme-color, 5%);
+$text-color-theme-light:   #545E6C; // 000  222   888
+$text-color-theme-light-l: #3F4650;
 
 $text-color-theme-dark-d:  #fff;
 $text-color-theme-dark:    rgba(#fff, .95);

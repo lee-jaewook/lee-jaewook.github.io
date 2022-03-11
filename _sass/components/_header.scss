@@ -117,6 +117,7 @@
   a {
     @include link-colors($main-color-1, $main-color-1);
   }
+  
   &::after {
     @include split-line(bottom, 4px, $main-color-1);
   }
