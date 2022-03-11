@@ -669,25 +669,25 @@ input:focus { outline: none; }
 
 .button--secondary svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.button--secondary, .button--secondary:link, .button--secondary:visited { color: #374e59; background-color: #f2f2f2; }
+.button--secondary, .button--secondary:link, .button--secondary:visited { color: #4b6a78; background-color: #f2f2f2; }
 
-.button--secondary svg path, .button--secondary:link svg path, .button--secondary:visited svg path { fill: #374e59; }
+.button--secondary svg path, .button--secondary:link svg path, .button--secondary:visited svg path { fill: #4b6a78; }
 
-.root[data-is-touch="false"] .button--secondary:hover { color: #374e59; background-color: #cecece; }
+.root[data-is-touch="false"] .button--secondary:hover { color: #4b6a78; background-color: #cecece; }
 
-.root[data-is-touch="false"] .button--secondary:hover svg path { fill: #374e59; }
+.root[data-is-touch="false"] .button--secondary:hover svg path { fill: #4b6a78; }
 
-.root[data-is-touch] .button--secondary.active, .root[data-is-touch] .button--secondary:active { color: #374e59; background-color: #a8a8a8; }
+.root[data-is-touch] .button--secondary.active, .root[data-is-touch] .button--secondary:active { color: #4b6a78; background-color: #a8a8a8; }
 
-.root[data-is-touch] .button--secondary.active svg path, .root[data-is-touch] .button--secondary:active svg path { fill: #374e59; }
+.root[data-is-touch] .button--secondary.active svg path, .root[data-is-touch] .button--secondary:active svg path { fill: #4b6a78; }
 
 .root[data-is-touch] .button--secondary.focus { color: default; background-color: #cecece; box-shadow: 0 0 0 2px rgba(206, 206, 206, 0.4); }
 
 .root[data-is-touch] .button--secondary.focus svg path { fill: default; }
 
-.button--secondary.disabled, .button--secondary:disabled { color: rgba(55, 78, 89, 0.2) !important; background-color: #f2f2f2 !important; }
+.button--secondary.disabled, .button--secondary:disabled { color: rgba(75, 106, 120, 0.2) !important; background-color: #f2f2f2 !important; }
 
-.button--secondary.disabled svg path, .button--secondary:disabled svg path { fill: rgba(55, 78, 89, 0.2) !important; }
+.button--secondary.disabled svg path, .button--secondary:disabled svg path { fill: rgba(75, 106, 120, 0.2) !important; }
 
 .button--success { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
@@ -865,13 +865,13 @@ input:focus { outline: none; }
 
 .button--outline-secondary svg path, .button--outline-secondary:link svg path, .button--outline-secondary:visited svg path { fill: #f2f2f2; }
 
-.root[data-is-touch="false"] .button--outline-secondary:hover { color: #374e59; background-color: #f2f2f2; }
+.root[data-is-touch="false"] .button--outline-secondary:hover { color: #4b6a78; background-color: #f2f2f2; }
 
-.root[data-is-touch="false"] .button--outline-secondary:hover svg path { fill: #374e59; }
+.root[data-is-touch="false"] .button--outline-secondary:hover svg path { fill: #4b6a78; }
 
-.root[data-is-touch] .button--outline-secondary.active, .root[data-is-touch] .button--outline-secondary:active { color: #374e59; background-color: #cccccc; }
+.root[data-is-touch] .button--outline-secondary.active, .root[data-is-touch] .button--outline-secondary:active { color: #4b6a78; background-color: #cccccc; }
 
-.root[data-is-touch] .button--outline-secondary.active svg path, .root[data-is-touch] .button--outline-secondary:active svg path { fill: #374e59; }
+.root[data-is-touch] .button--outline-secondary.active svg path, .root[data-is-touch] .button--outline-secondary:active svg path { fill: #4b6a78; }
 
 .root[data-is-touch] .button--outline-secondary.focus { color: default; background-color: #f2f2f2; box-shadow: 0 0 0 2px rgba(242, 242, 242, 0.4); }
 
@@ -1527,13 +1527,13 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .header a.active, .root[data-is-touch] .header a:active { text-decoration: none; }
 
-.header a, .header a:link, .header a:visited { color: #374e59; }
+.header a, .header a:link, .header a:visited { color: #4b6a78; }
 
 .root[data-is-touch="false"] .header a:hover { color: #08b6ce; }
 
 .root[data-is-touch] .header a.active, .root[data-is-touch] .header a:active { color: #057584; }
 
-.header a.disabled, .header a:disabled { color: rgba(55, 78, 89, 0.2) !important; }
+.header a.disabled, .header a:disabled { color: rgba(75, 106, 120, 0.2) !important; }
 
 .header .main { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
 
@@ -1606,7 +1606,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 .navigation__item--active::after { border: 0 solid #08b6ce; border-bottom-width: 4px; }
 
 /** Site Info */
-.footer { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; color: #374e59; background: #fff; }
+.footer { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; color: #4b6a78; background: #fff; }
 
 .footer a { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
@@ -1616,19 +1616,19 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .footer a.active, .root[data-is-touch] .footer a:active { text-decoration: none; }
 
-.footer a, .footer a:link, .footer a:visited { color: #374e59; }
+.footer a, .footer a:link, .footer a:visited { color: #4b6a78; }
 
 .root[data-is-touch="false"] .footer a:hover { color: #08b6ce; }
 
 .root[data-is-touch] .footer a.active, .root[data-is-touch] .footer a:active { color: #057584; }
 
-.footer a.disabled, .footer a:disabled { color: rgba(55, 78, 89, 0.2) !important; }
+.footer a.disabled, .footer a:disabled { color: rgba(75, 106, 120, 0.2) !important; }
 
 .footer .site-info { font-size: 0.7rem; text-align: center; }
 
 .footer .site-info .menu { line-height: 1.2; }
 
-.footer .site-info .menu > *:not(:last-child) { border: 0 solid #374e59; border-right-width: 1px; padding-right: 0.25rem; margin-right: 0.25rem; }
+.footer .site-info .menu > *:not(:last-child) { border: 0 solid #4b6a78; border-right-width: 1px; padding-right: 0.25rem; margin-right: 0.25rem; }
 
 .footer__author-links { overflow: auto; -webkit-overflow-scrolling: touch; }
 
@@ -2138,25 +2138,25 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .site-tags .tag-button svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.site-tags .tag-button, .site-tags .tag-button:link, .site-tags .tag-button:visited { color: #374e59; background-color: #f2f2f2; }
+.site-tags .tag-button, .site-tags .tag-button:link, .site-tags .tag-button:visited { color: #4b6a78; background-color: #f2f2f2; }
 
-.site-tags .tag-button svg path, .site-tags .tag-button:link svg path, .site-tags .tag-button:visited svg path { fill: #374e59; }
+.site-tags .tag-button svg path, .site-tags .tag-button:link svg path, .site-tags .tag-button:visited svg path { fill: #4b6a78; }
 
-.root[data-is-touch="false"] .site-tags .tag-button:hover { color: #374e59; background-color: #cecece; }
+.root[data-is-touch="false"] .site-tags .tag-button:hover { color: #4b6a78; background-color: #cecece; }
 
-.root[data-is-touch="false"] .site-tags .tag-button:hover svg path { fill: #374e59; }
+.root[data-is-touch="false"] .site-tags .tag-button:hover svg path { fill: #4b6a78; }
 
-.root[data-is-touch] .site-tags .tag-button.active, .root[data-is-touch] .site-tags .tag-button:active { color: #fff; background-color: #045f6c; }
+.root[data-is-touch] .site-tags .tag-button.active, .root[data-is-touch] .site-tags .tag-button:active { color: #fff; background-color: #068b9d; }
 
 .root[data-is-touch] .site-tags .tag-button.active svg path, .root[data-is-touch] .site-tags .tag-button:active svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button.focus { color: #fff; background-color: #045f6c; box-shadow: 0 0 0 2px rgba(4, 95, 108, 0.4); }
+.root[data-is-touch] .site-tags .tag-button.focus { color: #fff; background-color: #068b9d; box-shadow: 0 0 0 2px rgba(6, 139, 157, 0.4); }
 
 .root[data-is-touch] .site-tags .tag-button.focus svg path { fill: #fff; }
 
-.site-tags .tag-button.disabled, .site-tags .tag-button:disabled { color: rgba(55, 78, 89, 0.2) !important; background-color: #f2f2f2 !important; }
+.site-tags .tag-button.disabled, .site-tags .tag-button:disabled { color: rgba(75, 106, 120, 0.2) !important; background-color: #f2f2f2 !important; }
 
-.site-tags .tag-button.disabled svg path, .site-tags .tag-button:disabled svg path { fill: rgba(55, 78, 89, 0.2) !important; }
+.site-tags .tag-button.disabled svg path, .site-tags .tag-button:disabled svg path { fill: rgba(75, 106, 120, 0.2) !important; }
 
 .site-tags .tag-button > .tag-button__count { display: inline-block; margin-left: 0.25rem; font-size: 0.7rem; line-height: 1; vertical-align: top; }
 
@@ -2172,11 +2172,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch="false"] .site-tags .tag-button-1:hover svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-1.active, .root[data-is-touch] .site-tags .tag-button-1:active { color: #fff; background-color: #045f6c; }
+.root[data-is-touch] .site-tags .tag-button-1.active, .root[data-is-touch] .site-tags .tag-button-1:active { color: #fff; background-color: #068b9d; }
 
 .root[data-is-touch] .site-tags .tag-button-1.active svg path, .root[data-is-touch] .site-tags .tag-button-1:active svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-1.focus { color: #fff; background-color: #045f6c; box-shadow: 0 0 0 2px rgba(4, 95, 108, 0.4); }
+.root[data-is-touch] .site-tags .tag-button-1.focus { color: #fff; background-color: #068b9d; box-shadow: 0 0 0 2px rgba(6, 139, 157, 0.4); }
 
 .root[data-is-touch] .site-tags .tag-button-1.focus svg path { fill: #fff; }
 
@@ -2196,11 +2196,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch="false"] .site-tags .tag-button-2:hover svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-2.active, .root[data-is-touch] .site-tags .tag-button-2:active { color: #fff; background-color: #045f6c; }
+.root[data-is-touch] .site-tags .tag-button-2.active, .root[data-is-touch] .site-tags .tag-button-2:active { color: #fff; background-color: #068b9d; }
 
 .root[data-is-touch] .site-tags .tag-button-2.active svg path, .root[data-is-touch] .site-tags .tag-button-2:active svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-2.focus { color: #fff; background-color: #045f6c; box-shadow: 0 0 0 2px rgba(4, 95, 108, 0.4); }
+.root[data-is-touch] .site-tags .tag-button-2.focus { color: #fff; background-color: #068b9d; box-shadow: 0 0 0 2px rgba(6, 139, 157, 0.4); }
 
 .root[data-is-touch] .site-tags .tag-button-2.focus svg path { fill: #fff; }
 
@@ -2220,11 +2220,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch="false"] .site-tags .tag-button-3:hover svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-3.active, .root[data-is-touch] .site-tags .tag-button-3:active { color: #fff; background-color: #045f6c; }
+.root[data-is-touch] .site-tags .tag-button-3.active, .root[data-is-touch] .site-tags .tag-button-3:active { color: #fff; background-color: #068b9d; }
 
 .root[data-is-touch] .site-tags .tag-button-3.active svg path, .root[data-is-touch] .site-tags .tag-button-3:active svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-3.focus { color: #fff; background-color: #045f6c; box-shadow: 0 0 0 2px rgba(4, 95, 108, 0.4); }
+.root[data-is-touch] .site-tags .tag-button-3.focus { color: #fff; background-color: #068b9d; box-shadow: 0 0 0 2px rgba(6, 139, 157, 0.4); }
 
 .root[data-is-touch] .site-tags .tag-button-3.focus svg path { fill: #fff; }
 
@@ -2244,11 +2244,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch="false"] .site-tags .tag-button-4:hover svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-4.active, .root[data-is-touch] .site-tags .tag-button-4:active { color: #fff; background-color: #045f6c; }
+.root[data-is-touch] .site-tags .tag-button-4.active, .root[data-is-touch] .site-tags .tag-button-4:active { color: #fff; background-color: #068b9d; }
 
 .root[data-is-touch] .site-tags .tag-button-4.active svg path, .root[data-is-touch] .site-tags .tag-button-4:active svg path { fill: #fff; }
 
-.root[data-is-touch] .site-tags .tag-button-4.focus { color: #fff; background-color: #045f6c; box-shadow: 0 0 0 2px rgba(4, 95, 108, 0.4); }
+.root[data-is-touch] .site-tags .tag-button-4.focus { color: #fff; background-color: #068b9d; box-shadow: 0 0 0 2px rgba(6, 139, 157, 0.4); }
 
 .root[data-is-touch] .site-tags .tag-button-4.focus svg path { fill: #fff; }
 
@@ -2370,13 +2370,13 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .search-result__item a svg path, .search-result__item a:link svg path, .search-result__item a:visited svg path { fill: #545E6C; }
 
-.root[data-is-touch="false"] .search-result__item a:hover { color: #374e59; background-color: #f2f2f2; }
+.root[data-is-touch="false"] .search-result__item a:hover { color: #4b6a78; background-color: #f2f2f2; }
 
-.root[data-is-touch="false"] .search-result__item a:hover svg path { fill: #374e59; }
+.root[data-is-touch="false"] .search-result__item a:hover svg path { fill: #4b6a78; }
 
-.root[data-is-touch] .search-result__item a.active, .root[data-is-touch] .search-result__item a:active { color: #374e59; background-color: #cccccc; }
+.root[data-is-touch] .search-result__item a.active, .root[data-is-touch] .search-result__item a:active { color: #4b6a78; background-color: #cccccc; }
 
-.root[data-is-touch] .search-result__item a.active svg path, .root[data-is-touch] .search-result__item a:active svg path { fill: #374e59; }
+.root[data-is-touch] .search-result__item a.active svg path, .root[data-is-touch] .search-result__item a:active svg path { fill: #4b6a78; }
 
 .root[data-is-touch] .search-result__item a.focus { color: default; background-color: #f2f2f2; box-shadow: 0 0 0 2px rgba(242, 242, 242, 0.4); }
 
@@ -2434,7 +2434,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .search--dark .search-result__item a.disabled svg path, .search--dark .search-result__item a:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
 
-.search-result__item.active a, .search-result__item.active a:link, .search-result__item.active a:visited { color: #374e59; background-color: #f2f2f2; }
+.search-result__item.active a, .search-result__item.active a:link, .search-result__item.active a:visited { color: #4b6a78; background-color: #f2f2f2; }
 
 .search--light .search-result__item.active a, .search--light .search-result__item.active a:link, .search--light .search-result__item.active a:visited { color: rgba(255, 255, 255, 0.95); background-color: rgba(0, 0, 0, 0.9); }
 

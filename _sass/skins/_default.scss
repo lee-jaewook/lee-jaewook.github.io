@@ -9,11 +9,11 @@ $theme-color: #4B6A78;
 $main-color-1:     #08b6ce;  //#fc4d50
 $text-color-1:     #fff;
 
-$main-color-2:     darken($main-color-1, 20%);  //#fca24d
+$main-color-2:     darken($main-color-1, 10%);  //#fca24d
 $text-color-2:     #fff;
 
 $main-color-3:     #f2f2f2;
-$text-color-3:     darken($theme-color, 10%);
+$text-color-3:     lighten($theme-color, 0%);
 
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
