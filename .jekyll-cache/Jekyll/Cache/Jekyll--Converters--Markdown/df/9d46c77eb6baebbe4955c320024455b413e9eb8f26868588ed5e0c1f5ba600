@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-12T20:06:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
-</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Github(깃허브) 프로필 꾸미기(1)</title><link href="http://localhost:4000/2022/03/11/git_profile_1.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(1)" /><published>2022-03-11T00:00:00+09:00</published><updated>2022-03-11T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/11/git_profile_1</id><content type="html" xml:base="http://localhost:4000/2022/03/11/git_profile_1.html"><![CDATA[<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
+I"j<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
 <!--more--></p>
 <h1 id="1-readmemd-파일-생성">1. README.md 파일 생성</h1>
 <p>블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.</p>
@@ -15,10 +14,10 @@
 <h2 id="21-readmemd-파일-수정">2.1 README.md 파일 수정</h2>
 <p><a href="https://github.com/gautamkrishnar/blog-post-workflow">blog-post-workflow</a>를 사용해 깃허브 프로필에 블로그 리스트를 생성하기 위해서 <code class="language-plaintext highlighter-rouge">README.md</code> 파일에 아래와 같이 내용을 추가해줍니다.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- &lt;github user name&gt;</span>/README.md --&gt;
-<span class="gu">### 📕 Latest Blog Posts</span>
-<span class="c">&lt;!-- BLOG-POST-LIST:START --&gt;</span>
-<span class="c">&lt;!-- BLOG-POST-LIST:END --&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- &lt;github user name&gt;/README.md --&gt;
+### 📕 Latest Blog Posts
+&lt;!-- BLOG-POST-LIST:START --&gt;
+&lt;!-- BLOG-POST-LIST:END --&gt;
 </code></pre></div></div>
 
 <h2 id="22-폴더-생성-및-파일-생성">2.2 폴더 생성 및 파일 생성</h2>
@@ -73,4 +72,5 @@
 
 <p><img src="/assets/images/posts/github/1/9.png" alt="" /></p>
 
-<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry></feed>
+<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>
+:ET

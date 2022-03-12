@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-12T20:06:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
-</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Github(깃허브) 프로필 꾸미기(1)</title><link href="http://localhost:4000/2022/03/11/git_profile_1.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(1)" /><published>2022-03-11T00:00:00+09:00</published><updated>2022-03-11T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/11/git_profile_1</id><content type="html" xml:base="http://localhost:4000/2022/03/11/git_profile_1.html"><![CDATA[<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
+I"<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
 <!--more--></p>
 <h1 id="1-readmemd-파일-생성">1. README.md 파일 생성</h1>
 <p>블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.</p>
@@ -43,34 +42,44 @@
         <span class="na">with</span><span class="pi">:</span> 
           <span class="na">feed_list</span><span class="pi">:</span> <span class="c1"># "your blog feed url"</span>
 </code></pre></div></div>
-
-<p>여기서 <code class="language-plaintext highlighter-rouge">feed_list</code>에 여러분 블로그의 RSS feed URL을 적어주시면 됩니다. 저처럼 jekyll로 만든 github page를 사용하고 계신 분은 <code class="language-plaintext highlighter-rouge">_cofig.yml</code>파일에</p>
+<p><br />
+여기서 <code class="language-plaintext highlighter-rouge">feed_list</code>에 여러분 블로그의 RSS feed URL을 적어주시면 됩니다. 저처럼 jekyll로 만든 github page를 사용하고 계신 분은 <code class="language-plaintext highlighter-rouge">_cofig.yml</code>파일에 
+<br /></p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">jekyll-feed</span>
 </code></pre></div></div>
 
-<p>이렇게 <code class="language-plaintext highlighter-rouge">jekyll-feed</code>를 추가하신 뒤, <code class="language-plaintext highlighter-rouge">feed_list</code>에 <code class="language-plaintext highlighter-rouge">"&lt;github page url&gt;/feed"</code>를 기입하시면 됩니다.<br />
-이제 수정된 모든 파일을 깃허브에 업로드합니다.</p>
+<p><br />
+이렇게 <code class="language-plaintext highlighter-rouge">jekyll-feed</code>를 추가하신 뒤, <code class="language-plaintext highlighter-rouge">feed_list</code>에 <code class="language-plaintext highlighter-rouge">"&lt;github page url&gt;/feed"</code>를 기입하시면 됩니다.<br />
+이제 수정된 모든 파일을 깃허브에 업로드합니다.
+<br /></p>
 
 <h3 id="23-깃허브-workflows-설정">2.3 깃허브 workflows 설정</h3>
 
 <p><img src="/assets/images/posts/github/1/5.png" alt="" /></p>
 
-<p>업로드를 했지만 위의 그림처럼 포스트의 리스트가 표시되지 않습니다🤦‍♂️. <br />
-마지막으로 한가지 작업이 더 남아있습니다.</p>
+<p><br />
+업로드를 했지만 위의 그림처럼 포스트의 리스트가 표시되지 않습니다🤦‍♂️. <br />
+마지막으로 한가지 작업이 더 남아있습니다.<br />
+<br /></p>
 
 <p><img src="/assets/images/posts/github/1/6.png" alt="" /></p>
 
 <p><img src="/assets/images/posts/github/1/7.png" alt="" /></p>
 
-<p>프로필을 작성중인 <code class="language-plaintext highlighter-rouge">깃허브 사용자명</code>프로젝트에 들어가셔서 <code class="language-plaintext highlighter-rouge">Actions</code>을 누르시고 좌측의 <code class="language-plaintext highlighter-rouge">Workflows</code> 밑에 <code class="language-plaintext highlighter-rouge">Latest blog post workflow</code>를 클릭, <code class="language-plaintext highlighter-rouge">Run workflow</code>를 클릭하시면 됩니다.</p>
+<p><br />
+프로필을 작성중인 <code class="language-plaintext highlighter-rouge">깃허브 사용자명</code>프로젝트에 들어가셔서 <code class="language-plaintext highlighter-rouge">Actions</code>을 누르시고 좌측의 <code class="language-plaintext highlighter-rouge">Workflows</code> 밑에 <code class="language-plaintext highlighter-rouge">Latest blog post workflow</code>를 클릭, <code class="language-plaintext highlighter-rouge">Run workflow</code>를 클릭하시면 됩니다.
+<br /></p>
 
 <p><img src="/assets/images/posts/github/1/8.png" alt="" /></p>
 
-<p>잠시 기다린 뒤, 새로고침을 하면 아래와 같이 <code class="language-plaintext highlighter-rouge">workflow</code>가 실행되고 다시 프로필에 가보시면 리스트가 이제 보이게 됩니다<br />
-👍👍👍</p>
+<p><br />
+잠시 기다린 뒤, 새로고침을 하면 아래와 같이 <code class="language-plaintext highlighter-rouge">workflow</code>가 실행되고 다시 프로필에 가보시면 리스트가 이제 보이게 됩니다<br />
+👍👍👍
+<br /></p>
 
 <p><img src="/assets/images/posts/github/1/9.png" alt="" /></p>
 
-<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry></feed>
+<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>
+:ET

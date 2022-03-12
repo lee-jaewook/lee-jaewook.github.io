@@ -1678,7 +1678,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__header--cover { width: 100%; }
 
-.article__content { line-height: 1.8; word-wrap: break-word; }
+.article__content { line-height: 1.8; word-wrap: break-word; font-size: 17px; }
 
 @media print { .article__content { line-height: 1.6; } }
 
@@ -1710,7 +1710,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch="false"] .article__content h1:hover > .anchor, .root[data-is-touch="false"] .article__content h2:hover > .anchor, .root[data-is-touch="false"] .article__content h3:hover > .anchor, .root[data-is-touch="false"] .article__content h4:hover > .anchor, .root[data-is-touch="false"] .article__content h5:hover > .anchor, .root[data-is-touch="false"] .article__content h6:hover > .anchor { cursor: pointer; visibility: visible; opacity: 1; }
 
-.article__content h1, .article__content h2 { border: 0 solid #e6e6e6; border-bottom-width: 1px; }
+.article__content h1 { font-size: 30px; border: 0 solid #e6e6e6; border-bottom-width: 1px; }
+
+.article__content h2 { font-size: 25px; border: 0 solid #e6e6e6; border-bottom-width: 1px; }
+
+.article__content h3 { font-size: 20px; border: 0 solid #e6e6e6; border-bottom-width: 1px; }
 
 .article__content hr { border: none; }
 
@@ -1722,17 +1726,17 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__content blockquote > :last-child { margin-bottom: 0; }
 
-.article__content img:not(.emoji) { max-width: 100%; vertical-align: middle; }
+.article__content img:not(.emoji) { max-width: 80%; text-align: center; display: block; margin: 0 auto; }
 
-.article__content .emoji { display: inline-block; width: 1.26rem; height: 1.26rem; vertical-align: text-bottom; }
+.article__content .emoji { display: inline-block; width: 1.44rem; height: 1.44rem; vertical-align: text-bottom; }
 
 .article__content .footnotes { border: 0 solid #e6e6e6; border-top-width: 1px; margin-top: 3rem; }
 
 @media print { .article__content .footnotes { margin-top: 1rem; } }
 
-.article__content code { padding: 0.25rem 0.5rem; background-color: rgba(0, 0, 0, 0.05); border-radius: 0.4rem; }
+.article__content code { font-size: 13px; padding: 0.25rem 0.5rem; color: #3F4650; background-color: #dae4e8; border-radius: 0.4rem; }
 
-.article__content code span { padding: 0; margin: 0; }
+.article__content code span { font-size: 13px; padding: 0; margin: 0; }
 
 .article__content pre { overflow: auto; -webkit-overflow-scrolling: touch; }
 

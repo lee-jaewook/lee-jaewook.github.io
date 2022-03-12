@@ -1,6 +1,7 @@
 .article__content {
   line-height: map-get($base, line-height-lg);
   word-wrap: break-word;
+  font-size: 17px;
   @media print {
     line-height: map-get($base, line-height);
   }
@@ -34,8 +35,16 @@
       }
     }
   }
-  h1,
+  h1{
+    font-size: 30px;
+    @include split-line(bottom);
+  }
   h2 {
+    font-size: 25px;
+    @include split-line(bottom);
+  }
+  h3 {
+    font-size: 20px;
     @include split-line(bottom);
   }
   hr {
@@ -55,13 +64,16 @@
     }
   }
   img:not(.emoji) {
-    max-width: 100%;
-    vertical-align: middle;
+    max-width: 80%;
+    // vertical-align: middle;
+    text-align: center;
+    display : block ;
+    margin : 0 auto ;
   }
   .emoji {
     display: inline-block;
-    width: map-get($base, line-height-lg) * .7rem;
-    height: map-get($base, line-height-lg) * .7rem;
+    width: map-get($base, line-height-lg) * .8rem;
+    height: map-get($base, line-height-lg) * .8rem;
     vertical-align: text-bottom;
   }
   .footnotes {
@@ -72,10 +84,13 @@
     }
   }
   code {
+    font-size: 13px;
     padding: map-get($spacers, 1) map-get($spacers, 2);
-    background-color: $text-background-color;
+    color: $text-color;
+    background-color: lighten($theme-color, 50%); //$text-background-color;
     border-radius: map-get($base, border-radius);
     span {
+      font-size: 13px;
       padding: 0;
       margin: 0;
     }
