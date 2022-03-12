@@ -15,7 +15,7 @@ README.md 생성과 블로그 포스트 리스트(blog post list) 생성
 # 1. README.md 파일 생성
 블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.
 ```markdown
-<!-- <github user name>/README.md -->
+<!-- github_user_name/README.md -->
 # Hi there, I'm `your name`  👋 
 ```
 
@@ -28,7 +28,7 @@ README.md 생성과 블로그 포스트 리스트(blog post list) 생성
 [blog-post-workflow](https://github.com/gautamkrishnar/blog-post-workflow)를 사용해 깃허브 프로필에 블로그 리스트를 생성하기 위해서 `README.md` 파일에 아래와 같이 내용을 추가해줍니다.
 
 ```markdown
-<!-- <github user name>/README.md -->
+<!-- github_user_name/README.md -->
 ### 📕 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
