@@ -1,0 +1,46 @@
+I"�<!--more-->
+
+<h1 id="문제">문제</h1>
+<p><a href="https://www.acmicpc.net/problem/1157">벡준 1157번</a>
+<img src="/assets/../../assets/images/posts/Algorithm/bjoon_1157/1.png" alt="" /></p>
+
+<h1 id="문제-요약">문제 요약</h1>
+<p>대소문자 구분 없이 가장 많이 사용된 알파벳을 알아내자.</p>
+
+<h1 id="입출력">입출력</h1>
+<ul>
+  <li>입력 : 대소문자로 이루어진 단어</li>
+  <li>출력
+    <ul>
+      <li>가장 많이 사용된 알파벳이 여러 개 존재하는 경우
+        <ul>
+          <li>첫 줄 : <code class="language-plaintext highlighter-rouge">?</code> 출력</li>
+        </ul>
+      </li>
+      <li>가장 많이 사용된 알파벳이 하나만 존재하는 경우
+        <ul>
+          <li>첫 줄 : <code class="language-plaintext highlighter-rouge">대문자로 알파벳</code> 출력</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="파이썬-코드">파이썬 코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">words</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">unique_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
+
+<span class="n">words_cnt</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">unique_words</span> <span class="p">:</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">words_cnt</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>  
+
+<span class="k">if</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">'?'</span><span class="p">)</span>
+<span class="k">else</span> <span class="p">:</span>
+    <span class="n">max_index</span> <span class="o">=</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> 
+    <span class="k">print</span><span class="p">(</span><span class="n">unique_words</span><span class="p">[</span><span class="n">max_index</span><span class="p">])</span>
+</code></pre></div></div>
+
+:ET
