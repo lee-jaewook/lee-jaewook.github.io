@@ -1748,11 +1748,11 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__content pre > code.language-mermaid[data-processed], .article__content pre > code.language-chart[data-processed] { display: block; }
 
-.article__content .highlighter-rouge > .highlight > pre, .article__content figure.highlight > pre { padding: 1rem 0 1rem 1rem; margin: 0; background-color: rgba(0, 0, 0, 0.05); border-radius: 0.4rem; }
+.article__content .highlighter-rouge > .highlight > pre, .article__content figure.highlight > pre { padding: 1rem 0 1rem 1rem; margin: 0; background-color: #dae4e8; border-radius: 0.4rem; }
 
 .article__content .highlighter-rouge > .highlight > pre > code, .article__content figure.highlight > pre > code { display: block; }
 
-.article__content figure.highlight::before { display: block; padding: 0.5rem 1rem 0.5rem 0; font-weight: 700; color: rgba(0, 0, 0, 0.1); text-align: right; text-transform: uppercase; content: attr(data-lang); background-color: rgba(0, 0, 0, 0.05); border-top-left-radius: 0.4rem; border-top-right-radius: 0.4rem; }
+.article__content figure.highlight::before { display: block; padding: 0.5rem 1rem 0.5rem 0; font-weight: 700; color: rgba(0, 0, 0, 0.1); text-align: right; text-transform: uppercase; content: attr(data-lang); background-color: #dae4e8; border-top-left-radius: 0.4rem; border-top-right-radius: 0.4rem; }
 
 .article__content figure.highlight > pre { padding-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
 
@@ -1794,7 +1794,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__content table { display: block; width: 100%; border-collapse: collapse; overflow: auto; -webkit-overflow-scrolling: touch; }
 
-.article__content table thead, .article__content table tfoot { background-color: rgba(0, 0, 0, 0.05); }
+.article__content table thead, .article__content table tfoot { background-color: #dae4e8; }
 
 .article__content table th, .article__content table td { padding: 0.5rem; border: 1px solid #e6e6e6; }
 
@@ -2112,7 +2112,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .author-links > ul > li > .npm-button.disabled svg path, .author-links > ul > li > .npm-button:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
 
-.author-profile { max-width: 25rem; padding: 0.5rem 1rem; margin: 1.5rem 0; font-size: 0.85rem; background-color: rgba(0, 0, 0, 0.05); }
+.author-profile { max-width: 25rem; padding: 0.5rem 1rem; margin: 1.5rem 0; font-size: 0.85rem; background-color: #dae4e8; }
 
 @media (max-width: 499px) { .author-profile { text-align: center; } }
 
