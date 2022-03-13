@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Github(깃허브) 프로필 꾸미기(3)
+title: Github(깃허브) 프로필 꾸미기(3) - Technique Icons & Badge
 tags: github
 article_header:
   type: overlay
