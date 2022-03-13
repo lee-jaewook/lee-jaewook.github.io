@@ -11,6 +11,9 @@ article_header:
     src: assets/images/posts/github/1/11.png
 ---
 README.md 생성과 블로그 포스트 리스트(blog post list) 생성
+
+![](/assets/images/posts/github/1/11.png)
+
 <!--more-->
 # 1. README.md 파일 생성
 블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.

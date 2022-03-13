@@ -1,5 +1,8 @@
-I"�<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
-<!--more--></p>
+I"�<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성</p>
+
+<p><img src="/assets/images/posts/github/1/11.png" alt="" /></p>
+
+<!--more-->
 <h1 id="1-readmemd-파일-생성">1. README.md 파일 생성</h1>
 <p>블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.</p>
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>

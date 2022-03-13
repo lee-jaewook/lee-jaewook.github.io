@@ -1,6 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-12T22:26:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
-</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Github(깃허브) 프로필 꾸미기(1)</title><link href="http://localhost:4000/2022/03/11/git_profile_1.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(1)" /><published>2022-03-11T00:00:00+09:00</published><updated>2022-03-11T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/11/git_profile_1</id><content type="html" xml:base="http://localhost:4000/2022/03/11/git_profile_1.html"><![CDATA[<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성
-<!--more--></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-13T15:10:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+</subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Github(깃허브) 프로필 꾸미기(4)</title><link href="http://localhost:4000/2022/03/12/git_profile_4.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(4)" /><published>2022-03-12T00:00:00+09:00</published><updated>2022-03-12T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/12/git_profile_4</id><content type="html" xml:base="http://localhost:4000/2022/03/12/git_profile_4.html"><![CDATA[<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
+
+<!--more-->
+<h1 id="컨트리뷰션-차트contribution-chart-추가">컨트리뷰션 차트(Contribution chart) 추가</h1>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># &lt;github user name&gt;/.github/workflows/cobrinha.yml</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Generate Datas</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">schedule</span><span class="pi">:</span> <span class="c1"># execute every 12 hours</span>
+    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*</span><span class="nv"> </span><span class="s">*/12</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*"</span>
+  <span class="na">workflow_dispatch</span><span class="pi">:</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">Jobs to update datas</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="c1"># Snake Animation</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">Platane/snk@master</span>
+        <span class="na">id</span><span class="pi">:</span> <span class="s">snake-gif</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">github_user_name</span><span class="pi">:</span> <span class="s">your_git_username</span>
+          <span class="na">svg_out_path</span><span class="pi">:</span> <span class="s">dist/github-contribution-grid-snake.svg</span>
+
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">crazy-max/ghaction-github-pages@v2.1.3</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">target_branch</span><span class="pi">:</span> <span class="s">output</span>
+          <span class="na">build_dir</span><span class="pi">:</span> <span class="s">dist</span>
+        <span class="na">env</span><span class="pi">:</span>
+          <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
+</code></pre></div></div>
+<p>우선 <code class="language-plaintext highlighter-rouge">/.github/workflows</code> 폴더를 생성하시고, 폴더 안에 <code class="language-plaintext highlighter-rouge">cobrinha.yml</code>파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, <code class="language-plaintext highlighter-rouge">github_user_name</code>에 자신의 사용자명을 기입하시면 됩니다.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
+<span class="gu">## 🌱 Git Contribution Chart</span>
+ !<span class="p">[</span><span class="nv">Snake animation</span><span class="p">](</span><span class="sx">https://github.com/github_user_name/github_user_name/blob/output/github-contribution-grid-snake.svg</span><span class="p">)</span><span class="nt">&lt;br&gt;</span>
+</code></pre></div></div>
+
+<p>위의 코드에서 <code class="language-plaintext highlighter-rouge">github_user_name</code>을 자신의 깃허브 사용자명으로 바꾸시고 <code class="language-plaintext highlighter-rouge">README.md</code>파일에 추가해주시면 됩니다.</p>
+
+<p>그 다음은 <a href="https://lee-jaewook.github.io/2022/03/11/git_profile_1.html">Github(깃허브) 프로필 꾸미기(1)</a>에서 설명드렸던 것처럼 깃허브 레파지토리에서 <code class="language-plaintext highlighter-rouge">Action</code>을 실행해 주시면 됩니다.</p>
+
+<p><img src="/assets/images/posts/github/4/2.png" alt="" /></p>
+
+<p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 컨트리뷰션 차트 추가하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(3)</title><link href="http://localhost:4000/2022/03/11/git_profile_3.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(3)" /><published>2022-03-11T00:00:00+09:00</published><updated>2022-03-11T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/11/git_profile_3</id><content type="html" xml:base="http://localhost:4000/2022/03/11/git_profile_3.html"><![CDATA[<p>깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법</p>
+
+<!--more-->
+<h1 id="1-기술-아이콘technique-icons-생성">1. 기술 아이콘(Technique Icons) 생성</h1>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline_block"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">align=</span><span class="s">"center"</span> <span class="na">alt=</span><span class="s">"Python"</span> <span class="na">height=</span><span class="s">"40"</span> <span class="na">width=</span><span class="s">"50"</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>기술 아이콘을 추가하는 방법은 README.md 파일에 위의 코드를 추가하시면 됩니다. 예시 코드에는 파이썬만 추가하였지만 <a href="https://devicon.dev/">devicon.dev</a>에 접속하셔서 원하는 기술 아이콘의 <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> 요소를 얻을 수 있습니다.</p>
+
+<p><img src="/assets/images/posts/github/3/2.png" alt="" /></p>
+
+<p><img src="/assets/images/posts/github/3/1.png" alt="" /></p>
+
+<h1 id="2-소셜-뱃지social-badge-생성">2. 소셜 뱃지(Social Badge) 생성</h1>
+<p><a href="https://devicon.dev/">150-badges-for-github</a>에 들어가셔서 원하는 뱃지의 url을 복사해 <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>태그로 추가하시면 됩니다. 예시 코드는 아래와 같습니다.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline_block"</span><span class="nt">&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://github.com/lee-jaewook"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.linkedin.com/in/lee-jaewook/"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><img src="/assets/images/posts/github/3/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(2)</title><link href="http://localhost:4000/2022/03/10/git_profile_2.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(2)" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/10/git_profile_2</id><content type="html" xml:base="http://localhost:4000/2022/03/10/git_profile_2.html"><![CDATA[<p>깃허브 프로필에 Github Stats 생성하는 법</p>
+
+<!--more-->
+<h1 id="github-stats-생성">Github Stats 생성</h1>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">align=</span><span class="s">"center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://github.com/your_git_username"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">height=</span><span class="s">"180em"</span> <span class="na">src=</span><span class="s">"https://github-readme-stats.vercel.app/api?username=your_git_username&amp;show_icons=true&amp;theme=dracula&amp;include_all_commits=true&amp;count_private=true"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">height=</span><span class="s">"180em"</span> <span class="na">src=</span><span class="s">"https://github-readme-stats.vercel.app/api/top-langs/?username=your_git_username&amp;layout=compact&amp;langs_count=7&amp;theme=dracula"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Github Stats을 추가하는 방법은 간단합니다. README.md 파일에 위의 코드를 추가하고, <code class="language-plaintext highlighter-rouge">your_git_username</code>을 자신의 깃허브 사용자명으로 수정해주시면 됩니다.</p>
+
+<p><img src="/assets/images/posts/github/2/1.png" alt="" /></p>
+
+<p>(번외로 스타일을 바꾸고 싶으신 분은 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a>를 참고하시면 됩니다.)</p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 Github Stats 생성하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(1)</title><link href="http://localhost:4000/2022/03/09/git_profile_1.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(1)" /><published>2022-03-09T00:00:00+09:00</published><updated>2022-03-09T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/09/git_profile_1</id><content type="html" xml:base="http://localhost:4000/2022/03/09/git_profile_1.html"><![CDATA[<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성</p>
+
+<p><img src="/assets/images/posts/github/1/11.png" alt="" /></p>
+
+<!--more-->
 <h1 id="1-readmemd-파일-생성">1. README.md 파일 생성</h1>
 <p>블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.</p>
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
@@ -73,7 +161,7 @@
 
 <p><img src="/assets/images/posts/github/1/9.png" alt="" /></p>
 
-<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry><entry><title type="html">벡준 | 1157번 | 단어 공부</title><link href="http://localhost:4000/2022/03/10/bjoon_1157.html" rel="alternate" type="text/html" title="벡준 | 1157번 | 단어 공부" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/10/bjoon_1157</id><content type="html" xml:base="http://localhost:4000/2022/03/10/bjoon_1157.html"><![CDATA[<p><a href="https://www.acmicpc.net/problem/1157">벡준 1157번</a>
+<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry><entry><title type="html">벡준 | 1157번 | 단어 공부</title><link href="http://localhost:4000/2022/03/08/bjoon_1157.html" rel="alternate" type="text/html" title="벡준 | 1157번 | 단어 공부" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/08/bjoon_1157</id><content type="html" xml:base="http://localhost:4000/2022/03/08/bjoon_1157.html"><![CDATA[<p><a href="https://www.acmicpc.net/problem/1157">벡준 1157번</a>
 <!--more--></p>
 
 <h1 id="1-문제">1. 문제</h1>
