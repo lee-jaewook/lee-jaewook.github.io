@@ -1,7 +1,8 @@
-I"�<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
+I"�<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
 
 <!--more-->
 <h1 id="컨트리뷰션-차트contribution-chart-추가">컨트리뷰션 차트(Contribution chart) 추가</h1>
+
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># &lt;github user name&gt;/.github/workflows/cobrinha.yml</span>
 <span class="na">name</span><span class="pi">:</span> <span class="s">Generate Datas</span>
 
@@ -29,6 +30,7 @@
         <span class="na">env</span><span class="pi">:</span>
           <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
 </code></pre></div></div>
+
 <p>우선 <code class="language-plaintext highlighter-rouge">/.github/workflows</code> 폴더를 생성하시고, 폴더 안에 <code class="language-plaintext highlighter-rouge">cobrinha.yml</code>파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, <code class="language-plaintext highlighter-rouge">github_user_name</code>에 자신의 사용자명을 기입하시면 됩니다.</p>
 
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
@@ -43,4 +45,5 @@
 <p><img src="/assets/images/posts/github/4/2.png" alt="" /></p>
 
 <p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>
+
 :ET
