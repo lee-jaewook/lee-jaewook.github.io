@@ -4,6 +4,7 @@
   }
   @include hover() {
     text-decoration: underline;
+    text-underline-offset: 5px;
   }
   @include active() {
     text-decoration: none;

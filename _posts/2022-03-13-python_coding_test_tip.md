@@ -1,9 +1,10 @@
 ---
 layout: article
-title: 파이썬 코딩 테스트 팁 정리
+title: 코딩 테스트, 파이썬 문법 정리
 aside:
   toc: true
-published : false
+published : true
+tags: coding-test
 ---
 
 # 네이밍 컨벤션
@@ -52,3 +53,47 @@ a = {}
 for key, value in original.items():
   a[key] = value
 ```
+
+# 제너레이터
+- 제너레이터 : 루프의 반복 동작을 제어할 수 있는 루틴 형태
+- `yield` 구문을 사용해 제너레이터를 리턴할 수 있다.
+- 예시
+```python
+def get_natural_number():
+  n = 0
+  while True:
+    n += 1
+    yield n
+```
+```python
+get_natural_number()
+>>><generator object get_natural_number at ...>
+```
+```python
+g=get_natural_number()
+for _ in range(0, 100):
+  print(next(g))
+>>>1
+>>>2
+>>>3
+>>>4
+...
+```
+
+# range()
+- 제너레이터의 방식을 활용하는 대표적인 함수가 range이다.
+- 예시
+```python
+list(range(5))
+>>>[0,1,2,3,4]
+```
+- for 문에서 사용할 경우 내부적으로 제너레이터의 next()를 호출하듯 매번 다음 숫자를 생성
+  - 예시
+  ```python
+  for i in range(5):
+    print(i)
+  >>>0 1 2 3 4
+  ```
+- 값을 생성하는 것이 아리나, 생성해야 한다는 조건만 존재
+- <mark>range가 실제 선언보다 메모리 점유율이 낮아음</mark>
+  - 
