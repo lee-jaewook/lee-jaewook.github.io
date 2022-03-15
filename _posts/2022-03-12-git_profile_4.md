@@ -55,7 +55,7 @@ jobs:
 
 위의 코드에서 `github_user_name`을 자신의 깃허브 사용자명으로 바꾸시고 `README.md`파일에 추가해주시면 됩니다.
 
-그 다음은 [Github(깃허브) 프로필 꾸미기(1)](https://lee-jaewook.github.io/2022/03/11/git_profile_1.html)에서 설명드렸던 것처럼 깃허브 레파지토리에서 `Action`을 실행해 주시면 됩니다.
+그 다음은 [Github(깃허브) 프로필 꾸미기(1)](https://lee-jaewook.github.io/2022/03/09/git_profile_1.html)에서 설명드렸던 것처럼 깃허브 레파지토리에서 `Action`을 실행해 주시면 됩니다.
 
 ![](/assets/images/posts/github/4/2.png)
 

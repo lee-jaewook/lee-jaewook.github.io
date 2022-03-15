@@ -595,12 +595,17 @@ snake_case: int = 1</li>
     </ul>
   </li>
   <li>값을 생성하는 것이 아리나, 생성해야 한다는 조건만 존재</li>
-  <li><mark>range가 실제 선언보다 메모리 점유율이 낮아음</mark>
+  <li><mark>range가 실제 선언보다 메모리 점유율이 낮음</mark>
     <ul>
-      <li></li>
+      <li>예시
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)]</span> <span class="c1"># 메모리 8697464
+</span><span class="n">b</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span> <span class="c1"># 메모리 48
+</span></code></pre></div>        </div>
+      </li>
     </ul>
   </li>
 </ul>
+
 </div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-03-13T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
