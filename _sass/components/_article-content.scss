@@ -46,7 +46,7 @@
     @include hover() {
       text-decoration: underline;
       text-decoration-color: lighten(#08b6ce,20%);
-      color: lighten(#08b6ce,20%);
+      color: lighten(#08b6ce,20%); 
       text-decoration-thickness: 2px;
       text-underline-offset: 2.5px;
     }

@@ -1,4 +1,7 @@
-I"4'<h1 id="네이밍-컨벤션">네이밍 컨벤션</h1>
+I"�(<p>파이썬의 많은 문법 중 코딩 테스트에서 생산성을 높이기 위한 고급(?) 문법을 정리해 보도록 하겠습니다.<br />
+(출처 : <a href="https://github.com/onlybooks/algorithm-interview#%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9D%B8%ED%84%B0%EB%B7%B0">파이썬 알고리즘 인터뷰</a>)
+<!--more--></p>
+<h1 id="네이밍-컨벤션">네이밍 컨벤션</h1>
 <ul>
   <li>자바와 달리 각 단어를 밑줄(_)로 구분하여 표기하는 스네이크 케이스(Snake Case)를 따른다.
     <blockquote>
@@ -115,4 +118,5 @@ snake_case: int = 1</li>
   </li>
 </ul>
 
+<h1 id="enumerate">enumerate</h1>
 :ET
