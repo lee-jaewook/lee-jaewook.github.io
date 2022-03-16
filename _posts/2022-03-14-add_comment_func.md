@@ -6,6 +6,7 @@ aside:
 tags: Blog
 published : true
 ---
+# 서론
 ![](/assets/../../assets/images/posts/blog/03_14/1.png){: .align-center}
 
 깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 [Disqus](https://disqus.com/)를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만... 광고가 붙게되고 ~~못생겨서~~
