@@ -781,23 +781,23 @@ input:focus { outline: none; }
 
 .button--primary svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.button--primary, .button--primary:link, .button--primary:visited { color: #fff; background-color: #08b6ce; }
+.button--primary, .button--primary:link, .button--primary:visited { color: #fff; background-color: #2cdef7; }
 
 .button--primary svg path, .button--primary:link svg path, .button--primary:visited svg path { fill: #fff; }
 
-.root[data-is-touch="false"] .button--primary:hover { color: #fff; background-color: #057989; }
+.root[data-is-touch="false"] .button--primary:hover { color: #fff; background-color: #08bad3; }
 
 .root[data-is-touch="false"] .button--primary:hover svg path { fill: #fff; }
 
-.root[data-is-touch] .button--primary.active, .root[data-is-touch] .button--primary:active { color: #fff; background-color: #023840; }
+.root[data-is-touch] .button--primary.active, .root[data-is-touch] .button--primary:active { color: #fff; background-color: #057989; }
 
 .root[data-is-touch] .button--primary.active svg path, .root[data-is-touch] .button--primary:active svg path { fill: #fff; }
 
-.root[data-is-touch] .button--primary.focus { color: default; background-color: #057989; box-shadow: 0 0 0 2px rgba(5, 121, 137, 0.4); }
+.root[data-is-touch] .button--primary.focus { color: default; background-color: #08bad3; box-shadow: 0 0 0 2px rgba(8, 186, 211, 0.4); }
 
 .root[data-is-touch] .button--primary.focus svg path { fill: default; }
 
-.button--primary.disabled, .button--primary:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: #08b6ce !important; }
+.button--primary.disabled, .button--primary:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: #2cdef7 !important; }
 
 .button--primary.disabled svg path, .button--primary:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
 
@@ -2718,7 +2718,7 @@ body, html, .root, .layout--page { height: 100%; }
 
 .article__section-navigator > .previous > span, .article__section-navigator > .next > span { font-weight: 700; color: #3F4650; }
 
-.article__section-navigator > .previous > a, .article__section-navigator > .next > a { display: block; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.article__section-navigator > .previous > a, .article__section-navigator > .next > a { display: block; font-size: 11px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .article__section-navigator > .previous > a, .article__section-navigator > .previous > a:link, .article__section-navigator > .previous > a:visited, .article__section-navigator > .next > a, .article__section-navigator > .next > a:link, .article__section-navigator > .next > a:visited { text-decoration: none; }
 
