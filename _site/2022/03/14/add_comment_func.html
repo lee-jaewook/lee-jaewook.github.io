@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법 - Jaewook Log 🧑🏻‍💻</title>
 
-<meta name="description" content="깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은  광고가 없어야 한다. 🚫  가볍고 예뻐야 한다. ...">
+<meta name="description" content="서론깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은  광고가 없어야 한다. 🚫  가볍고 예뻐야 한다...">
 <link rel="canonical" href="http://localhost:4000/2022/03/14/add_comment_func.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -489,7 +489,8 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
     <meta itemprop="keywords" content="Blog"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
+<div class="article__content" itemprop="articleBody"><h1 id="서론">서론</h1>
+<p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
 <p>깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 <a href="https://disqus.com/">Disqus</a>를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 <del>못생겨서</del>
 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은</p>
@@ -509,7 +510,7 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
 
 <p>지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
 
-<h1 id="1-댓글을-관리할-레파지토리-생성">1. 댓글을 관리할 레파지토리 생성</h1>
+<h1 id="1-레파지토리-생성">1. 레파지토리 생성</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/4.png" alt="" class="align-center" /></p>
 
 <p>Utterance를 적용하기에 앞서 댓글(깃허브 이슈)를 관리할 public repository가 필요합니다. 이름은 정해져있는게 아니고 임의로 지정하셔도 무관합니다. 다만, 꼭 <code class="language-plaintext highlighter-rouge">public</code>으로 생성하셔야 합니다.</p>
@@ -572,7 +573,7 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
 
 <p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>
 
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-03-14T00:00:00+09:00"><!-- start custom article footer snippet -->
+</div><section class="article__sharing d-print-none"></section><section class="page__comments d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-03-14T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div>
@@ -612,7 +613,9 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
   });
 })();
 </script>
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div>
+
+                </article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>

@@ -2656,8 +2656,6 @@ body, html, .root, .layout--page { height: 100%; }
 
 .hide-footer .page__content { padding-bottom: 0; }
 
-.page__comments { margin: 1.5rem 0; }
-
 .page__aside .toc-aside { padding: 3rem 0 1rem 3rem; }
 
 .page__actions { position: fixed; bottom: 3rem; left: 1rem; z-index: 996; display: none; }
@@ -2739,6 +2737,8 @@ body, html, .root, .layout--page { height: 100%; }
 .article__section-navigator > .previous { float: left; padding-right: 0.5rem; }
 
 .article__section-navigator > .next { float: right; padding-left: 0.5rem; text-align: right; }
+
+.page__comments { margin: 1.5rem 0; }
 
 .layout--articles { margin: 1.5rem 0; margin-top: 3rem; }
 
