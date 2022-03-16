@@ -6,9 +6,12 @@ aside:
 published : true
 tags: coding-test
 ---
-
+파이썬의 많은 문법 중 코딩 테스트에서 생산성을 높이기 위한 고급(?) 문법을 정리해 보도록 하겠습니다.  
+(출처 : [파이썬 알고리즘 인터뷰](https://github.com/onlybooks/algorithm-interview#%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9D%B8%ED%84%B0%EB%B7%B0))
+<!--more-->
 # 네이밍 컨벤션
-- 자바와 달리 각 단어를 밑줄(_)로 구분하여 표기하는 스네이크 케이스(Snake Case)를 따른다.
+- 자바와 달리 파이썬에서의 네이밍 컨벤션은 스네이크 케이스를 따릅니다.
+- 스네이크 케이스란, 각 단어를 밑줄(_)로 구분하여 표기하는 스네이크 케이스(Snake Case)를 따른다.
 > 카멜 케이스, 스네이크 케이스  
 > - 카멜 케이스  
 > camelCase: int = 1
@@ -102,3 +105,4 @@ list(range(5))
   b = range(1000000) # 메모리 48
   ```
   
+# enumerate
