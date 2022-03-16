@@ -10,7 +10,7 @@
     width: 50%;
     & > span {
       font-weight: map-get($base, font-weight-bold);
-      color: $text-color-l;
+      color: $main-color-1; //$text-color-l;
     }
     & > a {
       display: block;

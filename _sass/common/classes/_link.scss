@@ -4,6 +4,8 @@
   }
   @include hover() {
     text-decoration: underline;
+    text-decoration-color: $main-color-1;
+    text-decoration-thickness: 2px;
     text-underline-offset: 5px;
   }
   @include active() {

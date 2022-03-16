@@ -295,7 +295,7 @@ pre.lineno { color: #6de06d !important; }
 
 .text--light a:not(.button):not(.swiper__button), .header--light a:not(.button):not(.swiper__button), .hero--light a:not(.button):not(.swiper__button), .card__image > .overlay--light a:not(.button):not(.swiper__button), .text--light a:not(.button):not(.swiper__button):link, .text--light a:not(.button):not(.swiper__button):visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .text--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .header--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .hero--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay--light a:not(.button):not(.swiper__button):hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .text--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .header--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .hero--light a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay--light a:not(.button):not(.swiper__button):hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .text--light a.active:not(.button):not(.swiper__button), .root[data-is-touch] .header--light a.active:not(.button):not(.swiper__button), .root[data-is-touch] .hero--light a.active:not(.button):not(.swiper__button), .root[data-is-touch] .card__image > .overlay--light a.active:not(.button):not(.swiper__button), .root[data-is-touch] .text--light a:not(.button):not(.swiper__button):active, .root[data-is-touch] .header--light a:not(.button):not(.swiper__button):active, .root[data-is-touch] .hero--light a:not(.button):not(.swiper__button):active, .root[data-is-touch] .card__image > .overlay--light a:not(.button):not(.swiper__button):active { text-decoration: none; }
 
@@ -319,7 +319,7 @@ pre.lineno { color: #6de06d !important; }
 
 .text--dark a:not(.button):not(.swiper__button), .header--dark a:not(.button):not(.swiper__button), .hero--dark a:not(.button):not(.swiper__button), .card__image > .overlay a:not(.button):not(.swiper__button), .card__image > .overlay--dark a:not(.button):not(.swiper__button), .text--dark a:not(.button):not(.swiper__button):link, .text--dark a:not(.button):not(.swiper__button):visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .text--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .header--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .hero--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay--dark a:not(.button):not(.swiper__button):hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .text--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .header--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .hero--dark a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay a:not(.button):not(.swiper__button):hover, .root[data-is-touch="false"] .card__image > .overlay--dark a:not(.button):not(.swiper__button):hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .text--dark a.active:not(.button):not(.swiper__button), .root[data-is-touch] .header--dark a.active:not(.button):not(.swiper__button), .root[data-is-touch] .hero--dark a.active:not(.button):not(.swiper__button), .root[data-is-touch] .card__image > .overlay a.active:not(.button):not(.swiper__button), .root[data-is-touch] .card__image > .overlay--dark a.active:not(.button):not(.swiper__button), .root[data-is-touch] .text--dark a:not(.button):not(.swiper__button):active, .root[data-is-touch] .header--dark a:not(.button):not(.swiper__button):active, .root[data-is-touch] .hero--dark a:not(.button):not(.swiper__button):active, .root[data-is-touch] .card__image > .overlay a:not(.button):not(.swiper__button):active, .root[data-is-touch] .card__image > .overlay--dark a:not(.button):not(.swiper__button):active { text-decoration: none; }
 
@@ -741,7 +741,7 @@ a { font-weight: 700; -webkit-transition: all 0.2s ease-in-out; transition: all 
 
 a, a:link, a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] a.active, .root[data-is-touch] a:active { text-decoration: none; }
 
@@ -1213,7 +1213,7 @@ input:focus { outline: none; }
 
 .card__header, .card__header:link, .card__header:visited, .card__header > a, .card__header > a:link, .card__header > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .card__header:hover, .root[data-is-touch="false"] .card__header > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .card__header:hover, .root[data-is-touch="false"] .card__header > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .card__header.active, .root[data-is-touch] .card__header:active, .root[data-is-touch] .card__header > a.active, .root[data-is-touch] .card__header > a:active { text-decoration: none; }
 
@@ -1331,7 +1331,7 @@ ul.toc .toc-h1 a, ul.toc .toc-h2 a, ul.toc .toc-h3 a, ul.toc .toc-h4 a, ul.toc .
 
 ul.toc .toc-h1 a, ul.toc .toc-h1 a:link, ul.toc .toc-h1 a:visited, ul.toc .toc-h2 a, ul.toc .toc-h2 a:link, ul.toc .toc-h2 a:visited, ul.toc .toc-h3 a, ul.toc .toc-h3 a:link, ul.toc .toc-h3 a:visited, ul.toc .toc-h4 a, ul.toc .toc-h4 a:link, ul.toc .toc-h4 a:visited, ul.toc .toc-h5 a, ul.toc .toc-h5 a:link, ul.toc .toc-h5 a:visited, ul.toc .toc-h6 a, ul.toc .toc-h6 a:link, ul.toc .toc-h6 a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc .toc-h1 a:hover, .root[data-is-touch="false"] ul.toc .toc-h2 a:hover, .root[data-is-touch="false"] ul.toc .toc-h3 a:hover, .root[data-is-touch="false"] ul.toc .toc-h4 a:hover, .root[data-is-touch="false"] ul.toc .toc-h5 a:hover, .root[data-is-touch="false"] ul.toc .toc-h6 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc .toc-h1 a:hover, .root[data-is-touch="false"] ul.toc .toc-h2 a:hover, .root[data-is-touch="false"] ul.toc .toc-h3 a:hover, .root[data-is-touch="false"] ul.toc .toc-h4 a:hover, .root[data-is-touch="false"] ul.toc .toc-h5 a:hover, .root[data-is-touch="false"] ul.toc .toc-h6 a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc .toc-h1 a.active, .root[data-is-touch] ul.toc .toc-h1 a:active, .root[data-is-touch] ul.toc .toc-h2 a.active, .root[data-is-touch] ul.toc .toc-h2 a:active, .root[data-is-touch] ul.toc .toc-h3 a.active, .root[data-is-touch] ul.toc .toc-h3 a:active, .root[data-is-touch] ul.toc .toc-h4 a.active, .root[data-is-touch] ul.toc .toc-h4 a:active, .root[data-is-touch] ul.toc .toc-h5 a.active, .root[data-is-touch] ul.toc .toc-h5 a:active, .root[data-is-touch] ul.toc .toc-h6 a.active, .root[data-is-touch] ul.toc .toc-h6 a:active { text-decoration: none; }
 
@@ -1347,7 +1347,7 @@ ul.toc .toc-h1.active a, ul.toc .toc-h2.active a, ul.toc .toc-h3.active a, ul.to
 
 ul.toc .toc-h1.active a, ul.toc .toc-h1.active a:link, ul.toc .toc-h1.active a:visited, ul.toc .toc-h2.active a, ul.toc .toc-h2.active a:link, ul.toc .toc-h2.active a:visited, ul.toc .toc-h3.active a, ul.toc .toc-h3.active a:link, ul.toc .toc-h3.active a:visited, ul.toc .toc-h4.active a, ul.toc .toc-h4.active a:link, ul.toc .toc-h4.active a:visited, ul.toc .toc-h5.active a, ul.toc .toc-h5.active a:link, ul.toc .toc-h5.active a:visited, ul.toc .toc-h6.active a, ul.toc .toc-h6.active a:link, ul.toc .toc-h6.active a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc .toc-h1.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h2.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h3.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h4.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h5.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h6.active a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc .toc-h1.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h2.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h3.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h4.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h5.active a:hover, .root[data-is-touch="false"] ul.toc .toc-h6.active a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc .toc-h1.active a.active, .root[data-is-touch] ul.toc .toc-h1.active a:active, .root[data-is-touch] ul.toc .toc-h2.active a.active, .root[data-is-touch] ul.toc .toc-h2.active a:active, .root[data-is-touch] ul.toc .toc-h3.active a.active, .root[data-is-touch] ul.toc .toc-h3.active a:active, .root[data-is-touch] ul.toc .toc-h4.active a.active, .root[data-is-touch] ul.toc .toc-h4.active a:active, .root[data-is-touch] ul.toc .toc-h5.active a.active, .root[data-is-touch] ul.toc .toc-h5.active a:active, .root[data-is-touch] ul.toc .toc-h6.active a.active, .root[data-is-touch] ul.toc .toc-h6.active a:active { text-decoration: none; }
 
@@ -1369,7 +1369,7 @@ ul.toc .toc-h1 a { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2
 
 ul.toc .toc-h1 a, ul.toc .toc-h1 a:link, ul.toc .toc-h1 a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc .toc-h1 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc .toc-h1 a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc .toc-h1 a.active, .root[data-is-touch] ul.toc .toc-h1 a:active { text-decoration: none; }
 
@@ -1395,7 +1395,7 @@ ul.toc .toc-h6 a { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2
 
 ul.toc .toc-h6 a, ul.toc .toc-h6 a:link, ul.toc .toc-h6 a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc .toc-h6 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc .toc-h6 a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc .toc-h6 a.active, .root[data-is-touch] ul.toc .toc-h6 a:active { text-decoration: none; }
 
@@ -1419,7 +1419,7 @@ ul.toc--navigator .toc-h2 a, ul.toc--navigator .toc-h3 a, ul.toc--navigator .toc
 
 ul.toc--navigator .toc-h2 a, ul.toc--navigator .toc-h2 a:link, ul.toc--navigator .toc-h2 a:visited, ul.toc--navigator .toc-h3 a, ul.toc--navigator .toc-h3 a:link, ul.toc--navigator .toc-h3 a:visited, ul.toc--navigator .toc-h4 a, ul.toc--navigator .toc-h4 a:link, ul.toc--navigator .toc-h4 a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc--navigator .toc-h2 a:hover, .root[data-is-touch="false"] ul.toc--navigator .toc-h3 a:hover, .root[data-is-touch="false"] ul.toc--navigator .toc-h4 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc--navigator .toc-h2 a:hover, .root[data-is-touch="false"] ul.toc--navigator .toc-h3 a:hover, .root[data-is-touch="false"] ul.toc--navigator .toc-h4 a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc--navigator .toc-h2 a.active, .root[data-is-touch] ul.toc--navigator .toc-h2 a:active, .root[data-is-touch] ul.toc--navigator .toc-h3 a.active, .root[data-is-touch] ul.toc--navigator .toc-h3 a:active, .root[data-is-touch] ul.toc--navigator .toc-h4 a.active, .root[data-is-touch] ul.toc--navigator .toc-h4 a:active { text-decoration: none; }
 
@@ -1439,7 +1439,7 @@ ul.toc--navigator .toc-h1 a { -webkit-transition: all 0.2s ease-in-out; transiti
 
 ul.toc--navigator .toc-h1 a, ul.toc--navigator .toc-h1 a:link, ul.toc--navigator .toc-h1 a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] ul.toc--navigator .toc-h1 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] ul.toc--navigator .toc-h1 a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] ul.toc--navigator .toc-h1 a.active, .root[data-is-touch] ul.toc--navigator .toc-h1 a:active { text-decoration: none; }
 
@@ -1471,7 +1471,7 @@ a > .item__header, a.item__header, .item__header > a { -webkit-transition: all 0
 
 a > .item__header, a > .item__header:link, a > .item__header:visited, a.item__header, a.item__header:link, a.item__header:visited, .item__header > a, .item__header > a:link, .item__header > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] a > .item__header:hover, .root[data-is-touch="false"] a.item__header:hover, .root[data-is-touch="false"] .item__header > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] a > .item__header:hover, .root[data-is-touch="false"] a.item__header:hover, .root[data-is-touch="false"] .item__header > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] a > .item__header.active, .root[data-is-touch] a > .item__header:active, .root[data-is-touch] a.item__header.active, .root[data-is-touch] a.item__header:active, .root[data-is-touch] .item__header > a.active, .root[data-is-touch] .item__header > a:active { text-decoration: none; }
 
@@ -1659,7 +1659,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .header a, .header a:link, .header a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .header a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .header a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .header a.active, .root[data-is-touch] .header a:active { text-decoration: none; }
 
@@ -1727,7 +1727,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .navigation__item--active a, .navigation__item--active a:link, .navigation__item--active a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .navigation__item--active a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .navigation__item--active a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .navigation__item--active a.active, .root[data-is-touch] .navigation__item--active a:active { text-decoration: none; }
 
@@ -1748,7 +1748,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .footer a, .footer a:link, .footer a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .footer a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .footer a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .footer a.active, .root[data-is-touch] .footer a:active { text-decoration: none; }
 
@@ -1830,7 +1830,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__content h1 > .anchor, .article__content h1 > .anchor:link, .article__content h1 > .anchor:visited, .article__content h2 > .anchor, .article__content h2 > .anchor:link, .article__content h2 > .anchor:visited, .article__content h3 > .anchor, .article__content h3 > .anchor:link, .article__content h3 > .anchor:visited, .article__content h4 > .anchor, .article__content h4 > .anchor:link, .article__content h4 > .anchor:visited, .article__content h5 > .anchor, .article__content h5 > .anchor:link, .article__content h5 > .anchor:visited, .article__content h6 > .anchor, .article__content h6 > .anchor:link, .article__content h6 > .anchor:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .article__content h1 > .anchor:hover, .root[data-is-touch="false"] .article__content h2 > .anchor:hover, .root[data-is-touch="false"] .article__content h3 > .anchor:hover, .root[data-is-touch="false"] .article__content h4 > .anchor:hover, .root[data-is-touch="false"] .article__content h5 > .anchor:hover, .root[data-is-touch="false"] .article__content h6 > .anchor:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .article__content h1 > .anchor:hover, .root[data-is-touch="false"] .article__content h2 > .anchor:hover, .root[data-is-touch="false"] .article__content h3 > .anchor:hover, .root[data-is-touch="false"] .article__content h4 > .anchor:hover, .root[data-is-touch="false"] .article__content h5 > .anchor:hover, .root[data-is-touch="false"] .article__content h6 > .anchor:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .article__content h1 > .anchor.active, .root[data-is-touch] .article__content h1 > .anchor:active, .root[data-is-touch] .article__content h2 > .anchor.active, .root[data-is-touch] .article__content h2 > .anchor:active, .root[data-is-touch] .article__content h3 > .anchor.active, .root[data-is-touch] .article__content h3 > .anchor:active, .root[data-is-touch] .article__content h4 > .anchor.active, .root[data-is-touch] .article__content h4 > .anchor:active, .root[data-is-touch] .article__content h5 > .anchor.active, .root[data-is-touch] .article__content h5 > .anchor:active, .root[data-is-touch] .article__content h6 > .anchor.active, .root[data-is-touch] .article__content h6 > .anchor:active { text-decoration: none; }
 
@@ -1948,7 +1948,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__license a, .article__license a:link, .article__license a:visited, .article__subscribe a, .article__subscribe a:link, .article__subscribe a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .article__license a:hover, .root[data-is-touch="false"] .article__subscribe a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .article__license a:hover, .root[data-is-touch="false"] .article__subscribe a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .article__license a.active, .root[data-is-touch] .article__license a:active, .root[data-is-touch] .article__subscribe a.active, .root[data-is-touch] .article__subscribe a:active { text-decoration: none; }
 
@@ -2266,7 +2266,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .author-profile__name a, .author-profile__name a:link, .author-profile__name a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .author-profile__name a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .author-profile__name a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .author-profile__name a.active, .root[data-is-touch] .author-profile__name a:active { text-decoration: none; }
 
@@ -2444,7 +2444,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .search-box > .search-box__icon-clear > a, .search-box > .search-box__icon-clear > a:link, .search-box > .search-box__icon-clear > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .search-box > .search-box__icon-clear > a.active, .root[data-is-touch] .search-box > .search-box__icon-clear > a:active { text-decoration: none; }
 
@@ -2460,7 +2460,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .search--light .search-box > .search-box__icon-clear > a, .search--light .search-box > .search-box__icon-clear > a:link, .search--light .search-box > .search-box__icon-clear > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .search--light .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .search--light .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .search--light .search-box > .search-box__icon-clear > a.active, .root[data-is-touch] .search--light .search-box > .search-box__icon-clear > a:active { text-decoration: none; }
 
@@ -2476,7 +2476,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .search--dark .search-box > .search-box__icon-clear > a, .search--dark .search-box > .search-box__icon-clear > a:link, .search--dark .search-box > .search-box__icon-clear > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .search--dark .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .search--dark .search-box > .search-box__icon-clear > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .search--dark .search-box > .search-box__icon-clear > a.active, .root[data-is-touch] .search--dark .search-box > .search-box__icon-clear > a:active { text-decoration: none; }
 
@@ -2716,13 +2716,13 @@ body, html, .root, .layout--page { height: 100%; }
 
 .article__section-navigator > .previous, .article__section-navigator > .next { width: 50%; }
 
-.article__section-navigator > .previous > span, .article__section-navigator > .next > span { font-weight: 700; color: #3F4650; }
+.article__section-navigator > .previous > span, .article__section-navigator > .next > span { font-weight: 700; color: #08b6ce; }
 
 .article__section-navigator > .previous > a, .article__section-navigator > .next > a { display: block; font-size: 11px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .article__section-navigator > .previous > a, .article__section-navigator > .previous > a:link, .article__section-navigator > .previous > a:visited, .article__section-navigator > .next > a, .article__section-navigator > .next > a:link, .article__section-navigator > .next > a:visited { text-decoration: none; }
 
-.root[data-is-touch="false"] .article__section-navigator > .previous > a:hover, .root[data-is-touch="false"] .article__section-navigator > .next > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.root[data-is-touch="false"] .article__section-navigator > .previous > a:hover, .root[data-is-touch="false"] .article__section-navigator > .next > a:hover { text-decoration: underline; text-decoration-color: #08b6ce; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .root[data-is-touch] .article__section-navigator > .previous > a.active, .root[data-is-touch] .article__section-navigator > .previous > a:active, .root[data-is-touch] .article__section-navigator > .next > a.active, .root[data-is-touch] .article__section-navigator > .next > a:active { text-decoration: none; }
 
