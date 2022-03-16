@@ -8,7 +8,7 @@ published : true
 ---
 ![](/assets/../../assets/images/posts/blog/03_14/1.png){: .align-center}
 
-깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 [Disqus](https://disqus.com/)를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만... 광고가 붙게되고 미관상 예쁘지 않은 것 같아
+깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 [Disqus](https://disqus.com/)를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만... 광고가 붙게되고 ~~못생겨서~~
 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은  
 
 1. 광고가 없어야 한다. 🚫
@@ -74,5 +74,20 @@ comments:
 
 `_config.yml`의 commets provider를 `custom`으로 수정한 뒤 `_inclue/comments-providers/cumtom.html`에 아래와 같이 코드를 추가하면 됩니다.  
 
+```html
+<!-- start custom comments snippet -->
+<script src="https://utteranc.es/client.js"
+        repo="lee-jaewook/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+<!-- end custom comments snippet -->
+```
+
+수정된 파일을 모두 깃허브에 push하시면 아래와 같이 댓글 기능이 추가된 것을 확인할 수 있습니다.(로컬로는 안보입니다!)
+
+![](/assets/../../assets/images/posts/blog/03_14/10.png){: .align-center}
 
 

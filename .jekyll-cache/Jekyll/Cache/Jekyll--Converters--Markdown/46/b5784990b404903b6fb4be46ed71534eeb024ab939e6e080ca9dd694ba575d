@@ -1,4 +1,4 @@
-I"g<p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
+I"�<p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
 <p>깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 <a href="https://disqus.com/">Disqus</a>를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 미관상 예쁘지 않은 것 같아
 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은</p>
@@ -53,4 +53,32 @@
 <p><img src="/assets/../../assets/images/posts/blog/03_14/9.png" alt="" class="align-center" /></p>
 
 <p>설정을 완료하신 다음 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 복사합니다.</p>
+
+<h1 id="4-깃허브-페이지-파일에-코드-추가">4. 깃허브 페이지 파일에 코드 추가</h1>
+
+<p>마지막으로 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 넣을 파일을 찾아야 합니다. 보통 <code class="language-plaintext highlighter-rouge">_layouts/article.html</code>에 넣으시면 되는데, 제가 사용하고 있는 <a href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt 테마</a>에서는</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## =&gt; Comments</span>
+<span class="c1">##############################</span>
+<span class="na">comments</span><span class="pi">:</span>
+  <span class="na">provider</span><span class="pi">:</span> <span class="s2">"</span><span class="s">custom"</span> <span class="c1"># false (default), "disqus", "gitalk", "valine", "custom"</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">_config.yml</code>의 commets provider를 <code class="language-plaintext highlighter-rouge">custom</code>으로 수정한 뒤 <code class="language-plaintext highlighter-rouge">_inclue/comments-providers/cumtom.html</code>에 아래와 같이 코드를 추가하면 됩니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- start custom comments snippet --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://utteranc.es/client.js"</span>
+        <span class="na">repo=</span><span class="s">"lee-jaewook/blog-comments"</span>
+        <span class="na">issue-term=</span><span class="s">"pathname"</span>
+        <span class="na">theme=</span><span class="s">"github-light"</span>
+        <span class="na">crossorigin=</span><span class="s">"anonymous"</span>
+        <span class="na">async</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- end custom comments snippet --&gt;</span>
+</code></pre></div></div>
+
+<p>수정된 파일을 모두 깃허브에 push하시면 아래와 같이 댓글 기능이 추가된 것을 확인할 수 있습니다.(로컬로는 안보입니다!)</p>
+
+<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>
+
 :ET
