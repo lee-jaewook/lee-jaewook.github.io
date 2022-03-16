@@ -25,7 +25,7 @@ published : true
 
 지금부터는 차례차례 `Utterances`를 제 블로그에 적용해보겠습니다.
 
-# 1. 댓글을 관리할 레파지토리 생성
+# 1. 레파지토리 생성
 ![](/assets/../../assets/images/posts/blog/03_14/4.png){: .align-center}
 
 Utterance를 적용하기에 앞서 댓글(깃허브 이슈)를 관리할 public repository가 필요합니다. 이름은 정해져있는게 아니고 임의로 지정하셔도 무관합니다. 다만, 꼭 `public`으로 생성하셔야 합니다.
