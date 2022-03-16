@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-16T14:56:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-16T15:15:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</title><link href="http://localhost:4000/2022/03/14/add_comment_func.html" rel="alternate" type="text/html" title="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/14/add_comment_func</id><content type="html" xml:base="http://localhost:4000/2022/03/14/add_comment_func.html"><![CDATA[<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
@@ -56,7 +56,7 @@
 
 <p>설정을 완료하신 다음 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 복사합니다.</p>
 
-<h1 id="4-깃허브-페이지-파일에-코드-추가">4. 깃허브 페이지 파일에 코드 추가</h1>
+<h1 id="4-코드-추가">4. 코드 추가</h1>
 
 <p>마지막으로 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 넣을 파일을 찾아야 합니다. 보통 <code class="language-plaintext highlighter-rouge">_layouts/article.html</code>에 넣으시면 되는데, 제가 사용하고 있는 <a href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt 테마</a>에서는</p>
 

@@ -62,7 +62,7 @@ Utterance를 적용하기에 앞서 댓글(깃허브 이슈)를 관리할 public
 
 설정을 완료하신 다음 `Enable Utterances` 스크립트를 복사합니다.
 
-# 4. 깃허브 페이지 파일에 코드 추가
+# 4. 코드 추가
 
 마지막으로 `Enable Utterances` 스크립트를 넣을 파일을 찾아야 합니다. 보통 `_layouts/article.html`에 넣으시면 되는데, 제가 사용하고 있는 [TeXt 테마](https://github.com/kitian616/jekyll-TeXt-theme)에서는  
 
