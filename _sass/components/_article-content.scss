@@ -101,7 +101,7 @@
   }
   code {
     font-size: 13px;
-    padding: map-get($spacers, 1) map-get($spacers, 2);
+    padding: map-get($spacers, 1) map-get($spacers, 1.5);
     color: $text-color;
     background-color: lighten($theme-color, 50%); //$text-background-color;
     border-radius: map-get($base, border-radius);

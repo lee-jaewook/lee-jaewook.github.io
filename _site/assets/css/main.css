@@ -1874,7 +1874,7 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 @media print { .article__content .footnotes { margin-top: 1rem; } }
 
-.article__content code { font-size: 13px; padding: 0.25rem 0.5rem; color: #3F4650; background-color: #dae4e8; border-radius: 0.4rem; }
+.article__content code { font-size: 13px; padding: 0.25rem; color: #3F4650; background-color: #dae4e8; border-radius: 0.4rem; }
 
 .article__content code span { font-size: 13px; padding: 0; margin: 0; }
 

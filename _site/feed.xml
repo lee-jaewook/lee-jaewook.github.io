@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-16T21:54:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-17T19:31:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</title><link href="http://localhost:4000/2022/03/14/add_comment_func.html" rel="alternate" type="text/html" title="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/14/add_comment_func</id><content type="html" xml:base="http://localhost:4000/2022/03/14/add_comment_func.html"><![CDATA[<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
@@ -104,11 +104,12 @@ snake_case: int = 1</li>
 <ul>
   <li>파이썬은 동적 타이핑 언어임에도, 타입을 지정할 수 있는 타입 힌트가 추가됨</li>
   <li>타입 힌트를 사용하면 가독성이 좋아지며 버그 발생 확률을 줄일 수 있음</li>
-  <li>사용 예시
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s">"1"</span>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s">"1"</span>
 <span class="k">def</span> <span class="nf">fn</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</code></pre></div>    </div>
-  </li>
+</code></pre></div></div>
+<ul>
   <li>강제 규약이 아니기 때문에, 여전히 동적으로 할당될 수 있음
     <blockquote>
       <p><code class="language-plaintext highlighter-rouge">mypy</code> 타입 힌트에 오류를 확일할 수 있는 라이브러리<br />
@@ -120,89 +121,203 @@ snake_case: int = 1</li>
 <h1 id="리스트-컴프리헨션">리스트 컴프리헨션</h1>
 <ul>
   <li>리스트 컴프리헨션 : 기존 리스트를 기반으로 새로운 리스트를 만들어내는 구문</li>
-  <li>예시
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">n</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
-</code></pre></div>    </div>
-  </li>
-  <li>리스트 컴프리헨션을 사용하지 않는 경우
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-<span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-  <span class="n">a</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
-</code></pre></div>    </div>
-  </li>
-  <li>번외로 딕셔너리도 가능하다.
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">original</span><span class="p">.</span><span class="n">items</span><span class="p">()}</span>
-</code></pre></div>    </div>
-  </li>
-  <li>딕셔너리 컴프리헨션을 사용하지 않는 경우
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">original</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
-<span class="n">a</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-</code></pre></div>    </div>
-  </li>
 </ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">n</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
+</code></pre></div></div>
+<ul>
+  <li>리스트 컴프리헨션을 사용하지 않는 경우</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
+</code></pre></div></div>
+<ul>
+  <li>번외로 딕셔너리도 가능하다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">original</span><span class="p">.</span><span class="n">items</span><span class="p">()}</span>
+</code></pre></div></div>
+<ul>
+  <li>딕셔너리 컴프리헨션을 사용하지 않는 경우</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">original</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+  <span class="n">a</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+</code></pre></div></div>
 
 <h1 id="제너레이터">제너레이터</h1>
 <ul>
   <li>제너레이터 : 루프의 반복 동작을 제어할 수 있는 루틴 형태</li>
   <li><code class="language-plaintext highlighter-rouge">yield</code> 구문을 사용해 제너레이터를 리턴할 수 있다.</li>
-  <li>예시
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_natural_number</span><span class="p">():</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-  <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
-  <span class="k">yield</span> <span class="n">n</span>
-</code></pre></div>    </div>
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">get_natural_number</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">get_natural_number</span> <span class="n">at</span> <span class="p">...</span><span class="o">&gt;</span>
-</code></pre></div>    </div>
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">g</span><span class="o">=</span><span class="n">get_natural_number</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
-<span class="o">&gt;&gt;&gt;</span><span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span><span class="mi">2</span>
-<span class="o">&gt;&gt;&gt;</span><span class="mi">3</span>
-<span class="o">&gt;&gt;&gt;</span><span class="mi">4</span>
-<span class="p">...</span>
-</code></pre></div>    </div>
-  </li>
 </ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_natural_number</span><span class="p">():</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">yield</span> <span class="n">n</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">get_natural_number</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">get_natural_number</span> <span class="n">at</span> <span class="p">...</span><span class="o">&gt;</span>
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">g</span><span class="o">=</span><span class="n">get_natural_number</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span>
+<span class="p">...</span>
+</code></pre></div></div>
 
 <h1 id="range">range()</h1>
 <ul>
   <li>제너레이터의 방식을 활용하는 대표적인 함수가 range이다.</li>
-  <li>예시
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-<span class="o">&gt;&gt;&gt;</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>for 문에서 사용할 경우 내부적으로 제너레이터의 next()를 호출하듯 매번 다음 숫자를 생성</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>
 </code></pre></div>    </div>
   </li>
-  <li>for 문에서 사용할 경우 내부적으로 제너레이터의 next()를 호출하듯 매번 다음 숫자를 생성
-    <ul>
-      <li>예시
-        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
   <li>값을 생성하는 것이 아리나, 생성해야 한다는 조건만 존재</li>
-  <li><mark>range가 실제 선언보다 메모리 점유율이 낮음</mark>
-    <ul>
-      <li>예시
-        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)]</span> <span class="c1"># 메모리 8697464
+  <li>
+    <p><mark>range가 실제 선언보다 메모리 점유율이 낮음</mark></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)]</span> <span class="c1"># 메모리 8697464
 </span><span class="n">b</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span> <span class="c1"># 메모리 48
-</span></code></pre></div>        </div>
-      </li>
-    </ul>
+</span></code></pre></div>    </div>
   </li>
 </ul>
 
-<h1 id="enumerate">enumerate</h1>]]></content><author><name>Jaewook Lee</name></author><category term="coding-test" /><summary type="html"><![CDATA[파이썬의 많은 문법 중 코딩 테스트에서 생산성을 높이기 위한 고급(?) 문법을 정리해 보도록 하겠습니다. (출처 : 파이썬 알고리즘 인터뷰)]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(4) - Contribution Chart</title><link href="http://localhost:4000/2022/03/12/git_profile_4.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(4) - Contribution Chart" /><published>2022-03-12T00:00:00+09:00</published><updated>2022-03-12T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/12/git_profile_4</id><content type="html" xml:base="http://localhost:4000/2022/03/12/git_profile_4.html"><![CDATA[<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
+<h1 id="enumerate">enumerate</h1>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">인덱스</code>를 포함한 객체를 리턴한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<h1 id="-나눗셈-연산자">// 나눗셈 연산자</h1>
+<ul>
+  <li>파이썬 3 이상에서 <code class="language-plaintext highlighter-rouge">/ 연산자</code>는 소수점 까지 리턴함</li>
+  <li><code class="language-plaintext highlighter-rouge">// 연산자</code>는 몫을 구하는 연산자이다.</li>
+  <li><code class="language-plaintext highlighter-rouge">% 연산자</code> : 나머지를 구하는 연산자</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">divmod()</code> : 몫과 나머지를 동시에 구하는 함수</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">divmod</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="print">print</h1>
+<ul>
+  <li>여러 값을 출력하는 법</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'A1'</span><span class="p">,</span> <span class="s">'B1'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">A1</span> <span class="n">B2</span>
+</code></pre></div></div>
+
+<ul>
+  <li>sep 파라미터로 구분자를 지정</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'A1'</span><span class="p">,</span> <span class="s">'B1'</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">A1</span><span class="p">,</span><span class="n">B1</span>
+</code></pre></div></div>
+
+<ul>
+  <li>end 파라미터로 줄바꿈을 제어할 수 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'A1'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'B1'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">A1</span> <span class="n">B1</span>
+</code></pre></div></div>
+
+<ul>
+  <li>리스트를 출력할 때는 join()으로 묶어서 처리한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">A</span> <span class="n">B</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{}</code>을 활용하는 방법</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">idx</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">fruit</span> <span class="o">=</span> <span class="s">"Apple"</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'{0}: {1}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fruit</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="p">:</span> <span class="n">fruit</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'{}: {}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fruit</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="p">:</span> <span class="n">fruit</span>
+</code></pre></div></div>
+
+<ul>
+  <li><mark>f-string</mark>
+    <ul>
+      <li>변수 뒤에 별도로 부여할 필요가 없어 간편함</li>
+    </ul>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="p">:</span> <span class="n">Apple</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="pass">pass</h1>
+<ul>
+  <li>전체 골격을 잡아 놓고 내부를 차후에 구현하려는 경우, 메소드가 아무런 처리를 하지 않는 경우 오류가 발생</li>
+  <li>이를 해결하기 위해 pass를 삽입해 간단하게 <code class="language-plaintext highlighter-rouge">널 연산</code>을 삽입할 수 있다.</li>
+  <li>즉, 목업 인터페이스부터 구현해 추후 구현을 진행할 수 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">method_a</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+      
+  <span class="k">def</span> <span class="nf">method_b</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Method B"</span><span class="p">)</span>  
+      
+<span class="n">c</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h1 id="local">local</h1>
+<ul>
+  <li>로컬 심볼 테이블 딕셔너리를 가져오는 메소드(로컬에 선언된 모든 변수를 조회)</li>
+  <li>클래스의 특정 메소드 내부에서나 함수 내부의 로컬 정보를 조회해 잘못 선언한 부분이 없는지 확인하는 용도로 활용 가능하다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">pprint</span><span class="p">.</span><span class="n">pprint</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="s">'nums'</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'pprint'</span><span class="p">:</span> <span class="p">...,</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'self'</span><span class="p">:</span> <span class="p">...,</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'target'</span><span class="p">:</span> <span class="mi">9</span><span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>Jaewook Lee</name></author><category term="coding-test" /><summary type="html"><![CDATA[파이썬의 많은 문법 중 코딩 테스트에서 생산성을 높이기 위한 고급(?) 문법을 정리해 보도록 하겠습니다. (출처 : 파이썬 알고리즘 인터뷰)]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(4) - Contribution Chart</title><link href="http://localhost:4000/2022/03/12/git_profile_4.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(4) - Contribution Chart" /><published>2022-03-12T00:00:00+09:00</published><updated>2022-03-12T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/12/git_profile_4</id><content type="html" xml:base="http://localhost:4000/2022/03/12/git_profile_4.html"><![CDATA[<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
 
 <!--more-->
 <h1 id="컨트리뷰션-차트contribution-chart-추가">컨트리뷰션 차트(Contribution chart) 추가</h1>
