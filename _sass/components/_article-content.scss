@@ -74,6 +74,7 @@
     @include split-line(left, 4px, $border-color);
     p {
       margin: map-get($spacers, 2) 0;
+      font-size: 15px;
     }
     & > :last-child {
       margin-bottom: 0;
@@ -97,6 +98,18 @@
     margin-top: map-get($spacers, 5);
     @media print {
       margin-top: map-get($spacers, 2) * 2;
+    }
+  }
+  .highlight {
+    code {
+      font-size: 13px;
+      padding: map-get($spacers, 1) map-get($spacers, 1.5);
+      color: #fff;
+      span {
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+      }
     }
   }
   code {

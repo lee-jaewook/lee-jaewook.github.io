@@ -1,0 +1,65 @@
+I"
+<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>오라클 데이터베이스는 맥 OS를 지원하지 않기 때문에 도커를 이용해서 Oracle Database 환경을 설정해야합니다. 하지만 ARM 아키텍쳐 기반의 M1에서는 이마저도 불가능합니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/3.png" alt="" /></p>
+
+<blockquote>
+  <p>위와 같이 오라클에서 제공하는 이미지를 설치하면 오류가 발생하는데, 오류가 발생하는 이유는 오라클에서 제공하는 이미지가 M1을 지원하지 않기 때문입니다.</p>
+</blockquote>
+
+<p>이에 대한 해결책으로 이번 포스팅에서는 <code class="language-plaintext highlighter-rouge">Oracle Cloud</code>로 무료 데이터베이스를 생성하고 이를 <code class="language-plaintext highlighter-rouge">SQL Developer</code>에 연결하는 방법을 다뤄보도록 하겠습니다.</p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>SQL Developer</li>
+  <li>Oracle Cloud</li>
+</ul>
+
+<!--more-->
+
+<h1 id="oracle-clould-free-tier-가입">Oracle Clould Free Tier 가입</h1>
+<p>먼저 <a href="https://www.oracle.com/cloud/free/">Oracle Clould Free Tier</a>에 접속하셔서 회원가입을 해야합니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/1.png" alt="" /></p>
+
+<p><img src="/assets/images/posts/oracle/2/2.png" alt="" /></p>
+
+<p>위와 같이 이동하셔서 내용을 기입하신 후 가입에 완료하시면 400 크레딧을 받을 수 있습니다.👍</p>
+
+<h1 id="autonomous-databaseoracle-19c-생성">Autonomous Database(oracle 19c) 생성</h1>
+<p>가입을 무사히 완료하신 뒤 오라클 클라우드에 로그인 하시면 아래와 같은 화면이 나오게 됩니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/4.png" alt="" /></p>
+
+<p>이 페이지를 내리셔서, <code class="language-plaintext highlighter-rouge">Launch Resources</code>에서 <code class="language-plaintext highlighter-rouge">Create an ADW database</code>를 선택하면 됩니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/5.png" alt="" /></p>
+
+<p>작성해 주셔야 하는게 두가지가 있습니다. 첫번째는 <code class="language-plaintext highlighter-rouge">Display name</code>을 사용하기 편한 이름으로 변경하시는 것이고</p>
+
+<p><img src="/assets/images/posts/oracle/2/6.png" alt="" /></p>
+
+<p>두번째는 쭉 내리셔서 관리자 비밀번호를 정해주는 것 입니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/7.png" alt="" /></p>
+
+<p>잠시 기다리시면 DB 생성이 완료됩니다!
+<img src="/assets/images/posts/oracle/2/8.png" alt="" />
+<img src="/assets/images/posts/oracle/2/9.png" alt="" /></p>
+
+<h1 id="wallet-파일-다운로드">wallet 파일 다운로드</h1>
+<p><code class="language-plaintext highlighter-rouge">SQL Developer</code>에 DB를 연결하기 위해 <code class="language-plaintext highlighter-rouge">wallet</code> 파일을 다운받아줘야 합니다. 이를 위해, 메뉴에서 두번째에 있는 <code class="language-plaintext highlighter-rouge">DB Connection</code>을 클릭합니다.
+<img src="/assets/images/posts/oracle/2/10.png" alt="" /></p>
+
+<p>그런 다음 <code class="language-plaintext highlighter-rouge">Download wallet</code>을 클릭하셔서 <code class="language-plaintext highlighter-rouge">.zip</code>파일을 다운로드 받으시면 됩니다.</p>
+
+<p><img src="/assets/images/posts/oracle/2/11.png" alt="" /></p>
+
+<h1 id="sql-developer-설치">SQL Developer 설치</h1>
+<p><code class="language-plaintext highlighter-rouge">SQL Developer</code>를 설치할 차례입니다. <a href="https://www.oracle.com/tools/downloads/sqldev-downloads.html">다운로드 링크</a>에 접속하셔서 <code class="language-plaintext highlighter-rouge">mac OSX</code>에 해당하는 파일을 다운로드하시면 <code class="language-plaintext highlighter-rouge">.zip</code>파일이 받아지는데 압축을 풀어주시고 설치 파일을 실행하시면 끝입니다.</p>
+
+<h1 id="db-연결">DB 연결</h1>
+<p>이제 드디어 DB와 SQL Developer를 연결할 차례입니다. SQL Developer를 실행하셔서 좌측 상단의 <code class="language-plaintext highlighter-rouge">초록색 십자가 버튼</code>을 클릭하신 뒤
+<img src="/assets/images/posts/oracle/2/11.png" alt="" /></p>
+:ET
