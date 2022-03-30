@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-24T21:26:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-30T20:02:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">이진 탐색(Binary Search) by 파이썬</title><link href="http://localhost:4000/2022/03/15/binary-search.html" rel="alternate" type="text/html" title="이진 탐색(Binary Search) by 파이썬" /><published>2022-03-15T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/15/binary-search</id><content type="html" xml:base="http://localhost:4000/2022/03/15/binary-search.html"><![CDATA[<h1 id="알고리즘-설명">알고리즘 설명</h1>
 <p>이진 탐색은 가장 보편적으로 사용되는 탐색 알고리즘 중 하나입니다. 이진 탐색은 정렬된 배열에 적용될 수 있으며 빠른 탐색 알고리즘 중 하나입니다. 이진 탐색은 매 iteration 마다 탐색 공간을 반으로 나눠가는 알고리즘 입니다(자세한 설명은 <a href="https://www.code-recipe.com/post/binary-search">이 글</a>을 참고하세요).
 <!--more--></p>
@@ -567,4 +567,73 @@ snake_case: int = 1</li>
     <span class="k">print</span><span class="p">(</span><span class="n">unique_words</span><span class="p">[</span><span class="n">max_index</span><span class="p">])</span>
 </code></pre></div></div>
 
-<p>사용 횟수가 저장된 <code class="language-plaintext highlighter-rouge">words_cnt</code>에서 가장 큰 수의 개수를 탐색하고, 가장 큰 수가 2개 이상이라면 ?를 출력하고 하나만 존재하는 경우에는 해당 알파벳의 인덱스(<code class="language-plaintext highlighter-rouge">words_cnt</code>의 인덱스와 <code class="language-plaintext highlighter-rouge">unique_words</code>의 인덱스가 동일함을 이용)를 통해 출력한다.</p>]]></content><author><name>Jaewook Lee</name></author><category term="coding-test" /><summary type="html"><![CDATA[벡준 1157번]]></summary></entry></feed>
+<p>사용 횟수가 저장된 <code class="language-plaintext highlighter-rouge">words_cnt</code>에서 가장 큰 수의 개수를 탐색하고, 가장 큰 수가 2개 이상이라면 ?를 출력하고 하나만 존재하는 경우에는 해당 알파벳의 인덱스(<code class="language-plaintext highlighter-rouge">words_cnt</code>의 인덱스와 <code class="language-plaintext highlighter-rouge">unique_words</code>의 인덱스가 동일함을 이용)를 통해 출력한다.</p>]]></content><author><name>Jaewook Lee</name></author><category term="coding-test" /><summary type="html"><![CDATA[벡준 1157번]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 1(SQL, DB, DBMS의 개념)</title><link href="http://localhost:4000/2019/01/27/oracle1.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 1(SQL, DB, DBMS의 개념)" /><published>2019-01-27T00:00:00+09:00</published><updated>2019-01-27T00:00:00+09:00</updated><id>http://localhost:4000/2019/01/27/oracle1</id><content type="html" xml:base="http://localhost:4000/2019/01/27/oracle1.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>프로그램에서 다루는 데이터와 이 데이터를 동시에 사용하는 사람이 많아질 수록 데이터의 관리는 어려워지고 이는 결함을 불러일으킬 수 있습니다. 이러한 동시성, 성능, 보안 등을 충족해 데이터를 관리하기 위해 사용하는 것이 데이터베이스 관리 시스템입니다. 이번 포스팅에서는 이 SQL, 데이터베이스, 데이터베이스 관리 시스템에 대해 알아보도록 하겠습니다.</p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>데이터베이스(database)</li>
+  <li>데이터베이스 관리 시스템(DBMS)</li>
+  <li>SQL</li>
+</ul>
+
+<!--more-->
+
+<h1 id="database와-dbms">Database와 DBMS</h1>
+<ul>
+  <li>데이터베이스의 정의
+    <ul>
+      <li>컴퓨터 시스템에 전자적으로 저장되는 구조화된 정보 또는 데이터의 조직화된 모음</li>
+      <li>여러 응용 프로그램들의 동합된 정보들을 저장하여 운영할 수 있는 공용 데이터의 집합</li>
+    </ul>
+  </li>
+  <li>데이터베이스의 유형
+    <ul>
+      <li>관계형 데이터베이스 : 각 항목이 열과 행이 있는 테이블 집합으로 구성되는 유형</li>
+      <li>NoSQL 데이터베이스 : 관계형 데이터베이스는 데이터베이스에 삽입되는 모든 데이터의 구성방식을 정의해야한다는 문제점이 있다. 이를 해결하기 위한 데이터베이스의 유형이 NoSQL 또는 비관계형 데이터베이스이다. 이를 사용해 비정형, 반정형 데이터를 저장하고 조직할 수 있다.</li>
+    </ul>
+  </li>
+  <li>데이터베이스 관리 시스템의 정의
+    <ul>
+      <li>데이터베이스와 사용자 또는 프로그램 간의 인터페이스 역활을 하여 사용자 정부의 구성 및 최적화 방법을 검색, 업데이트 및 관리할 수 있게 해주는 시스템</li>
+    </ul>
+  </li>
+  <li>데이터베이스 관리 시스템의 장점
+    <ul>
+      <li>데이터 중복 최소화</li>
+      <li>데이터의 일관성 및 무결성 유지</li>
+      <li>데이터 보안 보장</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="sqlstructured-query-language">SQL(Structured Query Language)</h1>
+<ul>
+  <li>SQL의 정의
+    <ul>
+      <li>SQL은 데이터를 쿼리, 조작 및 정의하고 엑세스 제어를 제공하기 위해 거의 모든 관계형 데이터베이스에서 사용되는 프로그래밍 언어이다.</li>
+    </ul>
+  </li>
+  <li>SQL 문법의 종류
+    <ul>
+      <li>DDL(Data Definition Language) : 각 릴레이션을 정의하기 위해 사용하는 언어(e.g., CREATE, ALTER, DROP)</li>
+      <li>DML(Data Manipualation Language) : 데이터를 추가, 수정, 삭제하기 위한, 즉 데이터 관리를 위한 언어(e.g., SELECT, INSERT, UPDATE, …)</li>
+      <li>DCL(Data Control Language) : 사용자 관리 및 사용자별로 릴레이션 또는 데이터를 관리하고 접근하는 권한을 다루기 위한 언어(e.g., GRANT, REVOKE, …)</li>
+    </ul>
+  </li>
+  <li>SQL의 언어적 특성
+    <ul>
+      <li>대소문자를 구분하지 않는다.</li>
+      <li>명령어는 세미콜론(;)으로 끝나야한다.</li>
+      <li>고유값은 따옴표(‘‘)로 감싸줘야한다.</li>
+      <li>객체를 나타낼 때는 백틱(``)으로 감싸줘야한다.</li>
+      <li>주석은 문장 앞에 <code class="language-plaintext highlighter-rouge">--</code>을 붙여 사용한다.</li>
+      <li>여러 줄 주석은 <code class="language-plaintext highlighter-rouge">/* */</code>로 감싸 사용한다.
+        <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+SELECT * FROM EMP WHERE EMPID=(SELECT * FROM WHERE NAME='홍길동')
+*/</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Jaewook Lee</name></author><category term="SQL" /><summary type="html"><![CDATA[들어가기 전에 프로그램에서 다루는 데이터와 이 데이터를 동시에 사용하는 사람이 많아질 수록 데이터의 관리는 어려워지고 이는 결함을 불러일으킬 수 있습니다. 이러한 동시성, 성능, 보안 등을 충족해 데이터를 관리하기 위해 사용하는 것이 데이터베이스 관리 시스템입니다. 이번 포스팅에서는 이 SQL, 데이터베이스, 데이터베이스 관리 시스템에 대해 알아보도록 하겠습니다. 핵심 개념 데이터베이스(database) 데이터베이스 관리 시스템(DBMS) SQL]]></summary></entry></feed>
