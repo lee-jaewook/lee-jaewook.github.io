@@ -1,0 +1,49 @@
+I"�<p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
+
+<!--more-->
+<h1 id="컨트리뷰션-차트contribution-chart-추가">컨트리뷰션 차트(Contribution chart) 추가</h1>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># &lt;github user name&gt;/.github/workflows/cobrinha.yml</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Generate Datas</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">schedule</span><span class="pi">:</span> <span class="c1"># execute every 12 hours</span>
+    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*</span><span class="nv"> </span><span class="s">*/12</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*"</span>
+  <span class="na">workflow_dispatch</span><span class="pi">:</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">Jobs to update datas</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="c1"># Snake Animation</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">Platane/snk@master</span>
+        <span class="na">id</span><span class="pi">:</span> <span class="s">snake-gif</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">github_user_name</span><span class="pi">:</span> <span class="s">your_git_username</span>
+          <span class="na">svg_out_path</span><span class="pi">:</span> <span class="s">dist/github-contribution-grid-snake.svg</span>
+
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">crazy-max/ghaction-github-pages@v2.1.3</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">target_branch</span><span class="pi">:</span> <span class="s">output</span>
+          <span class="na">build_dir</span><span class="pi">:</span> <span class="s">dist</span>
+        <span class="na">env</span><span class="pi">:</span>
+          <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
+</code></pre></div></div>
+
+<p>우선 <code class="language-plaintext highlighter-rouge">/.github/workflows</code> 폴더를 생성하시고, 폴더 안에 <code class="language-plaintext highlighter-rouge">cobrinha.yml</code>파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, <code class="language-plaintext highlighter-rouge">github_user_name</code>에 자신의 사용자명을 기입하시면 됩니다.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
+<span class="gu">## 🌱 Git Contribution Chart</span>
+ !<span class="p">[</span><span class="nv">Snake animation</span><span class="p">](</span><span class="sx">https://github.com/github_user_name/github_user_name/blob/output/github-contribution-grid-snake.svg</span><span class="p">)</span><span class="nt">&lt;br&gt;</span>
+</code></pre></div></div>
+
+<p>위의 코드에서 <code class="language-plaintext highlighter-rouge">github_user_name</code>을 자신의 깃허브 사용자명으로 바꾸시고 <code class="language-plaintext highlighter-rouge">README.md</code>파일에 추가해주시면 됩니다.</p>
+
+<p>그 다음은 <a href="https://lee-jaewook.github.io/2021/07/10/git_profile_1.html">Github(깃허브) 프로필 꾸미기(1)</a>에서 설명드렸던 것처럼 깃허브 레파지토리에서 <code class="language-plaintext highlighter-rouge">Action</code>을 실행해 주시면 됩니다.</p>
+
+<p><img src="/assets/images/posts/github/4/2.png" alt="" /></p>
+
+<p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>
+
+:ET
