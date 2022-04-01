@@ -21,9 +21,7 @@ published : true
 ![](/assets/../../assets/images/posts/blog/03_14/2.png){: .align-center}
 
 `Utterances`를 사용하게 되면 위의 사진처럼 댓글을 Github의 issue로 관리할 수 있습니다. 댓글을 달기 위해서는 Github의 계정이 필요한 것이 단점이지만, 제 블로그에 들어오셔서 댓글을 남기실 분들은 Github 계정이
-있을테니 괜찮겠죠??  
-
-지금부터는 차례차례 `Utterances`를 제 블로그에 적용해보겠습니다.
+있을테니 괜찮을 것 같습니다. 지금부터는 차례차례 `Utterances`를 제 블로그에 적용해보겠습니다.
 
 # 1. 레파지토리 생성
 ![](/assets/../../assets/images/posts/blog/03_14/4.png){: .align-center}

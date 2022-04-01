@@ -1,4 +1,4 @@
-I"X<h1 id="서론">서론</h1>
+I"]<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
 <p>깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 <a href="https://disqus.com/">Disqus</a>를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 <del>못생겨서</del>
@@ -15,9 +15,7 @@
 <p><img src="/assets/../../assets/images/posts/blog/03_14/2.png" alt="" class="align-center" /></p>
 
 <p><code class="language-plaintext highlighter-rouge">Utterances</code>를 사용하게 되면 위의 사진처럼 댓글을 Github의 issue로 관리할 수 있습니다. 댓글을 달기 위해서는 Github의 계정이 필요한 것이 단점이지만, 제 블로그에 들어오셔서 댓글을 남기실 분들은 Github 계정이
-있을테니 괜찮겠죠??</p>
-
-<p>지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
+있을테니 괜찮을 것 같습니다. 지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
 
 <h1 id="1-레파지토리-생성">1. 레파지토리 생성</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/4.png" alt="" class="align-center" /></p>

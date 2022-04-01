@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-31T21:45:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-01T21:06:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</title><link href="http://localhost:4000/2022/03/14/add_comment_func.html" rel="alternate" type="text/html" title="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/14/add_comment_func</id><content type="html" xml:base="http://localhost:4000/2022/03/14/add_comment_func.html"><![CDATA[<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
@@ -16,9 +16,7 @@
 <p><img src="/assets/../../assets/images/posts/blog/03_14/2.png" alt="" class="align-center" /></p>
 
 <p><code class="language-plaintext highlighter-rouge">Utterances</code>를 사용하게 되면 위의 사진처럼 댓글을 Github의 issue로 관리할 수 있습니다. 댓글을 달기 위해서는 Github의 계정이 필요한 것이 단점이지만, 제 블로그에 들어오셔서 댓글을 남기실 분들은 Github 계정이
-있을테니 괜찮겠죠??</p>
-
-<p>지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
+있을테니 괜찮을 것 같습니다. 지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
 
 <h1 id="1-레파지토리-생성">1. 레파지토리 생성</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/4.png" alt="" class="align-center" /></p>

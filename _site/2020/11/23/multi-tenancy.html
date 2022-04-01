@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법 - Jaewook Log 🧑🏻‍💻</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>멀티 테넌시 아키텍쳐(Multi Tenancy Architecture)란? - Jaewook Log 🧑🏻‍💻</title>
 
-<meta name="description" content="서론깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은  광고가 없어야 한다. 🚫  가볍고 예뻐야 한다...">
-<link rel="canonical" href="http://localhost:4000/2022/03/14/add_comment_func.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="들어가기 전에Cloud computing 기술이 보급화 되면서, 비용 효율을 위한 다양한 기술들이 언급되고 있습니다. 그 중 하나인 Multi-tenancy가 무엇인지에 대해 포스팅하고자 합니다.핵심 개념  멀티 테넌시 아키텍쳐(Multi Tenancy Architecture)">
+<link rel="canonical" href="http://localhost:4000/2020/11/23/multi-tenancy.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -477,101 +477,46 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>멀티 테넌시 아키텍쳐(Multi Tenancy Architecture)란?</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Edit on Github"
-            href="https://github.com/lee-jaewook/lee-jaewook.github.io/tree/master/_posts/2022-03-14-add_comment_func.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            href="https://github.com/lee-jaewook/lee-jaewook.github.io/tree/master/_posts/2020-11-23-multi-tenancy.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="멀티 테넌시 아키텍쳐(Multi Tenancy Architecture)란?"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Blog">Blog</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Mar 14, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2022-03-14T00:00:00+09:00">
-    <meta itemprop="keywords" content="Blog"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+                href="/archive.html?tag=cloud">cloud</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 23, 2020</span>
+            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2020-11-23T00:00:00+09:00">
+    <meta itemprop="keywords" content="cloud"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><h1 id="서론">서론</h1>
-<p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
+<div class="article__content" itemprop="articleBody"><h1 id="들어가기-전에">들어가기 전에</h1>
+<p>Cloud computing 기술이 보급화 되면서, 비용 효율을 위한 다양한 기술들이 언급되고 있습니다. 그 중 하나인 Multi-tenancy가 무엇인지에 대해 포스팅하고자 합니다.</p>
 
-<p>깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 <a href="https://disqus.com/">Disqus</a>를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 <del>못생겨서</del>
-대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은</p>
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>멀티 테넌시 아키텍쳐(Multi Tenancy Architecture)</li>
+</ul>
 
-<ol>
-  <li>광고가 없어야 한다. 🚫</li>
-  <li>가볍고 예뻐야 한다. 💅</li>
-</ol>
+<!--more-->
+<h1 id="멀티-테넌시multi-tenancy란">멀티 테넌시(Multi Tenancy)란?</h1>
 
-<p>입니다. 그 결과 발견💡한 것이 <a href="https://utteranc.es/">Utterances</a> 입니다.<br />
-<!--more--></p>
+<p><img src="/assets/../../assets/images/posts/cloud/1/1.png" alt="Google seach console 접속화면" /></p>
 
-<p><img src="/assets/../../assets/images/posts/blog/03_14/2.png" alt="" class="align-center" /></p>
+<p>멀티 테넌시는 소프트웨어 응용 프로그램의 <mark>단일 인스턴스</mark>가 테넌트(tenants)라고 불리는 <mark>여러 사용자</mark>에게 서비스를 제공하는 아키텍처의 원칙입니다. 멀티 테넌시는 서로 다른 클라이언트 조직에 대해 별도의 소프트웨어 인스턴스가 설정된 다중 인스턴스 아키텍처와 대조됩니다. 멀티 테넌지 아키텍처에서 소프트웨어 응용 프로그램은 데이터와 구성을 가상으로 분할하도록 설계돼, 각 클라이언트 조직은 사용자 정의된 가상 애플리케이션 인스턴스로 작업합니다. 즉 여러 테넌트들은 동일한 저장 메커니즘을 사용하여 동일한 운영체제, 하드웨어에서 실행되는 동일한 애플리케이션을 공유합니다. 단 테넌트는 서로의 데이터를 공유하거나 볼 수 없습니다.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Utterances</code>를 사용하게 되면 위의 사진처럼 댓글을 Github의 issue로 관리할 수 있습니다. 댓글을 달기 위해서는 Github의 계정이 필요한 것이 단점이지만, 제 블로그에 들어오셔서 댓글을 남기실 분들은 Github 계정이
-있을테니 괜찮을 것 같습니다. 지금부터는 차례차례 <code class="language-plaintext highlighter-rouge">Utterances</code>를 제 블로그에 적용해보겠습니다.</p>
+<h1 id="멀티-테넌시-vs-가상화">멀티 테넌시 vs 가상화</h1>
+<p>멀티 테넌시는 전에 설명했듯이 복수의 고객이 동일한 응용 프로그램을 공유합니다. 고객 간의 구별은 응용 프로그램 설계 중에 수행되므로 고객들은 각 고객의 데이터를 보거나 공유하지 못합니다. 이는 구성 요소가 이앙돼 각 고객 애플리케이션이 별도의 가상 머신에서 구동되는 것처럼 보이게 하는 가상화와 비교됩니다.</p>
 
-<h1 id="1-레파지토리-생성">1. 레파지토리 생성</h1>
-<p><img src="/assets/../../assets/images/posts/blog/03_14/4.png" alt="" class="align-center" /></p>
+<h1 id="클라우드-내-멀티-테넌시">클라우드 내 멀티 테넌시</h1>
+<p>클라우드 컴퓨팅에서는 가상화, 컨테이너화, 원격 엑세스를 활용하는 새로운 서비스 모델 때문에 멀티 테넌시 아키텍처의 의미가 확대되었습니다. 단일 테넌트 클라우드에서는 각 테넌트가 소프트웨어 애플리케이션의 전용 인스턴스를 가지고 있습니다. 이에반해, SaaS(Software-as a Service) 제공자는 데이터베이스의 한 인스턴스에서 애플리케이션의 한 인스턴스를 실행하고 여러 고객에게 웹 액세스를 제공할 수 있습니다. 이러한 시나리오에서는 각 테넌트의 데이터가 격리되어 다른 테넌트에게는 보이지 않는 상태를 유지합니다.</p>
 
-<p>Utterance를 적용하기에 앞서 댓글(깃허브 이슈)를 관리할 public repository가 필요합니다. 이름은 정해져있는게 아니고 임의로 지정하셔도 무관합니다. 다만, 꼭 <code class="language-plaintext highlighter-rouge">public</code>으로 생성하셔야 합니다.</p>
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://networkinterview.com/what-is-multi-tenancy/">What is Multi Tenancy?</a></li>
+</ul>
 
-<p><img src="/assets/../../assets/images/posts/blog/03_14/5.png" alt="" class="align-center" /></p>
-
-<p>그 다음 생성한 레파지토리 안에 <code class="language-plaintext highlighter-rouge">utterances.json</code> 파일을 생성하셔서 아래의 코드를 작성하시면 사전 작업 완료입니다.</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"origins"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"https://lee-jaewook.github.io"</span><span class="p">]</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="p">[</span><span class="err">*</span><span class="p">]</span><span class="w"> </span><span class="err">안에는</span><span class="w"> </span><span class="err">댓글</span><span class="w"> </span><span class="err">기능을</span><span class="w"> </span><span class="err">추가할</span><span class="w"> </span><span class="err">사이트를</span><span class="w"> </span><span class="err">입력</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h1 id="2-설치">2. 설치</h1>
-<p><img src="/assets/../../assets/images/posts/blog/03_14/3.png" alt="" class="align-center" /></p>
-
-<p>먼저 깃허브 앱의 <a href="https://github.com/apps/utterances">Utterances 설치 페이지</a>에서 <code class="language-plaintext highlighter-rouge">install</code> 버튼을 눌러줍니다.</p>
-
-<p><img src="/assets/../../assets/images/posts/blog/03_14/6.png" alt="" class="align-center" /></p>
-
-<p>그 다음 <code class="language-plaintext highlighter-rouge">Only select repositories</code>를 선택, <code class="language-plaintext highlighter-rouge">select repositoris</code>를 클릭하셔서 <a href="#1-댓글을-관리할-레파지토리-생성">챕터 1</a>에서 만들었던 repository를 선택하시면 됩니다.</p>
-
-<h1 id="3-설정">3. 설정</h1>
-<p><img src="/assets/../../assets/images/posts/blog/03_14/7.png" alt="" class="align-center" /></p>
-
-<p>설치를 완료하시면 위에 보이시는 설정 페이지로 자동으로 이동됩니다. 이 페이지에서 <code class="language-plaintext highlighter-rouge">rpositroy 설정</code>, <code class="language-plaintext highlighter-rouge">포스트와 이슈 맵핑</code>, <code class="language-plaintext highlighter-rouge">이슈 라벨</code>, <code class="language-plaintext highlighter-rouge">테마 설정</code>을 하실 수 있습니다.</p>
-
-<p><img src="/assets/../../assets/images/posts/blog/03_14/8.png" alt="" class="align-center" /></p>
-
-<p><code class="language-plaintext highlighter-rouge">rpositroy 설정</code>은 <code class="language-plaintext highlighter-rouge">username/repository_name</code>을 기입하시고 <code class="language-plaintext highlighter-rouge">포스트와 이슈 맵핑</code>은 pathname으로 이슈를 매핑하는게 나중에 블로그 내용이 바뀌어도 이슈가 맵핑될 수 있을 것 같아 선택하였습니다.</p>
-
-<p><img src="/assets/../../assets/images/posts/blog/03_14/9.png" alt="" class="align-center" /></p>
-
-<p>설정을 완료하신 다음 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 복사합니다.</p>
-
-<h1 id="4-코드-추가">4. 코드 추가</h1>
-
-<p>마지막으로 <code class="language-plaintext highlighter-rouge">Enable Utterances</code> 스크립트를 넣을 파일을 찾아야 합니다. 보통 <code class="language-plaintext highlighter-rouge">_layouts/article.html</code>에 넣으시면 되는데, 제가 사용하고 있는 <a href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt 테마</a>에서는</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## =&gt; Comments</span>
-<span class="c1">##############################</span>
-<span class="na">comments</span><span class="pi">:</span>
-  <span class="na">provider</span><span class="pi">:</span> <span class="s2">"</span><span class="s">custom"</span> <span class="c1"># false (default), "disqus", "gitalk", "valine", "custom"</span>
-</code></pre></div></div>
-
-<p><code class="language-plaintext highlighter-rouge">_config.yml</code>의 commets provider를 <code class="language-plaintext highlighter-rouge">custom</code>으로 수정한 뒤 <code class="language-plaintext highlighter-rouge">_inclue/comments-providers/cumtom.html</code>에 아래와 같이 코드를 추가하면 됩니다.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- start custom comments snippet --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://utteranc.es/client.js"</span>
-        <span class="na">repo=</span><span class="s">"lee-jaewook/blog-comments"</span>
-        <span class="na">issue-term=</span><span class="s">"pathname"</span>
-        <span class="na">theme=</span><span class="s">"github-light"</span>
-        <span class="na">crossorigin=</span><span class="s">"anonymous"</span>
-        <span class="na">async</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- end custom comments snippet --&gt;</span>
-</code></pre></div></div>
-
-<p>수정된 파일을 모두 깃허브에 push하시면 아래와 같이 댓글 기능이 추가된 것을 확인할 수 있습니다.(로컬로는 안보입니다!)</p>
-
-<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>
-
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-03-14T00:00:00+09:00"><!-- start custom article footer snippet -->
+<!--more-->
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-11-23T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div>
@@ -582,7 +527,7 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2021/11/09/oracle2.html">Oracle DB & SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2020/07/07/INC.html">오답노트(리트코드)</a></div><div class="next"><span>NEXT</span><a href="/2021/06/18/bjoon_1157.html">벡준 | 1157번 | 단어 공부</a></div></div></div>
 
 </div><section class="page__comments d-print-none"></section><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
