@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-01T21:06:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-01T23:34:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</title><link href="http://localhost:4000/2022/03/14/add_comment_func.html" rel="alternate" type="text/html" title="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/14/add_comment_func</id><content type="html" xml:base="http://localhost:4000/2022/03/14/add_comment_func.html"><![CDATA[<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
@@ -79,7 +79,148 @@
 
 <p>수정된 파일을 모두 깃허브에 push하시면 아래와 같이 댓글 기능이 추가된 것을 확인할 수 있습니다.(로컬로는 안보입니다!)</p>
 
-<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="Blog" /><summary type="html"><![CDATA[서론 깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은 광고가 없어야 한다. 🚫 가볍고 예뻐야 한다. 💅 입니다. 그 결과 발견💡한 것이 Utterances 입니다.]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)</title><link href="http://localhost:4000/2021/11/09/oracle2.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/09/oracle2</id><content type="html" xml:base="http://localhost:4000/2021/11/09/oracle2.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="Blog" /><summary type="html"><![CDATA[서론 깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은 광고가 없어야 한다. 🚫 가볍고 예뻐야 한다. 💅 입니다. 그 결과 발견💡한 것이 Utterances 입니다.]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)</title><link href="http://localhost:4000/2021/11/21/oracle3.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)" /><published>2021-11-21T00:00:00+09:00</published><updated>2021-11-21T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/21/oracle3</id><content type="html" xml:base="http://localhost:4000/2021/11/21/oracle3.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>, <code class="language-plaintext highlighter-rouge">ANSI, DB2 and SQL/DS Data Types</code>, <code class="language-plaintext highlighter-rouge">User-Defined Types</code>, <code class="language-plaintext highlighter-rouge">Oracle-Supplied Types</code>, <code class="language-plaintext highlighter-rouge">Data Type Comparison Rules</code>, <code class="language-plaintext highlighter-rouge">Data Conversion</code>이 있지만, 이번 포스팅에서는 가장 기본적인 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>만을 다루도록 하겠습니다.</p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>Oracle Built-in Data Types</li>
+  <li>Character Data Type</li>
+  <li>Numeric Data Type</li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
+
+<!--more-->
+
+<h1 id="character-data-type">Character Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHAR(n)</td>
+      <td>고정길이 문자 / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>VARCHAR2(n)</td>
+      <td>가변길이 문자 / n : 크기(단위: byte, default: 1, max: 4000)</td>
+    </tr>
+    <tr>
+      <td>NCHAR(n)</td>
+      <td>고정길이 유니코드 문자(다국어 입력가능) / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>NVARCHAR2(n)</td>
+      <td>가변길이 유니코드 문자(다국어 입력가능) / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>가변길이 문자 / 최대: 2GB</td>
+    </tr>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>많은 프로그래밍 언어에서 가장 기본적인 데이터 타입은 정수형이지만, SQL에서는 문자형입니다. 여기서 <mark>가변길이</mark>는 선언된 크기 n 미만의 데이터를 입력시 입력된 데이터 크기만큼만을 할당하는 것을 의미합니다. ~번외로 CHAR(n CHAR)을 선언하시면, n글자의 문자를 받을 수 있습니다(n개의 음절)~.</p>
+
+<h1 id="numeric-data-type">Numeric Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMBER(P,S)</td>
+      <td>가변길이 숫자 / P : 소숫점 포함 전체 자릿수(범위 : 1 ~ 38, default : 38) / S : 소수점 자릿수(범위 : -84 ~ 127, default : 0) /  max : 22byte</td>
+    </tr>
+    <tr>
+      <td>FLOAT(P)</td>
+      <td>NUMBER의 하위타입 / P : (범위 : 1~128, default : 128) / max : 22byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_FLOAT</td>
+      <td>32bit 부동소수점 수 / max : 4byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_DOUBLE</td>
+      <td>64bit 부동소수점 수 / max : 8byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="date-data-type">Date Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATE</td>
+      <td>BC 4712년 1월 1일 ~ 9999년 12월 31일, 연, 월, 일, 시, 분, 초 까지 입력 가능</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP</td>
+      <td>DATE에 더해 밀리초 이하까지 입력 가능</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="lob-data-type">LOB Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>BLOB</td>
+      <td>이진형 대용량 객체 (주로 그래픽, 이미지, 동영상 등의 데이터에서 사용)</td>
+    </tr>
+    <tr>
+      <td>BFILE</td>
+      <td>대용량 이진 파일에 대한 위치, 이름을 저장</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 LOB란 Large Object의 약자입니다. 이름에서 알 수 있듯 대용량 데이터를 저장할 수 있는 데이터타입인데, 일반적으로 그래픽, 이미지, 사운드등 비정형 데이터를 저장할때 LOB타입을 사용합니다.</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/cd/A87860_01/doc/server.817/a76965/c10datyp.htm">oracle docs</a></li>
+</ul>]]></content><author><name>Jaewook Lee</name></author><category term="SQL" /><summary type="html"><![CDATA[들어가기 전에 오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 Oracle Built-in Data Types, ANSI, DB2 and SQL/DS Data Types, User-Defined Types, Oracle-Supplied Types, Data Type Comparison Rules, Data Conversion이 있지만, 이번 포스팅에서는 가장 기본적인 Oracle Built-in Data Types만을 다루도록 하겠습니다. 핵심 개념 Oracle Built-in Data Types Character Data Type Numeric Data Type Date Data Type LOB Data Type]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)</title><link href="http://localhost:4000/2021/11/09/oracle2.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/09/oracle2</id><content type="html" xml:base="http://localhost:4000/2021/11/09/oracle2.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
 <p>오라클 데이터베이스는 맥 OS를 지원하지 않기 때문에 도커를 이용해서 Oracle Database 환경을 설정해야합니다. 하지만 ARM 아키텍쳐 기반의 M1에서는 이마저도 불가능합니다.</p>
 
 <p><img src="/assets/images/posts/oracle/2/3.png" alt="" /></p>
@@ -647,73 +788,4 @@ snake_case: int = 1</li>
 
 <p><img src="/assets/images/posts/github/1/9.png" alt="" /></p>
 
-<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry><entry><title type="html">벡준 | 1157번 | 단어 공부</title><link href="http://localhost:4000/2021/06/18/bjoon_1157.html" rel="alternate" type="text/html" title="벡준 | 1157번 | 단어 공부" /><published>2021-06-18T00:00:00+09:00</published><updated>2021-06-18T00:00:00+09:00</updated><id>http://localhost:4000/2021/06/18/bjoon_1157</id><content type="html" xml:base="http://localhost:4000/2021/06/18/bjoon_1157.html"><![CDATA[<p><a href="https://www.acmicpc.net/problem/1157">벡준 1157번</a>
-<!--more--></p>
-
-<h1 id="1-문제">1. 문제</h1>
-<p><img src="/assets/../../assets/images/posts/Algorithm/bjoon_1157/1.png" alt="" /></p>
-
-<h1 id="2-문제-요약">2. 문제 요약</h1>
-<p>대소문자 구분 없이 가장 많이 사용된 알파벳을 알아내자.</p>
-
-<h1 id="3-입출력">3. 입출력</h1>
-<ul>
-  <li>입력 : 대소문자로 이루어진 단어</li>
-  <li>출력
-    <ul>
-      <li>가장 많이 사용된 알파벳이 여러 개 존재하는 경우
-        <ul>
-          <li>첫 줄 : <code class="language-plaintext highlighter-rouge">?</code> 출력</li>
-        </ul>
-      </li>
-      <li>가장 많이 사용된 알파벳이 하나만 존재하는 경우
-        <ul>
-          <li>첫 줄 : <code class="language-plaintext highlighter-rouge">대문자로 알파벳</code> 출력</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="4-전체-파이썬-코드">4. 전체 파이썬 코드</h1>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">words</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">upper</span><span class="p">()</span>
-<span class="n">unique_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
-
-<span class="n">words_cnt</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">unique_words</span> <span class="p">:</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">words_cnt</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>  
-
-<span class="k">if</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">:</span> 
-    <span class="k">print</span><span class="p">(</span><span class="s">'?'</span><span class="p">)</span>
-<span class="k">else</span> <span class="p">:</span>
-    <span class="n">max_index</span> <span class="o">=</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> 
-    <span class="k">print</span><span class="p">(</span><span class="n">unique_words</span><span class="p">[</span><span class="n">max_index</span><span class="p">])</span>
-</code></pre></div></div>
-
-<h1 id="5-코드-풀이">5. 코드 풀이</h1>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">words</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">upper</span><span class="p">()</span>
-<span class="n">unique_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
-
-<span class="n">words_cnt</span> <span class="o">=</span> <span class="p">[]</span>
-</code></pre></div></div>
-
-<p>문자열을 입력받아 집합 <code class="language-plaintext highlighter-rouge">words</code>를 통해 중복되는 값을 제거한 리스트 <code class="language-plaintext highlighter-rouge">unique_words</code>를 생성한 뒤, 각 알파벳의 사용 횟수를 저장하기 위한 <code class="language-plaintext highlighter-rouge">words_cnt</code> 리스트를 선언한다.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">unique_words</span> <span class="p">:</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">words_cnt</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span> 
-</code></pre></div></div>
-
-<p>반복문을 통해 물자열에 포함된 알파벳의 갯수를 <code class="language-plaintext highlighter-rouge">words_cnt</code>에 추가한다.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">:</span> 
-    <span class="k">print</span><span class="p">(</span><span class="s">'?'</span><span class="p">)</span>
-<span class="k">else</span> <span class="p">:</span>
-    <span class="n">max_index</span> <span class="o">=</span> <span class="n">words_cnt</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">words_cnt</span><span class="p">))</span> 
-    <span class="k">print</span><span class="p">(</span><span class="n">unique_words</span><span class="p">[</span><span class="n">max_index</span><span class="p">])</span>
-</code></pre></div></div>
-
-<p>사용 횟수가 저장된 <code class="language-plaintext highlighter-rouge">words_cnt</code>에서 가장 큰 수의 개수를 탐색하고, 가장 큰 수가 2개 이상이라면 ?를 출력하고 하나만 존재하는 경우에는 해당 알파벳의 인덱스(<code class="language-plaintext highlighter-rouge">words_cnt</code>의 인덱스와 <code class="language-plaintext highlighter-rouge">unique_words</code>의 인덱스가 동일함을 이용)를 통해 출력한다.</p>]]></content><author><name>Jaewook Lee</name></author><category term="coding-test" /><summary type="html"><![CDATA[벡준 1157번]]></summary></entry></feed>
+<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry></feed>

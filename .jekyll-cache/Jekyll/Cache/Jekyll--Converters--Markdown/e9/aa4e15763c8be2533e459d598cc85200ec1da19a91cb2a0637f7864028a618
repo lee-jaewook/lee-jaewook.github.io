@@ -1,0 +1,13 @@
+I"6<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>, <code class="language-plaintext highlighter-rouge">ANSI, DB2 and SQL/DS Data Types</code>, <code class="language-plaintext highlighter-rouge">User-Defined Types</code>, <code class="language-plaintext highlighter-rouge">Oracle-Supplied Types</code>, <code class="language-plaintext highlighter-rouge">Data Type Comparison Rules</code>, <code class="language-plaintext highlighter-rouge">Data Conversion</code>이 있지만, 이번 포스팅에서는 가장 기본적인 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>만을 다루도록 하겠습니다.</p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>Oracle Built-in Data Types</li>
+  <li>Character Data Type</li>
+  <li>Numeric Data Type</li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
+
+:ET

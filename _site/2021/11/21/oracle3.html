@@ -1,11 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Home - Jaewook Log 🧑🏻‍💻</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Oracle DB & SQL 3(오라클 데이터타입 정리) - Jaewook Log 🧑🏻‍💻</title>
 
-<meta name="description" content="Hi my name is jaewook lee.
-">
-<link rel="canonical" href="http://localhost:4000/"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="들어가기 전에오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 Oracle Built-in Data Types, ANSI, DB2 and SQL/DS Data Types, User-Defined Types, Oracle-Supplied...">
+<link rel="canonical" href="http://localhost:4000/2021/11/21/oracle3.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -258,7 +257,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -472,153 +471,204 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
   </header>
 </div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Home</h1></header><meta itemprop="headline" content="Home"><meta itemprop="author" content="Jaewook Lee"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2022/03/14/add_comment_func.html"><h2 itemprop="headline" class="item__header">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">서론
-
-
-깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서
-대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은
-
-
-  광고가 없어야 한다. 🚫
-  가볍고 예뻐야 한다. 💅
-
-
-입니다. 그 결과 발견💡한 것이 Utterances 입니다.</div><p><a href="/2022/03/14/add_comment_func.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Blog">Blog</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Mar 14, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2022-03-14T00:00:00+09:00">
-    <meta itemprop="keywords" content="Blog"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/11/21/oracle3.html"><h2 itemprop="headline" class="item__header">Oracle DB & SQL 3(오라클 데이터타입 정리)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">들어가기 전에
-오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 Oracle Built-in Data Types, ANSI, DB2 and SQL/DS Data Types, User-Defined Types, Oracle-Supplied Types, Data Type Comparison Rules, Data Conversion이 있지만, 이번 포스팅에서는 가장 기본적인 Oracle Built-in Data Types만을 다루도록 하겠습니다.
-
-핵심 개념
-
-  Oracle Built-in Data Types
-  Character Data Type
-  Numeric Dat...</div><p><a href="/2021/11/21/oracle3.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Oracle DB & SQL 3(오라클 데이터타입 정리)</h1></header><span class="split-space">&nbsp;</span>
+          <a class="edit-on-github"
+            title="Edit on Github"
+            href="https://github.com/lee-jaewook/lee-jaewook.github.io/tree/master/_posts/2021-11-21-oracle3.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Oracle DB & SQL 3(오라클 데이터타입 정리)"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=SQL">SQL</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 21, 2021</span>
             </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-11-21T00:00:00+09:00">
-    <meta itemprop="keywords" content="SQL"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/11/09/oracle2.html"><h2 itemprop="headline" class="item__header">Oracle DB & SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">들어가기 전에
-오라클 데이터베이스는 맥 OS를 지원하지 않기 때문에 도커를 이용해서 Oracle Database 환경을 설정해야합니다. 하지만 ARM 아키텍쳐 기반의 M1에서는 이마저도 불가능합니다.
+    <meta itemprop="keywords" content="SQL"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><h1 id="들어가기-전에">들어가기 전에</h1>
+<p>오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>, <code class="language-plaintext highlighter-rouge">ANSI, DB2 and SQL/DS Data Types</code>, <code class="language-plaintext highlighter-rouge">User-Defined Types</code>, <code class="language-plaintext highlighter-rouge">Oracle-Supplied Types</code>, <code class="language-plaintext highlighter-rouge">Data Type Comparison Rules</code>, <code class="language-plaintext highlighter-rouge">Data Conversion</code>이 있지만, 이번 포스팅에서는 가장 기본적인 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>만을 다루도록 하겠습니다.</p>
 
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>Oracle Built-in Data Types</li>
+  <li>Character Data Type</li>
+  <li>Numeric Data Type</li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
 
+<!--more-->
 
-  위와 같이 오라클에서 제공하는 이미지를 설치하면 오류가 발생하는데, 오류가 발생하는 이유는 오라클에서 제공하는 이미지가 M1을 지원하지 않기 때문입니다.
+<h1 id="character-data-type">Character Data Type</h1>
 
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHAR(n)</td>
+      <td>고정길이 문자 / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>VARCHAR2(n)</td>
+      <td>가변길이 문자 / n : 크기(단위: byte, default: 1, max: 4000)</td>
+    </tr>
+    <tr>
+      <td>NCHAR(n)</td>
+      <td>고정길이 유니코드 문자(다국어 입력가능) / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>NVARCHAR2(n)</td>
+      <td>가변길이 유니코드 문자(다국어 입력가능) / n : 크기(단위: byte, default: 1, max: 2000)</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>가변길이 문자 / 최대: 2GB</td>
+    </tr>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+  </tbody>
+</table>
 
-이에 대한 해결책으로 이번 포스팅에서는 Oracle Cloud로 무료 데이터베이스를 생성하고 이를 SQL Developer에 연결하는 방법을 다뤄보도록 하겠습니다.
+<p>많은 프로그래밍 언어에서 가장 기본적인 데이터 타입은 정수형이지만, SQL에서는 문자형입니다. 여기서 <mark>가변길이</mark>는 선언된 크기 n 미만의 데이터를 입력시 입력된 데이터 크기만큼만을 할당하는 것을 의미합니다. ~번외로 CHAR(n CHAR)을 선언하시면, n글자의 문자를 받을 수 있습니다(n개의 음절)~.</p>
 
-핵심 개념
+<h1 id="numeric-data-type">Numeric Data Type</h1>
 
-  SQL Developer
-  Oracle Cloud</div><p><a href="/2021/11/09/oracle2.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=SQL">SQL</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-11-09T00:00:00+09:00">
-    <meta itemprop="keywords" content="SQL"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/11/07/oracle1.html"><h2 itemprop="headline" class="item__header">Oracle DB & SQL 1(SQL, DB, DBMS의 개념)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">들어가기 전에
-프로그램에서 다루는 데이터와 이 데이터를 동시에 사용하는 사람이 많아질 수록 데이터의 관리는 어려워지고 이는 결함을 불러일으킬 수 있습니다. 이러한 동시성, 성능, 보안 등을 충족해 데이터를 관리하기 위해 사용하는 것이 데이터베이스 관리 시스템입니다. 이번 포스팅에서는 이 SQL, 데이터베이스, 데이터베이스 관리 시스템에 대해 알아보도록 하겠습니다.
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMBER(P,S)</td>
+      <td>가변길이 숫자 / P : 소숫점 포함 전체 자릿수(범위 : 1 ~ 38, default : 38) / S : 소수점 자릿수(범위 : -84 ~ 127, default : 0) /  max : 22byte</td>
+    </tr>
+    <tr>
+      <td>FLOAT(P)</td>
+      <td>NUMBER의 하위타입 / P : (범위 : 1~128, default : 128) / max : 22byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_FLOAT</td>
+      <td>32bit 부동소수점 수 / max : 4byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_DOUBLE</td>
+      <td>64bit 부동소수점 수 / max : 8byte</td>
+    </tr>
+  </tbody>
+</table>
 
-핵심 개념
+<h1 id="date-data-type">Date Data Type</h1>
 
-  데이터베이스(database)
-  데이터베이스 관리 시스템(DBMS)
-  SQL</div><p><a href="/2021/11/07/oracle1.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=SQL">SQL</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 07, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-11-07T00:00:00+09:00">
-    <meta itemprop="keywords" content="SQL"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/10/24/binary-search.html"><h2 itemprop="headline" class="item__header">이진 탐색(Binary Search) by 파이썬</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">알고리즘 설명
-이진 탐색은 가장 보편적으로 사용되는 탐색 알고리즘 중 하나입니다. 이진 탐색은 정렬된 배열에 적용될 수 있으며 빠른 탐색 알고리즘 중 하나입니다. 이진 탐색은 매 iteration 마다 탐색 공간을 반으로 나눠가는 알고리즘 입니다(자세한 설명은 이 글을 참고하세요).</div><p><a href="/2021/10/24/binary-search.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=algorithm">algorithm</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Oct 24, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-10-24T00:00:00+09:00">
-    <meta itemprop="keywords" content="algorithm"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/09/13/python_coding_test_tip.html"><h2 itemprop="headline" class="item__header">코딩 테스트, 파이썬 문법 정리</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">파이썬의 많은 문법 중 코딩 테스트에서 생산성을 높이기 위한 고급(?) 문법을 정리해 보도록 하겠습니다.
-(출처 : 파이썬 알고리즘 인터뷰)</div><p><a href="/2021/09/13/python_coding_test_tip.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=coding-test">coding-test</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Sep 13, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-09-13T00:00:00+09:00">
-    <meta itemprop="keywords" content="coding-test"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/08/09/git_profile_4.html"><h2 itemprop="headline" class="item__header">Github(깃허브) 프로필 꾸미기(4) - Contribution Chart</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">깃허브 프로필에 컨트리뷰션 차트 추가하는 법</div><p><a href="/2021/08/09/git_profile_4.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=github">github</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-08-09T00:00:00+09:00">
-    <meta itemprop="keywords" content="github"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/08/02/git_profile_3.html"><h2 itemprop="headline" class="item__header">Github(깃허브) 프로필 꾸미기(3) - Technique Icons & Badge</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법</div><p><a href="/2021/08/02/git_profile_3.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=github">github</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-08-02T00:00:00+09:00">
-    <meta itemprop="keywords" content="github"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/07/21/git_profile_2.html"><h2 itemprop="headline" class="item__header">Github(깃허브) 프로필 꾸미기(2) - Stats</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">깃허브 프로필에 Github Stats 생성하는 법</div><p><a href="/2021/07/21/git_profile_2.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=github">github</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 21, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-07-21T00:00:00+09:00">
-    <meta itemprop="keywords" content="github"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/07/10/git_profile_1.html"><h2 itemprop="headline" class="item__header">Github(깃허브) 프로필 꾸미기(1) - Init & Posts list</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">README.md 생성과 블로그 포스트 리스트(blog post list) 생성</div><p><a href="/2021/07/10/git_profile_1.html">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=github">github</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-07-10T00:00:00+09:00">
-    <meta itemprop="keywords" content="github"></div>
-      </article></div>
-</div><div class="layout--home"><div class="pagination"><p>13 post articles, 2 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                <a class="button button--secondary button--circle" href="/page2"><span>2</span></a>
-              </li><li><a class="button button--secondary button--circle" href="/page2">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATE</td>
+      <td>BC 4712년 1월 1일 ~ 9999년 12월 31일, 연, 월, 일, 시, 분, 초 까지 입력 가능</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP</td>
+      <td>DATE에 더해 밀리초 이하까지 입력 가능</td>
+    </tr>
+  </tbody>
+</table>
 
-})();*/
+<h1 id="lob-data-type">LOB Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>BLOB</td>
+      <td>이진형 대용량 객체 (주로 그래픽, 이미지, 동영상 등의 데이터에서 사용)</td>
+    </tr>
+    <tr>
+      <td>BFILE</td>
+      <td>대용량 이진 파일에 대한 위치, 이름을 저장</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 LOB란 Large Object의 약자입니다. 이름에서 알 수 있듯 대용량 데이터를 저장할 수 있는 데이터타입인데, 일반적으로 그래픽, 이미지, 사운드등 비정형 데이터를 저장할때 LOB타입을 사용합니다.</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/cd/A87860_01/doc/server.817/a76965/c10datyp.htm">oracle docs</a></li>
+</ul>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2021-11-21T00:00:00+09:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div>
+</div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2021/11/09/oracle2.html">Oracle DB & SQL 2(M1 맥북에서 오라클 DB를 사용하는 방법)</a></div><div class="next"><span>NEXT</span><a href="/2022/03/14/add_comment_func.html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</a></div></div></div>
+
+</div><section class="page__comments d-print-none"></section><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
 </div>
 
                 </article><!-- start custom main bottom snippet -->
@@ -1157,6 +1207,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script><script>
   window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
     var $canvas = null, $this = null, _ctx = null, _text = '';
