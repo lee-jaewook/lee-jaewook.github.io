@@ -1,0 +1,14 @@
+I"�<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다.
+<img src="/assets/images/posts/oracle/4/1.jpeg" alt="" /></p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>DML (Data Manipulation Language)</li>
+  <li>INSERT</li>
+  <li></li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
+
+:ET

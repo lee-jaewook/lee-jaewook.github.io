@@ -11,7 +11,8 @@ article_header:
     src: assets/images/posts/github/2/1.png
 published : true
 ---
-깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법
+# 들어가기 전에
+깃허브 프로필 꾸미기를 진행하면서, 이번에는 깃허브 프로필에 `기술 아이콘` 및 `소셜 뱃지`를 생성하는 법에 대해서 포스팅해보겠습니다.
 
 <!--more-->
 # 1. 기술 아이콘(Technique Icons) 생성

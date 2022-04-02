@@ -1,0 +1,107 @@
+I"�
+<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다.
+<img src="/assets/images/posts/oracle/4/1.jpeg" alt="" /></p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>DML (Data Manipulation Language)</li>
+  <li>INSERT</li>
+  <li></li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
+
+<!--more-->
+
+<h1 id="insert">INSERT</h1>
+<ul>
+  <li></li>
+</ul>
+
+<h1 id="numeric-data-type">Numeric Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMBER(P,S)</td>
+      <td>가변길이 숫자 / P : 소숫점 포함 전체 자릿수(범위 : 1 ~ 38, default : 38) / S : 소수점 자릿수(범위 : -84 ~ 127, default : 0) /  max : 22byte</td>
+    </tr>
+    <tr>
+      <td>FLOAT(P)</td>
+      <td>NUMBER의 하위타입 / P : (범위 : 1~128, default : 128) / max : 22byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_FLOAT</td>
+      <td>32bit 부동소수점 수 / max : 4byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_DOUBLE</td>
+      <td>64bit 부동소수점 수 / max : 8byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="date-data-type">Date Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATE</td>
+      <td>BC 4712년 1월 1일 ~ 9999년 12월 31일, 연, 월, 일, 시, 분, 초 까지 입력 가능</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP</td>
+      <td>DATE에 더해 밀리초 이하까지 입력 가능</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="lob-data-type">LOB Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>BLOB</td>
+      <td>이진형 대용량 객체 (주로 그래픽, 이미지, 동영상 등의 데이터에서 사용)</td>
+    </tr>
+    <tr>
+      <td>BFILE</td>
+      <td>대용량 이진 파일에 대한 위치, 이름을 저장</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 LOB란 Large Object의 약자입니다. 이름에서 알 수 있듯 대용량 데이터를 저장할 수 있는 데이터타입인데, 일반적으로 그래픽, 이미지, 사운드등 비정형 데이터를 저장할때 LOB타입을 사용합니다.</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/cd/A87860_01/doc/server.817/a76965/c10datyp.htm">oracle docs</a></li>
+</ul>
+:ET

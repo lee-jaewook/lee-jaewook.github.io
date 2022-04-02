@@ -8,6 +8,7 @@
     display: inline;
   }
   h1 {
+    font-size: map-get($base, font-size-h1);
     word-wrap: break-word;
   }
   .split-space {
@@ -30,7 +31,7 @@
     }
   }
   .overlay__excerpt {
-    font-size: map-get($base, font-size-h3-xl);
+    font-size: map-get($base, font-size-h3);
     @include media-breakpoint-down(lg) {
       font-size: map-get($base, font-size-h3-lg);
     }

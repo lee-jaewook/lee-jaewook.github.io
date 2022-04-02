@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Github(깃허브) 프로필 꾸미기(4) - Contribution Chart - Jaewook Log 🧑🏻‍💻</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Oracle DB & SQL 4(DML) - Jaewook Log 🧑🏻‍💻</title>
 
-<meta name="description" content="깃허브 프로필에 컨트리뷰션 차트 추가하는 법">
-<link rel="canonical" href="http://localhost:4000/2021/08/09/git_profile_4.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="들어가기 전에SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다.핵심 개념  DML (Data Manipulation Language)  INSERT    D...">
+<link rel="canonical" href="http://localhost:4000/2021/11/28/oracle4.html"><link rel="alternate" type="application/rss+xml" title="Jaewook Log 🧑🏻‍💻" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -469,73 +469,128 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
         <ul><li class="navigation__item"><a href="/archive.html">Log</a></li><li class="navigation__item"><a href="https://lee-jaewook.github.io/resumecard/">Resume</a></li><li class="navigation__item"><a href="https://github.com/lee-jaewook">Github</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(75, 106, 120, 0.7), rgba(75, 106, 120, 1.0)),url(/assets/images/posts/github/4/1.svg);background-color:rgba(0, 255, 0, .5);"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=github">github</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 09, 2021</span>
-            </li></ul></div><div class="article__header"><header><h1>Github(깃허브) 프로필 꾸미기(4) - Contribution Chart</h1></header><span class="split-space">&nbsp;</span>
-          <a class="edit-on-github"
-            title="Edit on Github"
-            href="https://github.com/lee-jaewook/lee-jaewook.github.io/tree/master/_posts/2021-08-09-git_profile_4.md">
-            <i class="far fa-edit"></i></a></div><!-- <p class="overlay__excerpt">깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p> --></div></div>
-              </div>
-            </div><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
 
               <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
 </aside></div>
 
-              <div class="col-main cell cell--auto"><article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Github(깃허브) 프로필 꾸미기(4) - Contribution Chart"><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-08-09T00:00:00+09:00">
-    <meta itemprop="keywords" content="github"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+              <div class="col-main cell cell--auto"><article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Oracle DB & SQL 4(DML)</h1></header><span class="split-space">&nbsp;</span>
+          <a class="edit-on-github"
+            title="Edit on Github"
+            href="https://github.com/lee-jaewook/lee-jaewook.github.io/tree/master/_posts/2021-11-28-oracle4.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Oracle DB & SQL 4(DML)"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=SQL">SQL</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 28, 2021</span>
+            </li></ul></div><meta itemprop="author" content="Jaewook Lee"/><meta itemprop="datePublished" content="2021-11-28T00:00:00+09:00">
+    <meta itemprop="keywords" content="SQL"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>깃허브 프로필에 컨트리뷰션 차트 추가하는 법</p>
+<div class="article__content" itemprop="articleBody"><h1 id="들어가기-전에">들어가기 전에</h1>
+<p>SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다.
+<img src="/assets/images/posts/oracle/4/1.jpeg" alt="" /></p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>DML (Data Manipulation Language)</li>
+  <li>INSERT</li>
+  <li></li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
 
 <!--more-->
-<h1 id="컨트리뷰션-차트contribution-chart-추가">컨트리뷰션 차트(Contribution chart) 추가</h1>
 
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># &lt;github user name&gt;/.github/workflows/cobrinha.yml</span>
-<span class="na">name</span><span class="pi">:</span> <span class="s">Generate Datas</span>
+<h1 id="insert">INSERT</h1>
+<ul>
+  <li></li>
+</ul>
 
-<span class="na">on</span><span class="pi">:</span>
-  <span class="na">schedule</span><span class="pi">:</span> <span class="c1"># execute every 12 hours</span>
-    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*</span><span class="nv"> </span><span class="s">*/12</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*"</span>
-  <span class="na">workflow_dispatch</span><span class="pi">:</span>
+<h1 id="numeric-data-type">Numeric Data Type</h1>
 
-<span class="na">jobs</span><span class="pi">:</span>
-  <span class="na">build</span><span class="pi">:</span>
-    <span class="na">name</span><span class="pi">:</span> <span class="s">Jobs to update datas</span>
-    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
-    <span class="na">steps</span><span class="pi">:</span>
-      <span class="c1"># Snake Animation</span>
-      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">Platane/snk@master</span>
-        <span class="na">id</span><span class="pi">:</span> <span class="s">snake-gif</span>
-        <span class="na">with</span><span class="pi">:</span>
-          <span class="na">github_user_name</span><span class="pi">:</span> <span class="s">your_git_username</span>
-          <span class="na">svg_out_path</span><span class="pi">:</span> <span class="s">dist/github-contribution-grid-snake.svg</span>
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMBER(P,S)</td>
+      <td>가변길이 숫자 / P : 소숫점 포함 전체 자릿수(범위 : 1 ~ 38, default : 38) / S : 소수점 자릿수(범위 : -84 ~ 127, default : 0) /  max : 22byte</td>
+    </tr>
+    <tr>
+      <td>FLOAT(P)</td>
+      <td>NUMBER의 하위타입 / P : (범위 : 1~128, default : 128) / max : 22byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_FLOAT</td>
+      <td>32bit 부동소수점 수 / max : 4byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_DOUBLE</td>
+      <td>64bit 부동소수점 수 / max : 8byte</td>
+    </tr>
+  </tbody>
+</table>
 
-      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">crazy-max/ghaction-github-pages@v2.1.3</span>
-        <span class="na">with</span><span class="pi">:</span>
-          <span class="na">target_branch</span><span class="pi">:</span> <span class="s">output</span>
-          <span class="na">build_dir</span><span class="pi">:</span> <span class="s">dist</span>
-        <span class="na">env</span><span class="pi">:</span>
-          <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
-</code></pre></div></div>
+<h1 id="date-data-type">Date Data Type</h1>
 
-<p>우선 <code class="language-plaintext highlighter-rouge">/.github/workflows</code> 폴더를 생성하시고, 폴더 안에 <code class="language-plaintext highlighter-rouge">cobrinha.yml</code>파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, <code class="language-plaintext highlighter-rouge">github_user_name</code>에 자신의 사용자명을 기입하시면 됩니다.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATE</td>
+      <td>BC 4712년 1월 1일 ~ 9999년 12월 31일, 연, 월, 일, 시, 분, 초 까지 입력 가능</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP</td>
+      <td>DATE에 더해 밀리초 이하까지 입력 가능</td>
+    </tr>
+  </tbody>
+</table>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
-<span class="gu">## 🌱 Git Contribution Chart</span>
- !<span class="p">[</span><span class="nv">Snake animation</span><span class="p">](</span><span class="sx">https://github.com/github_user_name/github_user_name/blob/output/github-contribution-grid-snake.svg</span><span class="p">)</span><span class="nt">&lt;br&gt;</span>
-</code></pre></div></div>
+<h1 id="lob-data-type">LOB Data Type</h1>
 
-<p>위의 코드에서 <code class="language-plaintext highlighter-rouge">github_user_name</code>을 자신의 깃허브 사용자명으로 바꾸시고 <code class="language-plaintext highlighter-rouge">README.md</code>파일에 추가해주시면 됩니다.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>BLOB</td>
+      <td>이진형 대용량 객체 (주로 그래픽, 이미지, 동영상 등의 데이터에서 사용)</td>
+    </tr>
+    <tr>
+      <td>BFILE</td>
+      <td>대용량 이진 파일에 대한 위치, 이름을 저장</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>그 다음은 <a href="https://lee-jaewook.github.io/2021/07/10/git_profile_1.html">Github(깃허브) 프로필 꾸미기(1)</a>에서 설명드렸던 것처럼 깃허브 레파지토리에서 <code class="language-plaintext highlighter-rouge">Action</code>을 실행해 주시면 됩니다.</p>
+<p>여기서 LOB란 Large Object의 약자입니다. 이름에서 알 수 있듯 대용량 데이터를 저장할 수 있는 데이터타입인데, 일반적으로 그래픽, 이미지, 사운드등 비정형 데이터를 저장할때 LOB타입을 사용합니다.</p>
 
-<p><img src="/assets/images/posts/github/4/2.png" alt="" /></p>
-
-<p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>
-
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2021-08-09T00:00:00+09:00"><!-- start custom article footer snippet -->
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/cd/A87860_01/doc/server.817/a76965/c10datyp.htm">oracle docs</a></li>
+</ul>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2021-11-28T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div>
@@ -546,7 +601,7 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2021/08/02/git_profile_3.html">Github(깃허브) 프로필 꾸미기(3) - Technique Icons & Badge</a></div><div class="next"><span>NEXT</span><a href="/2021/09/13/python_coding_test_tip.html">코딩 테스트, 파이썬 문법 정리</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2021/11/21/oracle3.html">Oracle DB & SQL 3(오라클 데이터타입 정리)</a></div><div class="next"><span>NEXT</span><a href="/2022/03/14/add_comment_func.html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</a></div></div></div>
 
 </div><section class="page__comments d-print-none"></section><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;

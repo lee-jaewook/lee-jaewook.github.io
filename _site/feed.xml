@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-01T23:34:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-02T18:41:37+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaewook Log 🧑🏻‍💻</title><subtitle>Hi my name is jaewook lee.
 </subtitle><author><name>Jaewook Lee</name></author><entry><title type="html">Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법</title><link href="http://localhost:4000/2022/03/14/add_comment_func.html" rel="alternate" type="text/html" title="Utterances로 깃허브 페이지(Github Page) 댓글 기능 추가하는 법" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/14/add_comment_func</id><content type="html" xml:base="http://localhost:4000/2022/03/14/add_comment_func.html"><![CDATA[<h1 id="서론">서론</h1>
 <p><img src="/assets/../../assets/images/posts/blog/03_14/1.png" alt="" class="align-center" /></p>
 
@@ -79,7 +79,111 @@
 
 <p>수정된 파일을 모두 깃허브에 push하시면 아래와 같이 댓글 기능이 추가된 것을 확인할 수 있습니다.(로컬로는 안보입니다!)</p>
 
-<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="Blog" /><summary type="html"><![CDATA[서론 깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은 광고가 없어야 한다. 🚫 가볍고 예뻐야 한다. 💅 입니다. 그 결과 발견💡한 것이 Utterances 입니다.]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)</title><link href="http://localhost:4000/2021/11/21/oracle3.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)" /><published>2021-11-21T00:00:00+09:00</published><updated>2021-11-21T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/21/oracle3</id><content type="html" xml:base="http://localhost:4000/2021/11/21/oracle3.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p><img src="/assets/../../assets/images/posts/blog/03_14/10.png" alt="" class="align-center" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="Blog" /><summary type="html"><![CDATA[서론 깃허브 페이지에 댓글 기능을 추가하는 방법 중에 가장 대중화된(?) 방법은 Disqus를 사용하는 것 입니다. Disqus도 무료로 사용할 수 있지만… 광고가 붙게되고 못생겨서 대안을 찾게 됐습니다. 대안을 찾을 때 고려했던 사항은 광고가 없어야 한다. 🚫 가볍고 예뻐야 한다. 💅 입니다. 그 결과 발견💡한 것이 Utterances 입니다.]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 4(DML)</title><link href="http://localhost:4000/2021/11/28/oracle4.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 4(DML)" /><published>2021-11-28T00:00:00+09:00</published><updated>2021-11-28T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/28/oracle4</id><content type="html" xml:base="http://localhost:4000/2021/11/28/oracle4.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다.
+<img src="/assets/images/posts/oracle/4/1.jpeg" alt="" /></p>
+
+<h1 id="핵심-개념">핵심 개념</h1>
+<ul>
+  <li>DML (Data Manipulation Language)</li>
+  <li>INSERT</li>
+  <li></li>
+  <li>Date Data Type</li>
+  <li>LOB Data Type</li>
+</ul>
+
+<!--more-->
+
+<h1 id="insert">INSERT</h1>
+<ul>
+  <li></li>
+</ul>
+
+<h1 id="numeric-data-type">Numeric Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMBER(P,S)</td>
+      <td>가변길이 숫자 / P : 소숫점 포함 전체 자릿수(범위 : 1 ~ 38, default : 38) / S : 소수점 자릿수(범위 : -84 ~ 127, default : 0) /  max : 22byte</td>
+    </tr>
+    <tr>
+      <td>FLOAT(P)</td>
+      <td>NUMBER의 하위타입 / P : (범위 : 1~128, default : 128) / max : 22byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_FLOAT</td>
+      <td>32bit 부동소수점 수 / max : 4byte</td>
+    </tr>
+    <tr>
+      <td>BINARY_DOUBLE</td>
+      <td>64bit 부동소수점 수 / max : 8byte</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="date-data-type">Date Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATE</td>
+      <td>BC 4712년 1월 1일 ~ 9999년 12월 31일, 연, 월, 일, 시, 분, 초 까지 입력 가능</td>
+    </tr>
+    <tr>
+      <td>TIMESTAMP</td>
+      <td>DATE에 더해 밀리초 이하까지 입력 가능</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="lob-data-type">LOB Data Type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLOB</td>
+      <td>가변길이 대용량 문자 / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>NCLOB</td>
+      <td>가변길이 대용량 유니코드 문자(다국어 입력가능) / 크기: 4GB</td>
+    </tr>
+    <tr>
+      <td>BLOB</td>
+      <td>이진형 대용량 객체 (주로 그래픽, 이미지, 동영상 등의 데이터에서 사용)</td>
+    </tr>
+    <tr>
+      <td>BFILE</td>
+      <td>대용량 이진 파일에 대한 위치, 이름을 저장</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 LOB란 Large Object의 약자입니다. 이름에서 알 수 있듯 대용량 데이터를 저장할 수 있는 데이터타입인데, 일반적으로 그래픽, 이미지, 사운드등 비정형 데이터를 저장할때 LOB타입을 사용합니다.</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/cd/A87860_01/doc/server.817/a76965/c10datyp.htm">oracle docs</a></li>
+</ul>]]></content><author><name>Jaewook Lee</name></author><category term="SQL" /><summary type="html"><![CDATA[들어가기 전에 SQL(Structured Query Language) 언어의 종류는 크게 DML, DDL, DCL, TCL이 있습니다. 이번 포스팅에서는 DML에 대해 알아보도록 하겠습니다. 핵심 개념 DML (Data Manipulation Language) INSERT Date Data Type LOB Data Type]]></summary></entry><entry><title type="html">Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)</title><link href="http://localhost:4000/2021/11/21/oracle3.html" rel="alternate" type="text/html" title="Oracle DB &amp;amp; SQL 3(오라클 데이터타입 정리)" /><published>2021-11-21T00:00:00+09:00</published><updated>2021-11-21T00:00:00+09:00</updated><id>http://localhost:4000/2021/11/21/oracle3</id><content type="html" xml:base="http://localhost:4000/2021/11/21/oracle3.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
 <p>오라클 데이터 타입은 테이블에서 컬럼이 저장되는 데이터 유형을 말합니다. 오라클의 데이터 타입은 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>, <code class="language-plaintext highlighter-rouge">ANSI, DB2 and SQL/DS Data Types</code>, <code class="language-plaintext highlighter-rouge">User-Defined Types</code>, <code class="language-plaintext highlighter-rouge">Oracle-Supplied Types</code>, <code class="language-plaintext highlighter-rouge">Data Type Comparison Rules</code>, <code class="language-plaintext highlighter-rouge">Data Conversion</code>이 있지만, 이번 포스팅에서는 가장 기본적인 <code class="language-plaintext highlighter-rouge">Oracle Built-in Data Types</code>만을 다루도록 하겠습니다.</p>
 
 <h1 id="핵심-개념">핵심 개념</h1>
@@ -670,7 +774,8 @@ snake_case: int = 1</li>
 
 <p><img src="/assets/images/posts/github/4/2.png" alt="" /></p>
 
-<p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 컨트리뷰션 차트 추가하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(3) - Technique Icons &amp;amp; Badge</title><link href="http://localhost:4000/2021/08/02/git_profile_3.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(3) - Technique Icons &amp;amp; Badge" /><published>2021-08-02T00:00:00+09:00</published><updated>2021-08-02T00:00:00+09:00</updated><id>http://localhost:4000/2021/08/02/git_profile_3</id><content type="html" xml:base="http://localhost:4000/2021/08/02/git_profile_3.html"><![CDATA[<p>깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법</p>
+<p><img src="/assets/images/posts/github/4/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 컨트리뷰션 차트 추가하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(3) - Technique Icons &amp;amp; Badge</title><link href="http://localhost:4000/2021/08/02/git_profile_3.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(3) - Technique Icons &amp;amp; Badge" /><published>2021-08-02T00:00:00+09:00</published><updated>2021-08-02T00:00:00+09:00</updated><id>http://localhost:4000/2021/08/02/git_profile_3</id><content type="html" xml:base="http://localhost:4000/2021/08/02/git_profile_3.html"><![CDATA[<h1 id="들어가기-전에">들어가기 전에</h1>
+<p>깃허브 프로필 꾸미기를 진행하면서, 이번에는 깃허브 프로필에 <code class="language-plaintext highlighter-rouge">기술 아이콘</code> 및 <code class="language-plaintext highlighter-rouge">소셜 뱃지</code>를 생성하는 법에 대해서 포스팅해보겠습니다.</p>
 
 <!--more-->
 <h1 id="1-기술-아이콘technique-icons-생성">1. 기술 아이콘(Technique Icons) 생성</h1>
@@ -695,7 +800,7 @@ snake_case: int = 1</li>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.linkedin.com/in/lee-jaewook/"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
-<p><img src="/assets/images/posts/github/3/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 기술 아이콘 및 소셜 뱃지 생성하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(2) - Stats</title><link href="http://localhost:4000/2021/07/21/git_profile_2.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(2) - Stats" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>http://localhost:4000/2021/07/21/git_profile_2</id><content type="html" xml:base="http://localhost:4000/2021/07/21/git_profile_2.html"><![CDATA[<p>깃허브 프로필에 Github Stats 생성하는 법</p>
+<p><img src="/assets/images/posts/github/3/3.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[들어가기 전에 깃허브 프로필 꾸미기를 진행하면서, 이번에는 깃허브 프로필에 기술 아이콘 및 소셜 뱃지를 생성하는 법에 대해서 포스팅해보겠습니다.]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(2) - Stats</title><link href="http://localhost:4000/2021/07/21/git_profile_2.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(2) - Stats" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>http://localhost:4000/2021/07/21/git_profile_2</id><content type="html" xml:base="http://localhost:4000/2021/07/21/git_profile_2.html"><![CDATA[<p>깃허브 프로필에 Github Stats 생성하는 법</p>
 
 <!--more-->
 <h1 id="github-stats-생성">Github Stats 생성</h1>
@@ -711,81 +816,4 @@ snake_case: int = 1</li>
 
 <p><img src="/assets/images/posts/github/2/1.png" alt="" /></p>
 
-<p>(번외로 스타일을 바꾸고 싶으신 분은 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a>를 참고하시면 됩니다.)</p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 Github Stats 생성하는 법]]></summary></entry><entry><title type="html">Github(깃허브) 프로필 꾸미기(1) - Init &amp;amp; Posts list</title><link href="http://localhost:4000/2021/07/10/git_profile_1.html" rel="alternate" type="text/html" title="Github(깃허브) 프로필 꾸미기(1) - Init &amp;amp; Posts list" /><published>2021-07-10T00:00:00+09:00</published><updated>2021-07-10T00:00:00+09:00</updated><id>http://localhost:4000/2021/07/10/git_profile_1</id><content type="html" xml:base="http://localhost:4000/2021/07/10/git_profile_1.html"><![CDATA[<p>README.md 생성과 블로그 포스트 리스트(blog post list) 생성</p>
-
-<p><img src="/assets/images/posts/github/1/11.png" alt="" /></p>
-
-<!--more-->
-<h1 id="1-readmemd-파일-생성">1. README.md 파일 생성</h1>
-<p>블로그 리스트와 Stats를 추가하기에 앞서 각자의 깃허브 사용자명으로 폴더를 생성한 뒤 , 해당 폴더 안에 README.md 파일을 추가해 아래와 같이 간단한 내용을 적어줍니다.</p>
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
-<span class="gh"># Hi there, I'm `your name`  👋 </span>
-</code></pre></div></div>
-
-<p>이 파일을 깃허브 사용자명과 동일한 repository에 push해 주게되면 profile 상단에 표시되게 됩니다.</p>
-
-<p><img src="/assets/images/posts/github/1/4.png" alt="" /></p>
-
-<h1 id="2-블로그-포스트-리스트-생성">2. 블로그 포스트 리스트 생성</h1>
-<h2 id="21-readmemd-파일-수정">2.1 README.md 파일 수정</h2>
-<p><a href="https://github.com/gautamkrishnar/blog-post-workflow">blog-post-workflow</a>를 사용해 깃허브 프로필에 블로그 리스트를 생성하기 위해서 <code class="language-plaintext highlighter-rouge">README.md</code> 파일에 아래와 같이 내용을 추가해줍니다.</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- github_user_name/README.md --&gt;</span>
-<span class="gu">### 📕 Latest Blog Posts</span>
-<span class="c">&lt;!-- BLOG-POST-LIST:START --&gt;</span>
-<span class="c">&lt;!-- BLOG-POST-LIST:END --&gt;</span>
-</code></pre></div></div>
-
-<h2 id="22-폴더-생성-및-파일-생성">2.2 폴더 생성 및 파일 생성</h2>
-<p><code class="language-plaintext highlighter-rouge">/.github/workflows</code>폴더를 생성한 뒤 해당 폴더 안에 <code class="language-plaintext highlighter-rouge">blog-post-workflow.yml</code> 파일을 생성해, <code class="language-plaintext highlighter-rouge">blog-post-workflow.yml</code> 파일에 아래와 같이 입력합니다.</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># &lt;github user name&gt;/.github/workflows/blog-post-workflow.yml</span>
-<span class="na">name</span><span class="pi">:</span> <span class="s">Latest blog post workflow</span>
-<span class="na">on</span><span class="pi">:</span>
-  <span class="na">schedule</span><span class="pi">:</span> <span class="c1"># Run workflow automatically</span>
-    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">0</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span> <span class="c1"># Runs every hour, on the hour</span>
-  <span class="na">workflow_dispatch</span><span class="pi">:</span> <span class="c1"># Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly</span>
-
-<span class="na">jobs</span><span class="pi">:</span>
-  <span class="na">update-readme-with-blog</span><span class="pi">:</span>
-    <span class="na">name</span><span class="pi">:</span> <span class="s">Update this repo's README with latest blog posts</span>
-    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
-    <span class="na">steps</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout</span>
-        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Pull in dev.to posts</span>
-        <span class="na">uses</span><span class="pi">:</span> <span class="s">gautamkrishnar/blog-post-workflow@master</span>
-        <span class="na">with</span><span class="pi">:</span> 
-          <span class="na">feed_list</span><span class="pi">:</span> <span class="c1"># "your blog feed url"</span>
-</code></pre></div></div>
-
-<p>여기서 <code class="language-plaintext highlighter-rouge">feed_list</code>에 여러분 블로그의 RSS feed URL을 적어주시면 됩니다. 저처럼 jekyll로 만든 github page를 사용하고 계신 분은 <code class="language-plaintext highlighter-rouge">_cofig.yml</code>파일에</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-</code></pre></div></div>
-
-<p>이렇게 <code class="language-plaintext highlighter-rouge">jekyll-feed</code>를 추가하신 뒤, <code class="language-plaintext highlighter-rouge">feed_list</code>에 <code class="language-plaintext highlighter-rouge">"&lt;github page url&gt;/feed"</code>를 기입하시면 됩니다.<br />
-이제 수정된 모든 파일을 깃허브에 업로드합니다.</p>
-
-<h3 id="23-깃허브-workflows-설정">2.3 깃허브 workflows 설정</h3>
-
-<p><img src="/assets/images/posts/github/1/5.png" alt="" /></p>
-
-<p>업로드를 했지만 위의 그림처럼 포스트의 리스트가 표시되지 않습니다🤦‍♂️. <br />
-마지막으로 한가지 작업이 더 남아있습니다.</p>
-
-<p><img src="/assets/images/posts/github/1/6.png" alt="" /></p>
-
-<p><img src="/assets/images/posts/github/1/7.png" alt="" /></p>
-
-<p>프로필을 작성중인 <code class="language-plaintext highlighter-rouge">깃허브 사용자명</code>프로젝트에 들어가셔서 <code class="language-plaintext highlighter-rouge">Actions</code>을 누르시고 좌측의 <code class="language-plaintext highlighter-rouge">Workflows</code> 밑에 <code class="language-plaintext highlighter-rouge">Latest blog post workflow</code>를 클릭, <code class="language-plaintext highlighter-rouge">Run workflow</code>를 클릭하시면 됩니다.</p>
-
-<p><img src="/assets/images/posts/github/1/8.png" alt="" /></p>
-
-<p>잠시 기다린 뒤, 새로고침을 하면 아래와 같이 <code class="language-plaintext highlighter-rouge">workflow</code>가 실행되고 다시 프로필에 가보시면 리스트가 이제 보이게 됩니다<br />
-👍👍👍</p>
-
-<p><img src="/assets/images/posts/github/1/9.png" alt="" /></p>
-
-<p><img src="/assets/images/posts/github/1/10.png" alt="" /></p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[README.md 생성과 블로그 포스트 리스트(blog post list) 생성]]></summary></entry></feed>
+<p>(번외로 스타일을 바꾸고 싶으신 분은 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a>를 참고하시면 됩니다.)</p>]]></content><author><name>Jaewook Lee</name></author><category term="github" /><summary type="html"><![CDATA[깃허브 프로필에 Github Stats 생성하는 법]]></summary></entry></feed>
