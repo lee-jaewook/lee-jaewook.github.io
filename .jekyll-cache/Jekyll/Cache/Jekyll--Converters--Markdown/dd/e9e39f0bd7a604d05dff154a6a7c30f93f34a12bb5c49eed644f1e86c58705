@@ -1,0 +1,45 @@
+I"?<h1 id="category">Category</h1>
+<ul>
+  <li>String manipulation</li>
+</ul>
+
+<!--more-->
+<h1 id="question">Question</h1>
+<p>A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
+
+<p>Given a string s, return true if it is a palindrome, or false otherwise.</p>
+
+<p><strong>Exmaple 1</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+</code></pre></div></div>
+<p><strong>Exmaple 2</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+</code></pre></div></div>
+<p><strong>Exmaple 3</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+</code></pre></div></div>
+
+<h1 id="my-solution">My solution</h1>
+<p>I solved this problem using slicing.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">new_string</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"[^a-zA-Z0-9]"</span><span class="p">,</span><span class="n">s</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">new_string</span> <span class="o">==</span> <span class="n">newstring</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+<p>By filtering unnecessary characters with a regular expression(<code class="language-plaintext highlighter-rouge">re.sub()</code>), the string <code class="language-plaintext highlighter-rouge">s</code> was filtered out to only alphanumeric string <code class="language-plaintext highlighter-rouge">new_string</code> at a time, and then the string was reversed using <code class="language-plaintext highlighter-rouge">[::-1]</code>.</p>
+
+<h1 id="best-solution">Best solution</h1>
+<p>In my solution, the code to solve the problem is</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://github.com/onlybooks/algorithm-interview">파이썬 알고리즘 인터뷰</a> pp. 138</li>
+  <li>leatcode question num : 125</li>
+</ul>
+:ET
