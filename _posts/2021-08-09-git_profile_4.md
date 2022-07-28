@@ -45,7 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-우선 `/.github/workflows` 폴더를 생성하시고, 폴더 안에 `cobrinha.yml`파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, `github_user_name`에 자신의 사용자명을 기입하시면 됩니다
+우선 `/.github/workflows` 폴더를 생성하시고, 폴더 안에 `cobrinha.yml`파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, `github_user_name`에 자신의 사용자명을 기입하시면 됩니다.
 
 ```markdown
 <!-- github_user_name/README.md -->
