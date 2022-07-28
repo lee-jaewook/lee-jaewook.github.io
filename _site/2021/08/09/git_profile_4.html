@@ -517,7 +517,7 @@ c115 -152 197 -230 260 -247 19 -5 91 -25 160 -45 103 -30 130 -34 153 -26 50
           <span class="na">target_branch</span><span class="pi">:</span> <span class="s">output</span>
           <span class="na">build_dir</span><span class="pi">:</span> <span class="s">dist</span>
         <span class="na">env</span><span class="pi">:</span>
-          <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">${{ secrets.GITHUB_TOKEN }}</span>
+          <span class="na">GITHUB_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
 </code></pre></div></div>
 
 <p>우선 <code class="language-plaintext highlighter-rouge">/.github/workflows</code> 폴더를 생성하시고, 폴더 안에 <code class="language-plaintext highlighter-rouge">cobrinha.yml</code>파일을 생성하셔서 위와 같이 코드를 작성해주시면 됩니다. 다른건 수정할게 없고, <code class="language-plaintext highlighter-rouge">github_user_name</code>에 자신의 사용자명을 기입하시면 됩니다.</p>
