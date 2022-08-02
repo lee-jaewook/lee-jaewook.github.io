@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lee-jaewook.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://lee-jaewook.github.io/categories/"
-                />
+    <loc>https://lee-jaewook.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://lee-jaewook.github.io/en/categories/"
                 />
-  </url><url>
-    <loc>https://lee-jaewook.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://lee-jaewook.github.io/"
+                href="https://lee-jaewook.github.io/categories/"
                 />
+  </url><url>
+    <loc>https://lee-jaewook.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://lee-jaewook.github.io/en/"
                 />
-  </url><url>
-    <loc>https://lee-jaewook.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://lee-jaewook.github.io/tags/"
+                href="https://lee-jaewook.github.io/"
                 />
+  </url><url>
+    <loc>https://lee-jaewook.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://lee-jaewook.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://lee-jaewook.github.io/tags/"
                 />
   </url>
 </urlset>
