@@ -5,6 +5,15 @@
         <link>https://lee-jaewook.github.io/en/</link>
         <description>Recent content on Jaewook&#39;s log</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://lee-jaewook.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language><atom:link href="https://lee-jaewook.github.io/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Sample 1</title>
+        <link>https://lee-jaewook.github.io/en/sample-1/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lee-jaewook.github.io/en/sample-1/</guid>
+        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
