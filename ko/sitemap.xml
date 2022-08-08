@@ -15,33 +15,18 @@
                 href="https://lee-jaewook.github.io/"
                 />
   </url><url>
-    <loc>https://lee-jaewook.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://lee-jaewook.github.io/about/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://lee-jaewook.github.io/en/categories/"
+                href="https://lee-jaewook.github.io/en/sample-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://lee-jaewook.github.io/categories/"
+                href="https://lee-jaewook.github.io/about/"
                 />
-  </url><url>
-    <loc>https://lee-jaewook.github.io/post/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lee-jaewook.github.io/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lee-jaewook.github.io/p/test-korean/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lee-jaewook.github.io/categories/%ED%95%9C%EA%B8%80/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lee-jaewook.github.io/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lee-jaewook.github.io/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
@@ -55,6 +40,37 @@
                 hreflang="ko"
                 href="https://lee-jaewook.github.io/page/"
                 />
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://lee-jaewook.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://lee-jaewook.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://lee-jaewook.github.io/post/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/test/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/p/test-kk/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/%ED%95%9C%EA%B8%80/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/p/test-korean/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lee-jaewook.github.io/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -119,19 +135,6 @@
   </url><url>
     <loc>https://lee-jaewook.github.io/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lee-jaewook.github.io/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://lee-jaewook.github.io/en/sample-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://lee-jaewook.github.io/about/"
-                />
   </url><url>
     <loc>https://lee-jaewook.github.io/links/</loc>
   </url><url>
