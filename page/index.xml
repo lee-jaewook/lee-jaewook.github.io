@@ -12,14 +12,7 @@
         <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://lee-jaewook.github.io/about/</guid>
-        <description>&lt;h1 id=&#34;hi-there-im-jaewook-lee-httpsmediagiphycommediahvrjclfzcasrr4ia7zgiphygif&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee &lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;hi-there-im-jaewook-lee&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee&lt;/h1&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
