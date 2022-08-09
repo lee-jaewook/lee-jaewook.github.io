@@ -12,7 +12,7 @@
         <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://lee-jaewook.github.io/about/</guid>
-        <description>&lt;h2 id=&#34;hi-there-im-jaewook-lee&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;hi-there-im-jaewook-lee-img-srchttpsmediagiphycommediahvrjclfzcasrr4ia7zgiphygif-width25px&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee &lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;25px&#34;&gt;&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;m a 🧑🏻‍💻 Junior Software Enginner with backend &amp;amp; ML skills. I graduated from Jeonbuk National University bachelor of engineering in software engineering. I learned most of my key skills through my education, such as teamwork and working to tight deadlines. I thoroughly enjoyed my time at university and learned a lot about a healthy work-life balance. I believe in the power of perseverance, so I have been writing github daily commit, and a post on tech blog. I&amp;rsquo;m always striving to develop in accordance with the four major declarations and 12 principles of Agile.
 Hugo makes use of a variety of open source projects including:&lt;/p&gt;
 &lt;h3 id=&#34;-contact-me&#34;&gt;📞 Contact Me&lt;/h3&gt;
@@ -85,7 +85,7 @@ Hugo makes use of a variety of open source projects including:&lt;/p&gt;
 		data-flex-basis=&#34;180px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;==대통령은== 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;대통령은&lt;/code&gt; &lt;mark&gt;국무회의&lt;/mark&gt;의 의장이 되고, 국무총리는 부의장이 된다. 정당의 설립은 자유이며, 복수정당제는 보장된다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.&lt;/p&gt;
 &lt;p&gt;국가는 여자의 복지와 권익의 향상을 위하여 노력하여야 한다. 제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다.&lt;/p&gt;
 &lt;p&gt;국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다. 외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다.&lt;/p&gt;
 &lt;p&gt;대한민국의 국민이 되는 요건은 법률로 정한다. 대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 대법원에 대법관을 둔다. 다만, 법률이 정하는 바에 의하여 대법관이 아닌 법관을 둘 수 있다.&lt;/p&gt;
@@ -195,12 +195,21 @@ Hugo makes use of a variety of open source projects including:&lt;/p&gt;
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://lee-jaewook.github.io/links/</guid>
-        <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-</description>
+        <description>&lt;!-- To use this feature, add `links` section to frontmatter.
+
+This page&#39;s frontmatter: --&gt;
+&lt;!-- ```yaml
+links:
+  - title: GitHub
+    description: GitHub is the world&#39;s largest software development platform.
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: TypeScript
+    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+    website: https://www.typescriptlang.org
+    image: ts-logo-128.jpg
+``` --&gt;
+&lt;!-- `image` field accepts both local and external images. --&gt;</description>
         </item>
         <item>
         <title>Search</title>
