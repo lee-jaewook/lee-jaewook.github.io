@@ -14,6 +14,18 @@
                 href="https://lee-jaewook.github.io/en/"
                 />
   </url><url>
+    <loc>https://lee-jaewook.github.io/en/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://lee-jaewook.github.io/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://lee-jaewook.github.io/en/about/"
+                />
+  </url><url>
     <loc>https://lee-jaewook.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -36,18 +48,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://lee-jaewook.github.io/en/page/"
-                />
-  </url><url>
-    <loc>https://lee-jaewook.github.io/en/sample-1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://lee-jaewook.github.io/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://lee-jaewook.github.io/en/sample-1/"
                 />
   </url><url>
     <loc>https://lee-jaewook.github.io/en/tags/</loc>
