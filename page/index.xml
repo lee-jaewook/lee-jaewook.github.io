@@ -12,28 +12,58 @@
         <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://lee-jaewook.github.io/about/</guid>
-        <description>&lt;h1 id=&#34;hi-there-im-jaewook-lee&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee&lt;/h1&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+        <description>&lt;h2 id=&#34;hi-there-im-jaewook-lee&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m a 🧑🏻‍💻 Junior Software Enginner with backend &amp;amp; ML skills. I graduated from Jeonbuk National University bachelor of engineering in software engineering. I learned most of my key skills through my education, such as teamwork and working to tight deadlines. I thoroughly enjoyed my time at university and learned a lot about a healthy work-life balance. I believe in the power of perseverance, so I have been writing github daily commit, and a post on tech blog. I&amp;rsquo;m always striving to develop in accordance with the four major declarations and 12 principles of Agile.
+Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;h3 id=&#34;-contact-me&#34;&gt;📞 Contact Me&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Email : &lt;a class=&#34;link&#34; href=&#34;mailto:jaewook_lee@outlook.com&#34; &gt;jaewook_lee@outlook.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/lee-jaewook&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://lee-jaewook.github.io/resumecard&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;My Resume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/lee-jaewook/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linkedin&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
-&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
-&lt;p&gt;Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
-&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;-skills&#34;&gt;🛠 Skills&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Back-End Skills  : JAVA, Spring Framework, RESTful API, Spring Boot, AWS&lt;/li&gt;
+&lt;li&gt;Front-End Skills : HTML5, CSS, Javascript, React.js, Vue.js&lt;/li&gt;
+&lt;li&gt;Database : MySQL, MongoDB&lt;/li&gt;
+&lt;li&gt;Machine Learning : Python, Tensorflow, Sklearn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-projects&#34;&gt;💻 Projects&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Project&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Tech Stack&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BECS ITRC 학생주도 창의 자율 프로젝트&lt;/td&gt;
+&lt;td&gt;GAN을 이용한 엣지 컴퓨팅 서비스 품질 예측 모델 개발&lt;/td&gt;
+&lt;td&gt;Tech Stack : Python, Tensorflow, GAN&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://koasas.kaist.ac.kr/handle/10203/290091&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;저널 출간&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SIGNATURE(SIGN All transactions Using Voice REcord)&lt;/td&gt;
+&lt;td&gt;블록체인 기반 구두계약 지원 시스템&lt;/td&gt;
+&lt;td&gt;Vue.js, Docker, Blockchain&lt;/td&gt;
+&lt;td&gt;우수 논문상&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Brr(보르르)&lt;/td&gt;
+&lt;td&gt;청각장애인용 이름 인식 손목 진동 호출기 및 애플리케이션&lt;/td&gt;
+&lt;td&gt;Android, Arduino, Bluetooth, Azure&lt;/td&gt;
+&lt;td&gt;ICT 장애인 보조공학기기 공모전 우수상(3위)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         <item>
