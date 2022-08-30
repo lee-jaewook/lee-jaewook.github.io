@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://lee-jaewook.github.io/ko/sitemap.xml</loc>
-    
-      <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://lee-jaewook.github.io/en/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lee-jaewook.github.io/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/about/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/page/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/tags/algorithm/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/algorithm/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/p/algorithm/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/categories/computer-science/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/p/computer-science1/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/post/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/tags/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/links/</loc>
+  </url><url>
+    <loc>https://lee-jaewook.github.io/search/</loc>
+  </url>
+</urlset>
