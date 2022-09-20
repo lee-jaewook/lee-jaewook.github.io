@@ -13,7 +13,7 @@
         
         <guid>https://lee-jaewook.github.io/p/mvc-architecture/</guid>
         <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Today, I learnd MVC Architecture in SSAFY. I write down this post to improve my understanding and organization what i learnd. Before developing the web applications, we need to have idea about design models. It that organized with java server page is seperated into model 1 and model 2.&lt;/p&gt;
+&lt;p&gt;Today I learnd the MVC Architecture in SSAFY. I am going to write this to organize what I have learned. Before developing the web applications, we need to have idea about design models. It that organized with java server page is seperated into model 1 and model 2.&lt;/p&gt;
 &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Model View Controller (MVC)&lt;/li&gt;
