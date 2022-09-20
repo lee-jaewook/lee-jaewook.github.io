@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Jaewook&#39;s Log</title>
-        <link>https://lee-jaewook.github.io/</link>
-        <description>Recent content on Jaewook&#39;s Log</description>
+        <title>MVC on Jaewook&#39;s Log</title>
+        <link>https://lee-jaewook.github.io/tags/mvc/</link>
+        <description>Recent content in MVC on Jaewook&#39;s Log</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/tags/mvc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Unserstanding JavaServer Page Model 1 and Model 2(MVC) Architecture</title>
         <link>https://lee-jaewook.github.io/p/mvc-architecture/</link>
         <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
@@ -96,105 +96,6 @@
     &gt;https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=ka28&amp;logNo=222007545854&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://lee-jaewook.github.io/about/</link>
-        <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://lee-jaewook.github.io/about/</guid>
-        <description>&lt;h2 id=&#34;hi-there-im-jaewook-lee-img-srchttpsmediagiphycommediahvrjclfzcasrr4ia7zgiphygif-width25px&#34;&gt;Hi there, I&amp;rsquo;m Jaewook Lee &lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;25px&#34;&gt;&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m a 🧑🏻‍💻 Junior Software Enginner with backend &amp;amp; ML skills. I graduated from Jeonbuk National University bachelor of engineering in software engineering. I learned most of my key skills through my education, such as teamwork and working to tight deadlines. I thoroughly enjoyed my time at university and learned a lot about a healthy work-life balance. I believe in the power of perseverance, so I have been writing github daily commit, and a post on tech blog. I&amp;rsquo;m always striving to develop in accordance with the four major declarations and 12 principles of Agile.
-Hugo makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;h3 id=&#34;-contact-me&#34;&gt;📞 Contact Me&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Email : &lt;a class=&#34;link&#34; href=&#34;mailto:jaewook_lee@outlook.com&#34; &gt;jaewook_lee@outlook.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/lee-jaewook&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://lee-jaewook.github.io/resumecard&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;My Resume&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/lee-jaewook/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Linkedin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;-skills&#34;&gt;🛠 Skills&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Back-End Skills : JAVA, Spring Framework, RESTful API, Spring Boot, AWS&lt;/li&gt;
-&lt;li&gt;Front-End Skills : HTML5, CSS, Javascript, React.js, Vue.js&lt;/li&gt;
-&lt;li&gt;Database : MySQL, MongoDB&lt;/li&gt;
-&lt;li&gt;Machine Learning : Python, Tensorflow, Sklearn&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;-projects&#34;&gt;💻 Projects&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Project&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Tech Stack&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;BECS ITRC Student-led Creative Project&lt;/td&gt;
-&lt;td&gt;GAN-based QoS Prediction Model in Edge Cloud System&lt;/td&gt;
-&lt;td&gt;Python&lt;br&gt;Tensorflow&lt;br&gt;GAN&lt;br&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://koasas.kaist.ac.kr/handle/10203/290091&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Published in a journal&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SIGNATURE(SIGN All transactions Using Voice REcord)&lt;/td&gt;
-&lt;td&gt;Blockchain-based oral contract support system&lt;/td&gt;
-&lt;td&gt;Vue.js&lt;br&gt;Docker&lt;br&gt;Blockchain&lt;br&gt;&lt;/td&gt;
-&lt;td&gt;Excellence prize&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Brr&lt;/td&gt;
-&lt;td&gt;Communication supplementary smart watch for the hearing impaired&lt;/td&gt;
-&lt;td&gt;Android&lt;br&gt;Arduino&lt;br&gt;Bluetooth&lt;br&gt;Azure&lt;/td&gt;
-&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=o3dJAi9H_PI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ICT Assistive Technology Device Contest for the Disabled encouragement prize&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://lee-jaewook.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://lee-jaewook.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>https://lee-jaewook.github.io/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://lee-jaewook.github.io/links/</guid>
-        <description>&lt;!-- To use this feature, add `links` section to frontmatter.
-
-This page&#39;s frontmatter: --&gt;
-&lt;!-- ```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world&#39;s largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-``` --&gt;
-&lt;!-- `image` field accepts both local and external images. --&gt;</description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://lee-jaewook.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://lee-jaewook.github.io/search/</guid>
-        <description></description>
         </item>
         
     </channel>

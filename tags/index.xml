@@ -6,12 +6,28 @@
         <description>Recent content in Tags on Jaewook&#39;s Log</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>algorithm</title>
-        <link>https://lee-jaewook.github.io/tags/algorithm/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>JSP</title>
+        <link>https://lee-jaewook.github.io/tags/jsp/</link>
+        <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://lee-jaewook.github.io/tags/algorithm/</guid>
+        <guid>https://lee-jaewook.github.io/tags/jsp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>MVC</title>
+        <link>https://lee-jaewook.github.io/tags/mvc/</link>
+        <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://lee-jaewook.github.io/tags/mvc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Servlet</title>
+        <link>https://lee-jaewook.github.io/tags/servlet/</link>
+        <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://lee-jaewook.github.io/tags/servlet/</guid>
         <description></description>
         </item>
         

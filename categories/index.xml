@@ -6,21 +6,21 @@
         <description>Recent content in Categories on Jaewook&#39;s Log</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>computer science</title>
+        <link>https://lee-jaewook.github.io/categories/computer-science/</link>
+        <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://lee-jaewook.github.io/categories/computer-science/</guid>
+        <description>&lt;img src="https://lee-jaewook.github.io/categories/computer-science/rainbow.jpg" alt="Featured image of post computer science" /&gt;</description>
+        </item>
+        <item>
         <title>algorithm</title>
         <link>https://lee-jaewook.github.io/categories/algorithm/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://lee-jaewook.github.io/categories/algorithm/</guid>
         <description>&lt;img src="https://lee-jaewook.github.io/categories/algorithm/yellow.jpg" alt="Featured image of post algorithm" /&gt;</description>
-        </item>
-        <item>
-        <title>computer science</title>
-        <link>https://lee-jaewook.github.io/categories/computer-science/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://lee-jaewook.github.io/categories/computer-science/</guid>
-        <description>&lt;img src="https://lee-jaewook.github.io/categories/computer-science/orange.jpg" alt="Featured image of post computer science" /&gt;</description>
         </item>
         
     </channel>

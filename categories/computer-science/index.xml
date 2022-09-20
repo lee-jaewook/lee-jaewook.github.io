@@ -6,14 +6,95 @@
         <description>Recent content in computer science on Jaewook&#39;s Log</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/categories/computer-science/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Computer Science 공부 계획</title>
-        <link>https://lee-jaewook.github.io/p/computer-science1/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lee-jaewook.github.io/categories/computer-science/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Unserstanding JavaServer Page Model 1 and Model 2(MVC) Architecture</title>
+        <link>https://lee-jaewook.github.io/p/mvc-architecture/</link>
+        <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://lee-jaewook.github.io/p/computer-science1/</guid>
-        <description>&lt;img src="https://lee-jaewook.github.io/p/computer-science1/pexels-fiona-art-5725737.jpg" alt="Featured image of post Computer Science 공부 계획" /&gt;&lt;h2 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h2&gt;
-&lt;h2 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h2&gt;
+        <guid>https://lee-jaewook.github.io/p/mvc-architecture/</guid>
+        <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Today, I learnd MVC Architecture in SSAFY. I write down this post to improve my understanding and organization what i learnd. Before developing the web applications, we need to have idea about design models. It that organized with java server page is seperated into model 1 and model 2.&lt;/p&gt;
+&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Model View Controller (MVC)&lt;/li&gt;
+&lt;li&gt;Model 1 &amp;amp; Model 2&lt;/li&gt;
+&lt;li&gt;JSP, Servlet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;model-1&#34;&gt;Model 1&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://lee-jaewook.github.io/p/mvc-architecture/fig1.png&#34;
+	width=&#34;2553&#34;
+	height=&#34;849&#34;
+	srcset=&#34;https://lee-jaewook.github.io/p/mvc-architecture/fig1_hu33e988f352972791a59a410ee519f032_519090_480x0_resize_box_3.png 480w, https://lee-jaewook.github.io/p/mvc-architecture/fig1_hu33e988f352972791a59a410ee519f032_519090_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;300&#34;
+		data-flex-basis=&#34;721px&#34;
+	
+&gt;&lt;em&gt;Model 1 Architecture&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Servlet and JSP are the main technologies to develop the web applications. Servlet was considered superior to CGI. Servlet technology doesn&amp;rsquo;t create process, rather it creates thread to handle request. The advantage of creating thread over process is that it doesn&amp;rsquo;t allocate separate memory area. Thus many subsequent requests can be easily handled by servlet. Problem in Servlet technology Servlet needs to recompile if any designing code is modified. It doesn&amp;rsquo;t provide separation of concern. Presentation and Business logic are mixed up. JSP overcomes almost all the problems of Servlet. It provides better separation of concern, now presentation and business logic can be easily separated. You don&amp;rsquo;t need to redeploy the application if JSP page is modified. JSP provides support to develop web application using JavaBean, custom tags and JSTL so that we can put the business logic separate from our JSP that will be easier to test and debug.&lt;/p&gt;
+&lt;h3 id=&#34;advantage-and-disadvantage-of-model-1&#34;&gt;Advantage and Disadvantage of Model 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Advantage
+&lt;ul&gt;
+&lt;li&gt;Easy and Quick to develop web application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Disadvantage
+&lt;ul&gt;
+&lt;li&gt;Navigation control is decentralized since every page contains the logic to determine the next page. If JSP page name is changed that is referred by other pages, we need to change it in all the pages that leads to the maintenance problem.&lt;/li&gt;
+&lt;li&gt;Time consuming You need to spend more time to develop custom tags in JSP. So that we don&amp;rsquo;t need to use scriptlet tag.&lt;/li&gt;
+&lt;li&gt;Hard to extend It is better for small applications but not for large applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;model-2&#34;&gt;Model 2&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://lee-jaewook.github.io/p/mvc-architecture/fig2.png&#34;
+	width=&#34;2346&#34;
+	height=&#34;1146&#34;
+	srcset=&#34;https://lee-jaewook.github.io/p/mvc-architecture/fig2_hu207904cedcd2d6c020dc65c1a44b9179_833027_480x0_resize_box_3.png 480w, https://lee-jaewook.github.io/p/mvc-architecture/fig2_hu207904cedcd2d6c020dc65c1a44b9179_833027_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;em&gt;Model 2 Architecture&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Model 2 is based on the MVC (Model View Controller) design pattern. The MVC design pattern consists of three modules model, view and controller.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Model : The model represents the state (data) and business logic of the application.&lt;/li&gt;
+&lt;li&gt;View : The view module is responsible to display data i.e. it represents the presentation.&lt;/li&gt;
+&lt;li&gt;Controller : The controller module acts as an interface between view and model. It intercepts all the requests i.e. receives input and commands to Model / View to change accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;advantage-and-disadvantage-of-model-2&#34;&gt;Advantage and Disadvantage of Model 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Advantage
+&lt;ul&gt;
+&lt;li&gt;Navigation control is centralized Now only controller contains the logic to determine the next page.&lt;/li&gt;
+&lt;li&gt;Easy to maintain&lt;/li&gt;
+&lt;li&gt;Easy to extend&lt;/li&gt;
+&lt;li&gt;Easy to test&lt;/li&gt;
+&lt;li&gt;Better separation of concerns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Disadvantage
+&lt;ul&gt;
+&lt;li&gt;We need to write the controller code self. If we change the controller code, we need to recompile the class and redeploy the application.&lt;/li&gt;
+&lt;li&gt;More expensice than model 1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.edureka.co/blog/mvc-architecture-in-java/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.edureka.co/blog/mvc-architecture-in-java/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;amp;blogId=ka28&amp;amp;logNo=222007545854&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=ka28&amp;logNo=222007545854&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
